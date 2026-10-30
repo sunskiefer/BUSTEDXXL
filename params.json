@@ -12506,6 +12506,46 @@
    ],
    "default": 0,
    "poll": false
+  },
+  {
+   "key": "zoom",
+   "name": "Zoom",
+   "options": [
+    "Whole",
+    "Top half",
+    "Bottom half"
+   ],
+   "default": 0
+  },
+  {
+   "key": "zin_top",
+   "name": "Zoom Top Half",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "zin_bot",
+   "name": "Zoom Bottom Half",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "zout",
+   "name": "Zoom Out",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
   }
  ]
 }

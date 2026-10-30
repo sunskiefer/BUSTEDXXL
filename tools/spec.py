@@ -174,9 +174,40 @@ SX = [f[0] for f in FIT]
 SY = [f[0] for f in FIT]
 
 
-def to_page(s, x, y):
-    sc, ox, oy, _, _ = FIT[s]
-    return ox + x * sc, oy + y * sc
+ZOOMS = 3            # 0 whole screen, 1 top half, 2 bottom half (a zoom is a pre-drawn enlarged view, see post_skin.py)
+
+
+CUT = [FIT[s][4] / 2.0 for s in range(len(GEOM))]    # art y of the line that halves each screen
+PAD = [0.10 * FIT[s][4] for s in range(len(GEOM))]    # each zoomed half also shows this much of the other, so no knob or jack is cut
+
+
+def _views(s):
+    sc, ox, oy, w, h = FIT[s]
+    out = [(sc, ox, oy, 0.0, float(h))]
+    usable = PAGE_H - HEADER_H
+    for ya, yb in ((0.0, CUT[s] + PAD[s]), (CUT[s] - PAD[s], float(h))):
+        zs = min(PAGE_W / float(w), usable / (yb - ya))
+        out.append((zs, (PAGE_W - w * zs) / 2.0, HEADER_H + (usable - (yb - ya) * zs) / 2.0, ya, yb))
+    return out
+
+
+VIEWS = [_views(s) for s in range(len(GEOM))]   # per screen, per zoom: (scale, page x of art x 0, page y of art y ya, ya, yb)
+
+
+def zviews(s, y, r):
+    """The zoomed halves (1 top, 2 bottom) a control or jack at art y with radius r is shown and used in: every half that
+    holds its whole body (so one near the middle is in both)."""
+    zs = [z for z in (1, 2) if VIEWS[s][z][3] <= y - r * 0.95 and y + r * 0.95 <= VIEWS[s][z][4]]
+    return zs or [half_of(s, y)]
+
+
+def to_page(s, x, y, z=0):
+    sc, ox, oy, ya, _ = VIEWS[s][z]
+    return ox + x * sc, oy + (y - ya) * sc
+
+
+def half_of(s, y):
+    return 1 if y < CUT[s] else 2
 
 
 NSCREENS = len(GEOM)

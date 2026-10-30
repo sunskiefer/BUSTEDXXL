@@ -67,7 +67,8 @@ class Composer:
                 if st == "Knob" and data.get("filmStrip"):
                     strip = self.img(data["filmStrip"])
                     F = strip.size[0]
-                    fr = int(round(self.norm(key, state) * 127))
+                    nfr = strip.size[1] // F
+                    fr = int(round(self.norm(key, state) * (nfr - 1)))
                     page.alpha_composite(strip.crop((0, fr * F, F, fr * F + F)).resize((sw, sh)), (x + sx, y + sy))
                 elif st == "Button":
                     if sub["bounds"].get("whenVisible") == "WhenFocussed":
@@ -115,20 +116,16 @@ def run(skin, folder):
     comp = Composer(skin)
     base = sample_state(skin)
     for s in range(spec.NSCREENS):
-        st = dict(base)
-        st["view"] = s
         # only this screen's picture switches count (the engine zeroes the others)
-        keep = {}
-        for k, v in st.items():
-            if k == "view":
-                keep[k] = v
-                continue
+        keep0 = {}
+        for k, v in base.items():
             m = re.match(r"(cp|xo|xi)_(\d+)", k)
-            if m:
-                gid = int(m.group(2))
-                scr = spec.JACKS[gid].screen
-                if scr == s:
-                    keep[k] = v
-        im = comp.compose(keep).convert("RGB")
-        im.save(os.path.join(folder, "screen_%d.png" % (s + 1)))
+            if m and spec.JACKS[int(m.group(2))].screen == s:
+                keep0[k] = v
+        for z in range(spec.ZOOMS):
+            st = dict(keep0)
+            st["view"] = s
+            st["zoom"] = z
+            im = comp.compose(st).convert("RGB")
+            im.save(os.path.join(folder, "screen_%d%s.png" % (s + 1, ["", "_top", "_bottom"][z])))
     return folder

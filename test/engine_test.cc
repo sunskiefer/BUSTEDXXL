@@ -69,6 +69,11 @@ int main() {
     snprintf(k, sizeof k, "cp_%d_%d", o, JACK_GROUP_OF[in]);
     CHECK(geti(s, k) == 1 + JACK_GROUP_POS[in], "cable picture switch %s = %d (want %d)", k, geti(s, k), 1 + JACK_GROUP_POS[in]);
     // the picture clears on another screen, and the cross-screen stub shows where it should
+    set(s, "zin_top", "1"); CHECK(geti(s, "zoom") == 1, "tap top half zooms the top");
+    set(s, "zin_bot", "1"); CHECK(geti(s, "zoom") == 2, "tap bottom half zooms the bottom");
+    set(s, "nav_next", "1"); CHECK(geti(s, "zoom") == 2, "zoom stays when the screen changes");
+    set(s, "nav_prev", "1");
+    set(s, "zout", "1"); CHECK(geti(s, "zoom") == 0, "tap outside zooms out");
     set(s, "nav_next", "1"); CHECK(geti(s, "view") == 1, "next -> screen 2");
     CHECK(geti(s, k) == 0, "no cable picture on another screen");
     set(s, "nav_prev", "1"); set(s, "nav_prev", "1"); CHECK(geti(s, "view") == 2, "prev wraps to screen 3");

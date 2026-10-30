@@ -29,12 +29,19 @@ def trigger(key, name, refresh=False):
     return p
 
 
-def knob_radius(c):
-    """Page radius of a control's knob strip."""
+KNOB_MAX_RZ = 64
+
+
+def knob_radius(c, z=0):
+    """Page radius of a control's knob strip (in zoom view z: 0 whole screen, 1 top half, 2 bottom half)."""
     if c.kind == "v":
         return SLIDER_R
-    sc = spec.FIT[c.mod.screen][0]
-    return max(KNOB_MIN_R, min(KNOB_MAX_R, int(round(c.r * sc))))   # c.r is already a page radius
+    sc = spec.VIEWS[c.mod.screen][z][0]
+    return max(KNOB_MIN_R, min(KNOB_MAX_R if z == 0 else KNOB_MAX_RZ, int(round(c.r * sc))))
+
+
+def zoom_of(y_art, s):
+    return spec.half_of(s, y_art)
 
 
 def pretty(c):
@@ -84,6 +91,11 @@ def build_params():
         grp = spec.JACKS[h * spec.GROUP:(h + 1) * spec.GROUP]
         P.append({"key": "hd_%d" % h, "name": "Held %d" % (h + 1), "options": ["-"] + [j.key for j in grp], "default": 0,
                   "poll": False})
+    # zoom (appended after the shipped parameters): the view's enlarged half, and the taps that change it
+    P.append({"key": "zoom", "name": "Zoom", "options": ["Whole", "Top half", "Bottom half"], "default": 0})
+    P.append(trigger("zin_top", "Zoom Top Half", True))
+    P.append(trigger("zin_bot", "Zoom Bottom Half", True))
+    P.append(trigger("zout", "Zoom Out", True))
     keys = [p["key"] for p in P]
     assert len(keys) == len(set(keys)), "duplicate keys"
     return P
@@ -244,24 +256,25 @@ theme_lcd=101010
 theme_box=151515"""
 
 
-def jack_box(j):
+def jack_box(j, z=0):
     """Touch box (page coordinates) of a jack: its circle with a little room, never overlapping the jack row's neighbours."""
-    cx, cy = spec.to_page(j.screen, j.x, j.y)
-    sc = spec.SY[j.screen]
+    cx, cy = spec.to_page(j.screen, j.x, j.y, z)
+    sc = spec.VIEWS[j.screen][z][0]
     r = max(14, int(round(j.r * sc * 1.15)))
     return int(round(cx)) - r, int(round(cy)) - r, 2 * r, 2 * r
 
 
-def control_box(c):
-    cx, cy = spec.to_page(c.mod.screen, c.x, c.y)
-    sc = spec.FIT[c.mod.screen][0]
+def control_box(c, z=0):
+    cx, cy = spec.to_page(c.mod.screen, c.x, c.y, z)
+    sc = spec.VIEWS[c.mod.screen][z][0]
     if c.kind in ("k", "n"):
-        R = knob_radius(c)
+        R = knob_radius(c, z)
         return int(round(cx)) - R - 2, int(round(cy)) - R - 2, 2 * R + 4, 2 * R + 4
     r = max(16, int(round(c.r * sc * 1.1)))
     if c.kind == "v":
         # a slider: a tall touch box along the slider's travel
-        return int(round(cx)) - 12, int(round(cy)) - 40, 24, 80
+        k = sc / spec.FIT[c.mod.screen][0]
+        return int(round(cx - 12 * k)), int(round(cy - 40 * k)), int(round(24 * k)), int(round(80 * k))
     return int(round(cx)) - r, int(round(cy)) - r, 2 * r, 2 * r
 
 
@@ -286,6 +299,9 @@ def write_layout():
          THEME,
          "qlinks_track = " + ",".join("ql%d" % (i + 1) for i in range(16)),
          "", "[tab KutilXXL]"]
+    for s_ in range(spec.NSCREENS):   # behind every control: a tap on empty art zooms in / out (post_skin.py sizes them)
+        for k in ("zin_top", "zin_bot", "zout"):
+            L.append('button cx=640 cy=%d label="" key=%s when=view:%d' % (350 + Y0, k, s_))
     for k, lbl, x, y in NAV:
         L.append('button cx=%d cy=%d label="%s" key=%s' % (x, y + Y0, lbl, k))
     for j in spec.JACKS:

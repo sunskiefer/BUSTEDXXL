@@ -178,7 +178,7 @@ struct Module {
 struct Eng {
   float pv[P_COUNT];
   float btn[P_COUNT];                   // pending momentary presses
-  int view = 0, held = -1;
+  int view = 0, held = -1, zoom = 0;
   Cable cab[MAXCAB];
   int ncab = 0;
   unsigned rev = 1;
@@ -273,6 +273,13 @@ struct Eng {
       held = -1;
       rebuild();
     }
+    bump();
+  }
+  void set_zoom(int z) {   // 0 whole screen, 1 top half, 2 bottom half; the skin's enlarged views follow it
+    z = (int)clampf((float)z, 0, 2);
+    if (z == zoom) return;
+    zoom = z;
+    pv[P_ZOOM] = (float)z;
     bump();
   }
   void set_view(int v) {
@@ -947,6 +954,7 @@ void set_param(void *inst, const char *key, const char *val) {
     return;
   }
   if (p == P_VIEW) { s->set_view((int)lroundf(v)); return; }
+  if (p == P_ZOOM) { s->set_zoom((int)lroundf(v)); return; }
   if (p >= P_QL1 && p <= P_QL16) {
     int t = ql_target(s, p - P_QL1);
     if (t < 0) return;
@@ -963,6 +971,9 @@ void set_param(void *inst, const char *key, const char *val) {
     return;
   }
   if (p >= P_TAP_FIRST && p < P_TAP_FIRST + N_JACKS) { s->tap(p - P_TAP_FIRST); return; }
+  if (p == P_ZIN_TOP) { s->set_zoom(1); return; }
+  if (p == P_ZIN_BOT) { s->set_zoom(2); return; }
+  if (p == P_ZOUT) { s->set_zoom(0); return; }
 }
 
 int get_param(void *inst, const char *key, char *buf, int n) {
@@ -995,6 +1006,7 @@ int get_param(void *inst, const char *key, char *buf, int n) {
   }
   if (p < N_CONTROLS) return P_NOPTS[p] ? snprintf(buf, n, "%d", (int)s->pv[p]) : snprintf(buf, n, "%g", s->pv[p]);
   if (p == P_VIEW) return snprintf(buf, n, "%d", s->view);
+  if (p == P_ZOOM) return snprintf(buf, n, "%d", s->zoom);
   if (p >= P_VIS_FIRST && p < P_VIS_FIRST + N_VIS) return snprintf(buf, n, "%d", s->vis_value(p - P_VIS_FIRST));
   if (p == P_PATCH_INFO) return snprintf(buf, n, "%s", s->info);
   return snprintf(buf, n, "0");
