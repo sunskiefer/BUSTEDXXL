@@ -170,6 +170,8 @@ def screen_fit(s):
 
 
 FIT = [screen_fit(s) for s in range(len(GEOM))]
+SX = [f[0] for f in FIT]
+SY = [f[0] for f in FIT]
 
 
 def to_page(s, x, y):

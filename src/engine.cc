@@ -299,8 +299,9 @@ struct Eng {
     }
     if (kind == 2) {            // xi: input a fed from screen b
       if (JACK_SCREEN[a] != view) return 0;
-      for (int c = 0; c < ncab; c++) if (cab[c].i == a && JACK_SCREEN[cab[c].o] == b) return 1;
-      return 0;
+      int r = 0;   // the colour of the newest cable from screen b, so the stub matches the one that left that screen
+      for (int c = 0; c < ncab; c++) if (cab[c].i == a && JACK_SCREEN[cab[c].o] == b) r = 1 + JACK_COLOUR[cab[c].o];
+      return r;
     }
     if (held < 0 || JACK_SCREEN[held] != view) return 0;   // hd: group a
     return (held / GROUP == a) ? 1 + held % GROUP : 0;
@@ -817,7 +818,12 @@ struct Inst : Eng {
     }
   }
 
+  long long frames_run = 0;
+  int refreshes = 0;
   void render(int16_t *out_lr, int frames) {
+    // ask the host to redraw a few times shortly after loading, so the picture switches (which screen's knobs show) settle
+    frames_run += frames;
+    if (refreshes < 3 && frames_run > (refreshes == 0 ? 22050LL : refreshes == 1 ? 66150LL : 176400LL)) { refreshes++; bump(); }
     if (!created) { memset(out_lr, 0, sizeof(int16_t) * 2 * frames); return; }
     int pulse = (int)(0.008f * SR);
     for (int i = 0; i < frames; i++) {

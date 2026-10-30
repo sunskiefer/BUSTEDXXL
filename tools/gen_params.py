@@ -34,7 +34,7 @@ def knob_radius(c):
     if c.kind == "v":
         return SLIDER_R
     sc = spec.FIT[c.mod.screen][0]
-    return max(KNOB_MIN_R, min(KNOB_MAX_R, int(round(c.r * sc))))
+    return max(KNOB_MIN_R, min(KNOB_MAX_R, int(round(c.r * sc))))   # c.r is already a page radius
 
 
 def pretty(c):
@@ -79,7 +79,7 @@ def build_params():
         for t in range(spec.NSCREENS):
             if t != j.screen:
                 P.append({"key": "xi_%d_%d" % (j.gid, t), "name": "In %s %s from %d" % (j.mod.name, j.label, t + 1),
-                          "options": ["-", "on"], "default": 0, "poll": False})
+                          "options": ["-"] + ["col%d" % k for k in range(len(spec.COLORS))], "default": 0, "poll": False})
     for h in range((len(spec.JACKS) + spec.GROUP - 1) // spec.GROUP):
         grp = spec.JACKS[h * spec.GROUP:(h + 1) * spec.GROUP]
         P.append({"key": "hd_%d" % h, "name": "Held %d" % (h + 1), "options": ["-"] + [j.key for j in grp], "default": 0,
@@ -202,6 +202,7 @@ def write_header(P):
     L.append("#define P_VIS_FIRST %d" % first)
     L.append("#define N_VIS %d" % len(vis))
     L.append("#define GROUP %d" % spec.GROUP)
+    L.append("static const unsigned char JACK_COLOUR[N_JACKS] = {%s};" % ", ".join(str(getattr(j, "out_index", 0) % len(spec.COLORS)) for j in spec.JACKS))
     L.append("static const unsigned char VIS_KIND[N_VIS] = {%s};" % ", ".join(str(v[0]) for v in vis))
     L.append("static const short VIS_A[N_VIS] = {%s};" % ", ".join(str(v[1]) for v in vis))
     L.append("static const short VIS_B[N_VIS] = {%s};" % ", ".join(str(v[2]) for v in vis))
@@ -246,7 +247,7 @@ theme_box=151515"""
 def jack_box(j):
     """Touch box (page coordinates) of a jack: its circle with a little room, never overlapping the jack row's neighbours."""
     cx, cy = spec.to_page(j.screen, j.x, j.y)
-    sc = spec.FIT[j.screen][0]
+    sc = spec.SY[j.screen]
     r = max(14, int(round(j.r * sc * 1.15)))
     return int(round(cx)) - r, int(round(cy)) - r, 2 * r, 2 * r
 

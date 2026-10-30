@@ -8911,7 +8911,14 @@
    "name": "In KOMPAS1 COLLAB from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -8921,7 +8928,14 @@
    "name": "In KOMPAS1 COLLAB from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -8931,7 +8945,14 @@
    "name": "In KOMPAS1 RESET from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -8941,7 +8962,14 @@
    "name": "In KOMPAS1 RESET from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -8951,7 +8979,14 @@
    "name": "In KOMPAS1 CLOCK from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -8961,7 +8996,14 @@
    "name": "In KOMPAS1 CLOCK from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -8971,7 +9013,14 @@
    "name": "In CRUST21 A CLK IN from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -8981,7 +9030,14 @@
    "name": "In CRUST21 A CLK IN from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -8991,7 +9047,14 @@
    "name": "In CRUST21 A CLK RESET from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9001,7 +9064,14 @@
    "name": "In CRUST21 A CLK RESET from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9011,7 +9081,14 @@
    "name": "In CRUST21 A C IN from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9021,7 +9098,14 @@
    "name": "In CRUST21 A C IN from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9031,7 +9115,14 @@
    "name": "In CRUST21 A G IN from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9041,7 +9132,14 @@
    "name": "In CRUST21 A G IN from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9051,7 +9149,14 @@
    "name": "In CRUST21 A R IN from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9061,7 +9166,14 @@
    "name": "In CRUST21 A R IN from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9071,7 +9183,14 @@
    "name": "In CRUST21 B CLK IN from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9081,7 +9200,14 @@
    "name": "In CRUST21 B CLK IN from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9091,7 +9217,14 @@
    "name": "In CRUST21 B CLK RESET from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9101,7 +9234,14 @@
    "name": "In CRUST21 B CLK RESET from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9111,7 +9251,14 @@
    "name": "In CRUST21 B C IN from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9121,7 +9268,14 @@
    "name": "In CRUST21 B C IN from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9131,7 +9285,14 @@
    "name": "In CRUST21 B G IN from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9141,7 +9302,14 @@
    "name": "In CRUST21 B G IN from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9151,7 +9319,14 @@
    "name": "In CRUST21 B R IN from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9161,7 +9336,14 @@
    "name": "In CRUST21 B R IN from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9171,7 +9353,14 @@
    "name": "In CRUST21 A LAYER CTRL from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9181,7 +9370,14 @@
    "name": "In CRUST21 A LAYER CTRL from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9191,7 +9387,14 @@
    "name": "In CRUST21 A VELOCITY from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9201,7 +9404,14 @@
    "name": "In CRUST21 A VELOCITY from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9211,7 +9421,14 @@
    "name": "In CRUST21 A TRIG from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9221,7 +9438,14 @@
    "name": "In CRUST21 A TRIG from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9231,7 +9455,14 @@
    "name": "In CRUST21 B PITCH VOCT from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9241,7 +9472,14 @@
    "name": "In CRUST21 B PITCH VOCT from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9251,7 +9489,14 @@
    "name": "In PIZZA1 CV from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9261,7 +9506,14 @@
    "name": "In PIZZA1 CV from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9271,7 +9523,14 @@
    "name": "In PIZZA1 SYNC from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9281,7 +9540,14 @@
    "name": "In PIZZA1 SYNC from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9291,7 +9557,14 @@
    "name": "In PIZZA1 CTRL from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9301,7 +9574,14 @@
    "name": "In PIZZA1 CTRL from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9311,7 +9591,14 @@
    "name": "In PIZZA1 FM INDEX from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9321,7 +9608,14 @@
    "name": "In PIZZA1 FM INDEX from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9331,7 +9625,14 @@
    "name": "In PIZZA1 EXT from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9341,7 +9642,14 @@
    "name": "In PIZZA1 EXT from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9351,7 +9659,14 @@
    "name": "In PIZZA1 V OCT from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9361,7 +9676,14 @@
    "name": "In PIZZA1 V OCT from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9371,7 +9693,14 @@
    "name": "In ABC1 A from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9381,7 +9710,14 @@
    "name": "In ABC1 A from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9391,7 +9727,14 @@
    "name": "In ABC1 B from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9401,7 +9744,14 @@
    "name": "In ABC1 B from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9411,7 +9761,14 @@
    "name": "In ABC1 C from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9421,7 +9778,14 @@
    "name": "In ABC1 C from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9431,7 +9795,14 @@
    "name": "In ABC1 D from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9441,7 +9812,14 @@
    "name": "In ABC1 D from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9451,7 +9829,14 @@
    "name": "In ABC1 E from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9461,7 +9846,14 @@
    "name": "In ABC1 E from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9471,7 +9863,14 @@
    "name": "In ABC1 F from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9481,7 +9880,14 @@
    "name": "In ABC1 F from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9491,7 +9897,14 @@
    "name": "In WAVEBARD1 CLK IN from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9501,7 +9914,14 @@
    "name": "In WAVEBARD1 CLK IN from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9511,7 +9931,14 @@
    "name": "In WAVEBARD1 CLK RESET from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9521,7 +9948,14 @@
    "name": "In WAVEBARD1 CLK RESET from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9531,7 +9965,14 @@
    "name": "In WAVEBARD1 C IN from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9541,7 +9982,14 @@
    "name": "In WAVEBARD1 C IN from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9551,7 +9999,14 @@
    "name": "In WAVEBARD1 G IN from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9561,7 +10016,14 @@
    "name": "In WAVEBARD1 G IN from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9571,7 +10033,14 @@
    "name": "In WAVEBARD1 LFO RESET from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9581,7 +10050,14 @@
    "name": "In WAVEBARD1 LFO RESET from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9591,7 +10067,14 @@
    "name": "In WAVEBARD1 LFO MOD from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9601,7 +10084,14 @@
    "name": "In WAVEBARD1 LFO MOD from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9611,7 +10101,14 @@
    "name": "In WAVEBARD1 AUD L IN from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9621,7 +10118,14 @@
    "name": "In WAVEBARD1 AUD L IN from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9631,7 +10135,14 @@
    "name": "In WAVEBARD1 AUD R IN from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9641,7 +10152,14 @@
    "name": "In WAVEBARD1 AUD R IN from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9651,7 +10169,14 @@
    "name": "In WAVEBARD1 MIDI IN from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9661,7 +10186,14 @@
    "name": "In WAVEBARD1 MIDI IN from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9671,7 +10203,14 @@
    "name": "In WAVEBARD1 TRIG from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9681,7 +10220,14 @@
    "name": "In WAVEBARD1 TRIG from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9691,7 +10237,14 @@
    "name": "In WAVEBARD1 BANK from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9701,7 +10254,14 @@
    "name": "In WAVEBARD1 BANK from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9711,7 +10271,14 @@
    "name": "In WAVEBARD1 FREE from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9721,7 +10288,14 @@
    "name": "In WAVEBARD1 FREE from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9731,7 +10305,14 @@
    "name": "In WAVEBARD1 NOTE from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9741,7 +10322,14 @@
    "name": "In WAVEBARD1 NOTE from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9751,7 +10339,14 @@
    "name": "In WAVEBARD1 SAMPLE from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9761,7 +10356,14 @@
    "name": "In WAVEBARD1 SAMPLE from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9771,7 +10373,14 @@
    "name": "In WAVEBARD1 LENGTH from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9781,7 +10390,14 @@
    "name": "In WAVEBARD1 LENGTH from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9791,7 +10407,14 @@
    "name": "In WAVEBARD1 AUX from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9801,7 +10424,14 @@
    "name": "In WAVEBARD1 AUX from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9811,7 +10441,14 @@
    "name": "In KOMPAS2 RESET from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9821,7 +10458,14 @@
    "name": "In KOMPAS2 RESET from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9831,7 +10475,14 @@
    "name": "In KOMPAS2 CLOCK from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9841,7 +10492,14 @@
    "name": "In KOMPAS2 CLOCK from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9851,7 +10509,14 @@
    "name": "In ABC2 A from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9861,7 +10526,14 @@
    "name": "In ABC2 A from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9871,7 +10543,14 @@
    "name": "In ABC2 B from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9881,7 +10560,14 @@
    "name": "In ABC2 B from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9891,7 +10577,14 @@
    "name": "In ABC2 C from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9901,7 +10594,14 @@
    "name": "In ABC2 C from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9911,7 +10611,14 @@
    "name": "In ABC2 D from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9921,7 +10628,14 @@
    "name": "In ABC2 D from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9931,7 +10645,14 @@
    "name": "In ABC2 E from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9941,7 +10662,14 @@
    "name": "In ABC2 E from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9951,7 +10679,14 @@
    "name": "In ABC2 F from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9961,7 +10696,14 @@
    "name": "In ABC2 F from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9971,7 +10713,14 @@
    "name": "In WAVEBARD2 CLK IN from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9981,7 +10730,14 @@
    "name": "In WAVEBARD2 CLK IN from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -9991,7 +10747,14 @@
    "name": "In WAVEBARD2 CLK RESET from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10001,7 +10764,14 @@
    "name": "In WAVEBARD2 CLK RESET from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10011,7 +10781,14 @@
    "name": "In WAVEBARD2 C IN from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10021,7 +10798,14 @@
    "name": "In WAVEBARD2 C IN from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10031,7 +10815,14 @@
    "name": "In WAVEBARD2 G IN from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10041,7 +10832,14 @@
    "name": "In WAVEBARD2 G IN from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10051,7 +10849,14 @@
    "name": "In WAVEBARD2 LFO RESET from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10061,7 +10866,14 @@
    "name": "In WAVEBARD2 LFO RESET from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10071,7 +10883,14 @@
    "name": "In WAVEBARD2 LFO MOD from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10081,7 +10900,14 @@
    "name": "In WAVEBARD2 LFO MOD from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10091,7 +10917,14 @@
    "name": "In WAVEBARD2 AUD L IN from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10101,7 +10934,14 @@
    "name": "In WAVEBARD2 AUD L IN from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10111,7 +10951,14 @@
    "name": "In WAVEBARD2 AUD R IN from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10121,7 +10968,14 @@
    "name": "In WAVEBARD2 AUD R IN from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10131,7 +10985,14 @@
    "name": "In WAVEBARD2 MIDI IN from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10141,7 +11002,14 @@
    "name": "In WAVEBARD2 MIDI IN from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10151,7 +11019,14 @@
    "name": "In WAVEBARD2 TRIG from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10161,7 +11036,14 @@
    "name": "In WAVEBARD2 TRIG from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10171,7 +11053,14 @@
    "name": "In WAVEBARD2 BANK from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10181,7 +11070,14 @@
    "name": "In WAVEBARD2 BANK from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10191,7 +11087,14 @@
    "name": "In WAVEBARD2 FREE from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10201,7 +11104,14 @@
    "name": "In WAVEBARD2 FREE from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10211,7 +11121,14 @@
    "name": "In WAVEBARD2 NOTE from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10221,7 +11138,14 @@
    "name": "In WAVEBARD2 NOTE from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10231,7 +11155,14 @@
    "name": "In WAVEBARD2 SAMPLE from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10241,7 +11172,14 @@
    "name": "In WAVEBARD2 SAMPLE from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10251,7 +11189,14 @@
    "name": "In WAVEBARD2 LENGTH from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10261,7 +11206,14 @@
    "name": "In WAVEBARD2 LENGTH from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10271,7 +11223,14 @@
    "name": "In WAVEBARD2 AUX from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10281,7 +11240,14 @@
    "name": "In WAVEBARD2 AUX from 3",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10291,7 +11257,14 @@
    "name": "In KOMPAS3 COLLAB from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10301,7 +11274,14 @@
    "name": "In KOMPAS3 COLLAB from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10311,7 +11291,14 @@
    "name": "In KOMPAS3 RESET from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10321,7 +11308,14 @@
    "name": "In KOMPAS3 RESET from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10331,7 +11325,14 @@
    "name": "In KOMPAS3 CLOCK from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10341,7 +11342,14 @@
    "name": "In KOMPAS3 CLOCK from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10351,7 +11359,14 @@
    "name": "In ALCHEMIST1 CLK IN from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10361,7 +11376,14 @@
    "name": "In ALCHEMIST1 CLK IN from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10371,7 +11393,14 @@
    "name": "In ALCHEMIST1 CLK RESET from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10381,7 +11410,14 @@
    "name": "In ALCHEMIST1 CLK RESET from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10391,7 +11427,14 @@
    "name": "In ALCHEMIST1 C IN from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10401,7 +11444,14 @@
    "name": "In ALCHEMIST1 C IN from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10411,7 +11461,14 @@
    "name": "In ALCHEMIST1 G IN from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10421,7 +11478,14 @@
    "name": "In ALCHEMIST1 G IN from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10431,7 +11495,14 @@
    "name": "In ALCHEMIST1 R IN from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10441,7 +11512,14 @@
    "name": "In ALCHEMIST1 R IN from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10451,7 +11529,14 @@
    "name": "In ALCHEMIST1 LFO RESET from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10461,7 +11546,14 @@
    "name": "In ALCHEMIST1 LFO RESET from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10471,7 +11563,14 @@
    "name": "In ALCHEMIST1 LFO MOD from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10481,7 +11580,14 @@
    "name": "In ALCHEMIST1 LFO MOD from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10491,7 +11597,14 @@
    "name": "In ALCHEMIST1 LFO IN from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10501,7 +11614,14 @@
    "name": "In ALCHEMIST1 LFO IN from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10511,7 +11631,14 @@
    "name": "In ALCHEMIST1 AUD L IN from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10521,7 +11648,14 @@
    "name": "In ALCHEMIST1 AUD L IN from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10531,7 +11665,14 @@
    "name": "In ALCHEMIST1 AUD R IN from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10541,7 +11682,14 @@
    "name": "In ALCHEMIST1 AUD R IN from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10551,7 +11699,14 @@
    "name": "In BASIL1 TIME CV from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10561,7 +11716,14 @@
    "name": "In BASIL1 TIME CV from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10571,7 +11733,14 @@
    "name": "In BASIL1 SYNC from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10581,7 +11750,14 @@
    "name": "In BASIL1 SYNC from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10591,7 +11767,14 @@
    "name": "In BASIL1 CTRL from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10601,7 +11784,14 @@
    "name": "In BASIL1 CTRL from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10611,7 +11801,14 @@
    "name": "In BASIL1 L IN from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10621,7 +11818,14 @@
    "name": "In BASIL1 L IN from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10631,7 +11835,14 @@
    "name": "In BASIL1 R IN from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10641,7 +11852,14 @@
    "name": "In BASIL1 R IN from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10651,7 +11869,14 @@
    "name": "In BASIL1 MIX CV from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10661,7 +11886,14 @@
    "name": "In BASIL1 MIX CV from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10671,7 +11903,14 @@
    "name": "In BASIL1 V OCT from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10681,7 +11920,14 @@
    "name": "In BASIL1 V OCT from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10691,7 +11937,14 @@
    "name": "In BASIL1 FEEDBACK CV from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10701,7 +11954,14 @@
    "name": "In BASIL1 FEEDBACK CV from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10711,7 +11971,14 @@
    "name": "In ABC3 A from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10721,7 +11988,14 @@
    "name": "In ABC3 A from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10731,7 +12005,14 @@
    "name": "In ABC3 B from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10741,7 +12022,14 @@
    "name": "In ABC3 B from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10751,7 +12039,14 @@
    "name": "In ABC3 C from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10761,7 +12056,14 @@
    "name": "In ABC3 C from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10771,7 +12073,14 @@
    "name": "In ABC3 D from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10781,7 +12090,14 @@
    "name": "In ABC3 D from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10791,7 +12107,14 @@
    "name": "In ABC3 E from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10801,7 +12124,14 @@
    "name": "In ABC3 E from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10811,7 +12141,14 @@
    "name": "In ABC3 F from 1",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false
@@ -10821,7 +12158,14 @@
    "name": "In ABC3 F from 2",
    "options": [
     "-",
-    "on"
+    "col0",
+    "col1",
+    "col2",
+    "col3",
+    "col4",
+    "col5",
+    "col6",
+    "col7"
    ],
    "default": 0,
    "poll": false

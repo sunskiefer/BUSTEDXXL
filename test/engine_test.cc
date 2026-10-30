@@ -90,7 +90,7 @@ int main() {
     CHECK(ncables(s) == 2, "cable made across screens: %d", ncables(s));
     char k[32];
     set(s, "view", "0"); snprintf(k, sizeof k, "xo_%d_1", o); CHECK(geti(s, k) == 1, "out stub toward screen 2 on screen 1");
-    int in = jack("wavebard1_c_in"); set(s, "view", "1"); snprintf(k, sizeof k, "xi_%d_0", in); CHECK(geti(s, k) == 1, "in stub from screen 1 on screen 2");
+    int in = jack("wavebard1_c_in"); set(s, "view", "1"); snprintf(k, sizeof k, "xi_%d_0", in); CHECK(geti(s, k) > 0, "in stub from screen 1 on screen 2 (coloured like its source)");
     set(s, "view", "2"); CHECK(geti(s, k) == 0, "no stub on a third screen");
     E->destroy(s);
   }

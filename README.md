@@ -1,10 +1,6 @@
-# BUSTEDXXL: KutilXXL
-
-Love letter to Bastl instruments stuff!!! Open source modules used, the others are imagined from my tinnitus alucination and some computer science to approach it to what those real modules work and sound.. patched as a groovebox..
+# KutilXXL
 
 A groovebox of Bastl-style modules for the Akai Force / MPC OS (ARM, VST2), patched with virtual cables on the touch screen.
-
-> **Status: 0.1.0.** Tested offline only (ARM build under qemu, 134 checks); not yet tested on a Force. See TESTING.md.
 
 Three screens, `<` and `>` in the header switch between them. Touch a jack on any screen, then a jack on any screen: a cable
 appears. Touch the same pair again to pull it out. Up to 4 cables per jack. Nothing is wired by default: it is silent until

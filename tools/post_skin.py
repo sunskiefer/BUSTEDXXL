@@ -276,8 +276,11 @@ def knob_sprite(c, R):
     """The art's own knob as a transparent disc, 2R+10 square, scaled to the page."""
     s = c.mod.screen
     art = Image.open(os.path.join(ROOT, "art", spec.GEOM[s]["art"])).convert("RGB")
-    rr = c.r * 1.06
-    box = (int(round(c.x - rr)), int(round(c.y - rr)), int(round(c.x + rr)), int(round(c.y + rr)))
+    src = c
+    if getattr(c, "sprite_from_first_knob", False):
+        src = next(k for k in c.mod.controls if k.kind in ("k", "n") and not getattr(k, "sprite_from_first_knob", False))
+    rr = src.r * 1.06
+    box = (int(round(src.x - rr)), int(round(src.y - rr)), int(round(src.x + rr)), int(round(src.y + rr)))
     crop = art.crop(box)
     diam = 2 * int(round(R * 1.06))
     S = 4
@@ -377,7 +380,7 @@ def main():
         for inst in skin.instances(k):
             inst["bounds"]["bounds"] = bstr(x - 40, y - 26, 80, 52)
     blank(4, 4).save(os.path.join(folder, "ku_blank.png"))
-    for r in sorted(set([max(14, int(round(j.r * spec.FIT[j.screen][0] * 1.15))) for j in spec.JACKS])):
+    for r in sorted(set([max(14, int(round(j.r * spec.SY[j.screen] * 1.15))) for j in spec.JACKS])):
         ring_image(r).save(os.path.join(folder, "ku_ring_%d.png" % r))
     for j in spec.JACKS:
         bx, by, bw, bh = gp.jack_box(j)
@@ -410,7 +413,7 @@ def main():
 
     # 4) cables, stubs, rings
     pos = {j.gid: spec.to_page(j.screen, j.x, j.y) for j in spec.JACKS}
-    plugr = {j.gid: max(7, int(round(j.r * spec.FIT[j.screen][0] * 0.85))) for j in spec.JACKS}
+    plugr = {j.gid: max(7, int(round(j.r * spec.SY[j.screen] * 0.85))) for j in spec.JACKS}
     jobs_pair, jobs_stub, handles = [], [], {}
     for o in spec.OUTS:
         for j in spec.INS:
@@ -433,9 +436,10 @@ def main():
             if t == j.screen:
                 continue
             side = "l" if t < j.screen else "r"
-            prefix = "ku_xi_%d_%d" % (j.gid, t)
-            jobs_stub.append((prefix, pos[j.gid], side, NEUTRAL, plugr[j.gid], "FROM %d" % (t + 1)))
-            handles[prefix] = "IndexedEnabling/1/2/Parameter %d" % skin.index["xi_%d_%d" % (j.gid, t)]
+            for ci in range(len(spec.COLORS)):
+                prefix = "ku_xi_%d_%d_%d" % (j.gid, t, ci)
+                jobs_stub.append((prefix, pos[j.gid], side, spec.COLORS[ci], plugr[j.gid], "FROM %d" % (t + 1)))
+                handles[prefix] = "IndexedEnabling/%d/%d/Parameter %d" % (1 + ci, 1 + len(spec.COLORS), skin.index["xi_%d_%d" % (j.gid, t)])
     cpus = max(1, multiprocessing.cpu_count())
     with multiprocessing.Pool(cpus, initializer=_init, initargs=(folder,)) as pool:
         res = pool.map(job_pair, jobs_pair, chunksize=16) + pool.map(job_stub, jobs_stub, chunksize=16)

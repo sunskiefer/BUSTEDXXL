@@ -107,7 +107,7 @@ def sample_state(skin):
     o = byname["pizza1_main"]
     st["xo_%d_1" % o.gid] = 1
     i = byname["wavebard1_aud_l_in"]
-    st["xi_%d_0" % i.gid] = 1
+    st["xi_%d_0" % i.gid] = 1 + o.out_index % len(spec.COLORS)
     return st
 
 
