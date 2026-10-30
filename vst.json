@@ -1,0 +1,31 @@
+{
+  "name": "KutilXXL",
+  "vendor": "L'Cronx",
+  "uid": "Kutl",
+  "version": 100,
+  "so": "kutilxxl.so",
+  "params": "params.json",
+  "build": {
+    "root": ".",
+    "sources": [
+      "src/engine.cc"
+    ],
+    "cflags": [
+      "-Isrc"
+    ],
+    "libs": [
+      "-lm",
+      "-ldl",
+      "-lpthread"
+    ]
+  },
+  "layout": "layout.conf",
+  "title_font": "art/fonts/TitilliumWeb-SemiBold.ttf",
+  "defines": {
+    "HAS_SONG_POS": 1,
+    "HAS_TRANSPORT": 1,
+    "HAS_DISPLAY_REV": 1,
+    "PARAM_TEXT_MAX": 64,
+    "DISPLAY_REV_NO_UPDATE": 1
+  }
+}

@@ -1,0 +1,11167 @@
+{
+ "name": "KutilXXL",
+ "params": [
+  {
+   "key": "kompas1_latitude",
+   "name": "KOMPAS1 Latitude",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "kompas1_altitude",
+   "name": "KOMPAS1 Altitude",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "kompas1_longitude",
+   "name": "KOMPAS1 Longitude",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "kompas1_collab",
+   "name": "KOMPAS1 Collab",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "kompas1_stz_zopa",
+   "name": "KOMPAS1 Stz Zopa",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "kompas1_find",
+   "name": "KOMPAS1 Find",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "crust21_a_pitch_mod",
+   "name": "CRUST21 A Pitch Mod",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "crust21_a_sample_mod",
+   "name": "CRUST21 A Sample Mod",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "crust21_a_lfo_mod",
+   "name": "CRUST21 A Lfo Mod",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "crust21_b_pitch_mod",
+   "name": "CRUST21 B Pitch Mod",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "crust21_b_sample_mod",
+   "name": "CRUST21 B Sample Mod",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "crust21_b_lfo_mod",
+   "name": "CRUST21 B Lfo Mod",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "crust21_layer",
+   "name": "CRUST21 Layer",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "crust21_length",
+   "name": "CRUST21 Length",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "crust21_ctrl",
+   "name": "CRUST21 Ctrl",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "crust21_bank",
+   "name": "CRUST21 Bank",
+   "min": 0.0,
+   "max": 7.0,
+   "default": 0.0,
+   "display": "int"
+  },
+  {
+   "key": "crust21_a_cvgate",
+   "name": "CRUST21 A Cvgate",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "crust21_b_cvgate",
+   "name": "CRUST21 B Cvgate",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "crust21_shift",
+   "name": "CRUST21 Shift",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "crust21_tap",
+   "name": "CRUST21 Tap",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "pizza1_pitch",
+   "name": "PIZZA1 Pitch",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "pizza1_index_mod",
+   "name": "PIZZA1 Index Mod",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "pizza1_shape",
+   "name": "PIZZA1 Shape",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "pizza1_ratio",
+   "name": "PIZZA1 Ratio",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "pizza1_detune",
+   "name": "PIZZA1 Detune",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "pizza1_wave",
+   "name": "PIZZA1 Wave",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "pizza1_fm_index_sl",
+   "name": "PIZZA1 Fm Index Sl",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "pizza1_shape_sl",
+   "name": "PIZZA1 Shape Sl",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "pizza1_octave",
+   "name": "PIZZA1 Octave",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "abc1_a",
+   "name": "ABC1 A",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.7,
+   "dynamic_display": true
+  },
+  {
+   "key": "abc1_b",
+   "name": "ABC1 B",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.7,
+   "dynamic_display": true
+  },
+  {
+   "key": "abc1_c",
+   "name": "ABC1 C",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.7,
+   "dynamic_display": true
+  },
+  {
+   "key": "abc1_d",
+   "name": "ABC1 D",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.7,
+   "dynamic_display": true
+  },
+  {
+   "key": "abc1_e",
+   "name": "ABC1 E",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.7,
+   "dynamic_display": true
+  },
+  {
+   "key": "abc1_f",
+   "name": "ABC1 F",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.7,
+   "dynamic_display": true
+  },
+  {
+   "key": "wavebard1_pitch_mod",
+   "name": "WAVEBARD1 Pitch Mod",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "wavebard1_sample_mod",
+   "name": "WAVEBARD1 Sample Mod",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "wavebard1_lfo_mod",
+   "name": "WAVEBARD1 Lfo Mod",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "wavebard1_pitch",
+   "name": "WAVEBARD1 Pitch",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "wavebard1_sample",
+   "name": "WAVEBARD1 Sample",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "wavebard1_lfo",
+   "name": "WAVEBARD1 Lfo",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "wavebard1_length",
+   "name": "WAVEBARD1 Length",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "wavebard1_shift",
+   "name": "WAVEBARD1 Shift",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "wavebard1_bank",
+   "name": "WAVEBARD1 Bank",
+   "min": 0.0,
+   "max": 7.0,
+   "default": 0.0,
+   "display": "int"
+  },
+  {
+   "key": "wavebard1_rnd_cv",
+   "name": "WAVEBARD1 Rnd Cv",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "wavebard1_tiv_gate",
+   "name": "WAVEBARD1 Tiv Gate",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "kompas2_latitude",
+   "name": "KOMPAS2 Latitude",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "kompas2_altitude",
+   "name": "KOMPAS2 Altitude",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "kompas2_longitude",
+   "name": "KOMPAS2 Longitude",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "kompas2_collab",
+   "name": "KOMPAS2 Collab",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "kompas2_stz_zopa",
+   "name": "KOMPAS2 Stz Zopa",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "kompas2_find",
+   "name": "KOMPAS2 Find",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "abc2_d",
+   "name": "ABC2 D",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.7,
+   "dynamic_display": true
+  },
+  {
+   "key": "abc2_a",
+   "name": "ABC2 A",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.7,
+   "dynamic_display": true
+  },
+  {
+   "key": "abc2_b",
+   "name": "ABC2 B",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.7,
+   "dynamic_display": true
+  },
+  {
+   "key": "abc2_e",
+   "name": "ABC2 E",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.7,
+   "dynamic_display": true
+  },
+  {
+   "key": "wavebard2_pitch_mod",
+   "name": "WAVEBARD2 Pitch Mod",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "wavebard2_sample_mod",
+   "name": "WAVEBARD2 Sample Mod",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "wavebard2_lfo_mod",
+   "name": "WAVEBARD2 Lfo Mod",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "wavebard2_pitch",
+   "name": "WAVEBARD2 Pitch",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "wavebard2_sample",
+   "name": "WAVEBARD2 Sample",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "wavebard2_lfo",
+   "name": "WAVEBARD2 Lfo",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "wavebard2_length",
+   "name": "WAVEBARD2 Length",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "wavebard2_shift",
+   "name": "WAVEBARD2 Shift",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "wavebard2_bank",
+   "name": "WAVEBARD2 Bank",
+   "min": 0.0,
+   "max": 7.0,
+   "default": 0.0,
+   "display": "int"
+  },
+  {
+   "key": "wavebard2_rnd_cv",
+   "name": "WAVEBARD2 Rnd Cv",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "wavebard2_tiv_gate",
+   "name": "WAVEBARD2 Tiv Gate",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "kompas3_latitude",
+   "name": "KOMPAS3 Latitude",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "kompas3_altitude",
+   "name": "KOMPAS3 Altitude",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "kompas3_longitude",
+   "name": "KOMPAS3 Longitude",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "kompas3_collab",
+   "name": "KOMPAS3 Collab",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "kompas3_stz_zopa",
+   "name": "KOMPAS3 Stz Zopa",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "kompas3_find",
+   "name": "KOMPAS3 Find",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "alchemist1_pitch_mod",
+   "name": "ALCHEMIST1 Pitch Mod",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "alchemist1_timbre_mod",
+   "name": "ALCHEMIST1 Timbre Mod",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "alchemist1_lfo_mod",
+   "name": "ALCHEMIST1 Lfo Mod",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "alchemist1_env",
+   "name": "ALCHEMIST1 Env",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "alchemist1_pitch",
+   "name": "ALCHEMIST1 Pitch",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "alchemist1_timbre",
+   "name": "ALCHEMIST1 Timbre",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "alchemist1_tempo",
+   "name": "ALCHEMIST1 Tempo",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "alchemist1_shift",
+   "name": "ALCHEMIST1 Shift",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "alchemist1_bank",
+   "name": "ALCHEMIST1 Bank",
+   "min": 0.0,
+   "max": 7.0,
+   "default": 0.0,
+   "display": "int"
+  },
+  {
+   "key": "alchemist1_rnd_cv",
+   "name": "ALCHEMIST1 Rnd Cv",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "alchemist1_tiv_gate",
+   "name": "ALCHEMIST1 Tiv Gate",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "basil1_delay",
+   "name": "BASIL1 Delay",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.4,
+   "dynamic_display": true
+  },
+  {
+   "key": "basil1_feedback",
+   "name": "BASIL1 Feedback",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.4,
+   "dynamic_display": true
+  },
+  {
+   "key": "basil1_ctrl",
+   "name": "BASIL1 Ctrl",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "basil1_dry_wet",
+   "name": "BASIL1 Dry Wet",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "basil1_space",
+   "name": "BASIL1 Space",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.3,
+   "dynamic_display": true
+  },
+  {
+   "key": "basil1_time_btn",
+   "name": "BASIL1 Time Btn",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "basil1_stereo",
+   "name": "BASIL1 Stereo",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "basil1_speed",
+   "name": "BASIL1 Speed",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "basil1_range",
+   "name": "BASIL1 Range",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "basil1_blur",
+   "name": "BASIL1 Blur",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "basil1_filter",
+   "name": "BASIL1 Filter",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "basil1_taps",
+   "name": "BASIL1 Taps",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "basil1_lo_fi",
+   "name": "BASIL1 Lo Fi",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "basil1_long",
+   "name": "BASIL1 Long",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "abc3_d",
+   "name": "ABC3 D",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.7,
+   "dynamic_display": true
+  },
+  {
+   "key": "abc3_a",
+   "name": "ABC3 A",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.7,
+   "dynamic_display": true
+  },
+  {
+   "key": "abc3_e",
+   "name": "ABC3 E",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.7,
+   "dynamic_display": true
+  },
+  {
+   "key": "abc3_b",
+   "name": "ABC3 B",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.7,
+   "dynamic_display": true
+  },
+  {
+   "key": "abc3_f",
+   "name": "ABC3 F",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.7,
+   "dynamic_display": true
+  },
+  {
+   "key": "abc3_c",
+   "name": "ABC3 C",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.7,
+   "dynamic_display": true
+  },
+  {
+   "key": "view",
+   "name": "Screen",
+   "options": [
+    "Screen 1",
+    "Screen 2",
+    "Screen 3"
+   ],
+   "default": 0
+  },
+  {
+   "key": "nav_prev",
+   "name": "Screen Prev",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "nav_next",
+   "name": "Screen Next",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas1_collab",
+   "name": "Jack KOMPAS1 COLLAB",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas1_reset",
+   "name": "Jack KOMPAS1 RESET",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas1_clock",
+   "name": "Jack KOMPAS1 CLOCK",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas1_cv1",
+   "name": "Jack KOMPAS1 CV1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas1_trig1",
+   "name": "Jack KOMPAS1 TRIG1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas1_cv2",
+   "name": "Jack KOMPAS1 CV2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas1_trig2",
+   "name": "Jack KOMPAS1 TRIG2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas1_cv3",
+   "name": "Jack KOMPAS1 CV3",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas1_trig3",
+   "name": "Jack KOMPAS1 TRIG3",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_a_clk_in",
+   "name": "Jack CRUST21 A CLK IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_a_clk_reset",
+   "name": "Jack CRUST21 A CLK RESET",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_a_c_in",
+   "name": "Jack CRUST21 A C IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_a_g_in",
+   "name": "Jack CRUST21 A G IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_a_r_in",
+   "name": "Jack CRUST21 A R IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_a_out",
+   "name": "Jack CRUST21 A OUT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_a_env",
+   "name": "Jack CRUST21 A ENV",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_a_cv",
+   "name": "Jack CRUST21 A CV",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_a_gate",
+   "name": "Jack CRUST21 A GATE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_a_edit",
+   "name": "Jack CRUST21 A EDIT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_b_clk_in",
+   "name": "Jack CRUST21 B CLK IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_b_clk_reset",
+   "name": "Jack CRUST21 B CLK RESET",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_b_c_in",
+   "name": "Jack CRUST21 B C IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_b_g_in",
+   "name": "Jack CRUST21 B G IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_b_r_in",
+   "name": "Jack CRUST21 B R IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_b_out",
+   "name": "Jack CRUST21 B OUT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_b_env",
+   "name": "Jack CRUST21 B ENV",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_b_cv",
+   "name": "Jack CRUST21 B CV",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_b_gate",
+   "name": "Jack CRUST21 B GATE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_b_edit",
+   "name": "Jack CRUST21 B EDIT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_a_layer_ctrl",
+   "name": "Jack CRUST21 A LAYER CTRL",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_a_velocity",
+   "name": "Jack CRUST21 A VELOCITY",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_a_trig",
+   "name": "Jack CRUST21 A TRIG",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_a_rnd_out",
+   "name": "Jack CRUST21 A RND OUT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_b_pitch_voct",
+   "name": "Jack CRUST21 B PITCH VOCT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_b_env_out1",
+   "name": "Jack CRUST21 B ENV OUT1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_b_env_out2",
+   "name": "Jack CRUST21 B ENV OUT2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_crust21_b_rnd_out",
+   "name": "Jack CRUST21 B RND OUT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_pizza1_cv",
+   "name": "Jack PIZZA1 CV",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_pizza1_sync",
+   "name": "Jack PIZZA1 SYNC",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_pizza1_ctrl",
+   "name": "Jack PIZZA1 CTRL",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_pizza1_fm_index",
+   "name": "Jack PIZZA1 FM INDEX",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_pizza1_ext",
+   "name": "Jack PIZZA1 EXT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_pizza1_v_oct",
+   "name": "Jack PIZZA1 V OCT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_pizza1_pulse",
+   "name": "Jack PIZZA1 PULSE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_pizza1_main",
+   "name": "Jack PIZZA1 MAIN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_pizza1_oct_osc",
+   "name": "Jack PIZZA1 OCT OSC",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_abc1_a",
+   "name": "Jack ABC1 A",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_abc1_b",
+   "name": "Jack ABC1 B",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_abc1_c",
+   "name": "Jack ABC1 C",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_abc1_sum1",
+   "name": "Jack ABC1 SUM1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_abc1_d",
+   "name": "Jack ABC1 D",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_abc1_e",
+   "name": "Jack ABC1 E",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_abc1_f",
+   "name": "Jack ABC1 F",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_abc1_sum2",
+   "name": "Jack ABC1 SUM2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard1_clk_in",
+   "name": "Jack WAVEBARD1 CLK IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard1_clk_reset",
+   "name": "Jack WAVEBARD1 CLK RESET",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard1_c_in",
+   "name": "Jack WAVEBARD1 C IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard1_g_in",
+   "name": "Jack WAVEBARD1 G IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard1_lfo_reset",
+   "name": "Jack WAVEBARD1 LFO RESET",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard1_lfo_mod",
+   "name": "Jack WAVEBARD1 LFO MOD",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard1_aud_l_in",
+   "name": "Jack WAVEBARD1 AUD L IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard1_aud_r_in",
+   "name": "Jack WAVEBARD1 AUD R IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard1_out",
+   "name": "Jack WAVEBARD1 OUT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard1_env",
+   "name": "Jack WAVEBARD1 ENV",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard1_cv",
+   "name": "Jack WAVEBARD1 CV",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard1_gate",
+   "name": "Jack WAVEBARD1 GATE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard1_lfo_l",
+   "name": "Jack WAVEBARD1 LFO L",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard1_lfo_a",
+   "name": "Jack WAVEBARD1 LFO A",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard1_l_out",
+   "name": "Jack WAVEBARD1 L OUT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard1_r_out",
+   "name": "Jack WAVEBARD1 R OUT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard1_midi_in",
+   "name": "Jack WAVEBARD1 MIDI IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard1_trig",
+   "name": "Jack WAVEBARD1 TRIG",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard1_bank",
+   "name": "Jack WAVEBARD1 BANK",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard1_free",
+   "name": "Jack WAVEBARD1 FREE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard1_note",
+   "name": "Jack WAVEBARD1 NOTE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard1_sample",
+   "name": "Jack WAVEBARD1 SAMPLE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard1_length",
+   "name": "Jack WAVEBARD1 LENGTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard1_aux",
+   "name": "Jack WAVEBARD1 AUX",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas2_reset",
+   "name": "Jack KOMPAS2 RESET",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas2_clock",
+   "name": "Jack KOMPAS2 CLOCK",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas2_cv1",
+   "name": "Jack KOMPAS2 CV1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas2_trig1",
+   "name": "Jack KOMPAS2 TRIG1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas2_cv2",
+   "name": "Jack KOMPAS2 CV2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas2_trig2",
+   "name": "Jack KOMPAS2 TRIG2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas2_cv3",
+   "name": "Jack KOMPAS2 CV3",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas2_trig3",
+   "name": "Jack KOMPAS2 TRIG3",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_abc2_a",
+   "name": "Jack ABC2 A",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_abc2_b",
+   "name": "Jack ABC2 B",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_abc2_c",
+   "name": "Jack ABC2 C",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_abc2_sum1",
+   "name": "Jack ABC2 SUM1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_abc2_d",
+   "name": "Jack ABC2 D",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_abc2_e",
+   "name": "Jack ABC2 E",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_abc2_f",
+   "name": "Jack ABC2 F",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_abc2_sum2",
+   "name": "Jack ABC2 SUM2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard2_clk_in",
+   "name": "Jack WAVEBARD2 CLK IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard2_clk_reset",
+   "name": "Jack WAVEBARD2 CLK RESET",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard2_c_in",
+   "name": "Jack WAVEBARD2 C IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard2_g_in",
+   "name": "Jack WAVEBARD2 G IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard2_lfo_reset",
+   "name": "Jack WAVEBARD2 LFO RESET",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard2_lfo_mod",
+   "name": "Jack WAVEBARD2 LFO MOD",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard2_aud_l_in",
+   "name": "Jack WAVEBARD2 AUD L IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard2_aud_r_in",
+   "name": "Jack WAVEBARD2 AUD R IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard2_out",
+   "name": "Jack WAVEBARD2 OUT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard2_env",
+   "name": "Jack WAVEBARD2 ENV",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard2_cv",
+   "name": "Jack WAVEBARD2 CV",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard2_gate",
+   "name": "Jack WAVEBARD2 GATE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard2_lfo_l",
+   "name": "Jack WAVEBARD2 LFO L",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard2_lfo_a",
+   "name": "Jack WAVEBARD2 LFO A",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard2_l_out",
+   "name": "Jack WAVEBARD2 L OUT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard2_r_out",
+   "name": "Jack WAVEBARD2 R OUT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard2_midi_in",
+   "name": "Jack WAVEBARD2 MIDI IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard2_trig",
+   "name": "Jack WAVEBARD2 TRIG",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard2_bank",
+   "name": "Jack WAVEBARD2 BANK",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard2_free",
+   "name": "Jack WAVEBARD2 FREE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard2_note",
+   "name": "Jack WAVEBARD2 NOTE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard2_sample",
+   "name": "Jack WAVEBARD2 SAMPLE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard2_length",
+   "name": "Jack WAVEBARD2 LENGTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_wavebard2_aux",
+   "name": "Jack WAVEBARD2 AUX",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas3_collab",
+   "name": "Jack KOMPAS3 COLLAB",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas3_reset",
+   "name": "Jack KOMPAS3 RESET",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas3_clock",
+   "name": "Jack KOMPAS3 CLOCK",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas3_cv1",
+   "name": "Jack KOMPAS3 CV1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas3_trig1",
+   "name": "Jack KOMPAS3 TRIG1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas3_cv2",
+   "name": "Jack KOMPAS3 CV2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas3_trig2",
+   "name": "Jack KOMPAS3 TRIG2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas3_cv3",
+   "name": "Jack KOMPAS3 CV3",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_kompas3_trig3",
+   "name": "Jack KOMPAS3 TRIG3",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_alchemist1_clk_in",
+   "name": "Jack ALCHEMIST1 CLK IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_alchemist1_clk_reset",
+   "name": "Jack ALCHEMIST1 CLK RESET",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_alchemist1_c_in",
+   "name": "Jack ALCHEMIST1 C IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_alchemist1_g_in",
+   "name": "Jack ALCHEMIST1 G IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_alchemist1_r_in",
+   "name": "Jack ALCHEMIST1 R IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_alchemist1_lfo_reset",
+   "name": "Jack ALCHEMIST1 LFO RESET",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_alchemist1_lfo_mod",
+   "name": "Jack ALCHEMIST1 LFO MOD",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_alchemist1_lfo_in",
+   "name": "Jack ALCHEMIST1 LFO IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_alchemist1_aud_l_in",
+   "name": "Jack ALCHEMIST1 AUD L IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_alchemist1_aud_r_in",
+   "name": "Jack ALCHEMIST1 AUD R IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_alchemist1_out",
+   "name": "Jack ALCHEMIST1 OUT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_alchemist1_env",
+   "name": "Jack ALCHEMIST1 ENV",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_alchemist1_cv",
+   "name": "Jack ALCHEMIST1 CV",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_alchemist1_gate",
+   "name": "Jack ALCHEMIST1 GATE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_alchemist1_lfo_l",
+   "name": "Jack ALCHEMIST1 LFO L",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_alchemist1_lfo_edit",
+   "name": "Jack ALCHEMIST1 LFO EDIT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_alchemist1_lfo_a",
+   "name": "Jack ALCHEMIST1 LFO A",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_alchemist1_lfo_out",
+   "name": "Jack ALCHEMIST1 LFO OUT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_alchemist1_l_out",
+   "name": "Jack ALCHEMIST1 L OUT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_alchemist1_r_out",
+   "name": "Jack ALCHEMIST1 R OUT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_basil1_time_cv",
+   "name": "Jack BASIL1 TIME CV",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_basil1_sync",
+   "name": "Jack BASIL1 SYNC",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_basil1_ctrl",
+   "name": "Jack BASIL1 CTRL",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_basil1_l_in",
+   "name": "Jack BASIL1 L IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_basil1_r_in",
+   "name": "Jack BASIL1 R IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_basil1_mix_cv",
+   "name": "Jack BASIL1 MIX CV",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_basil1_v_oct",
+   "name": "Jack BASIL1 V OCT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_basil1_feedback_cv",
+   "name": "Jack BASIL1 FEEDBACK CV",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_basil1_l_out",
+   "name": "Jack BASIL1 L OUT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_basil1_r_out",
+   "name": "Jack BASIL1 R OUT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_basil1_mix_out",
+   "name": "Jack BASIL1 MIX OUT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_abc3_a",
+   "name": "Jack ABC3 A",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_abc3_b",
+   "name": "Jack ABC3 B",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_abc3_c",
+   "name": "Jack ABC3 C",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_abc3_sum1",
+   "name": "Jack ABC3 SUM1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_abc3_d",
+   "name": "Jack ABC3 D",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_abc3_e",
+   "name": "Jack ABC3 E",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_abc3_f",
+   "name": "Jack ABC3 F",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tap_abc3_sum2",
+   "name": "Jack ABC3 SUM2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "patch_info",
+   "name": "Patch Info",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "ql1",
+   "name": "Q-Link 1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql2",
+   "name": "Q-Link 2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql3",
+   "name": "Q-Link 3",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql4",
+   "name": "Q-Link 4",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql5",
+   "name": "Q-Link 5",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql6",
+   "name": "Q-Link 6",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql7",
+   "name": "Q-Link 7",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql8",
+   "name": "Q-Link 8",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql9",
+   "name": "Q-Link 9",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql10",
+   "name": "Q-Link 10",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql11",
+   "name": "Q-Link 11",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql12",
+   "name": "Q-Link 12",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql13",
+   "name": "Q-Link 13",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql14",
+   "name": "Q-Link 14",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql15",
+   "name": "Q-Link 15",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql16",
+   "name": "Q-Link 16",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "cp_3_0",
+   "name": "Cable KOMPAS1 CV1 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "crust21_a_clk_reset",
+    "crust21_b_clk_in",
+    "crust21_b_r_in",
+    "crust21_b_pitch_voct",
+    "pizza1_fm_index",
+    "abc1_b",
+    "abc1_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_3_1",
+   "name": "Cable KOMPAS1 CV1 2",
+   "options": [
+    "-",
+    "kompas1_reset",
+    "crust21_a_c_in",
+    "crust21_b_clk_reset",
+    "crust21_a_layer_ctrl",
+    "pizza1_cv",
+    "pizza1_ext",
+    "abc1_c"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_3_2",
+   "name": "Cable KOMPAS1 CV1 3",
+   "options": [
+    "-",
+    "kompas1_clock",
+    "crust21_a_g_in",
+    "crust21_b_c_in",
+    "crust21_a_velocity",
+    "pizza1_sync",
+    "pizza1_v_oct",
+    "abc1_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_3_3",
+   "name": "Cable KOMPAS1 CV1 4",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_r_in",
+    "crust21_b_g_in",
+    "crust21_a_trig",
+    "pizza1_ctrl",
+    "abc1_a",
+    "abc1_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_4_0",
+   "name": "Cable KOMPAS1 TRIG1 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "crust21_a_clk_reset",
+    "crust21_b_clk_in",
+    "crust21_b_r_in",
+    "crust21_b_pitch_voct",
+    "pizza1_fm_index",
+    "abc1_b",
+    "abc1_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_4_1",
+   "name": "Cable KOMPAS1 TRIG1 2",
+   "options": [
+    "-",
+    "kompas1_reset",
+    "crust21_a_c_in",
+    "crust21_b_clk_reset",
+    "crust21_a_layer_ctrl",
+    "pizza1_cv",
+    "pizza1_ext",
+    "abc1_c"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_4_2",
+   "name": "Cable KOMPAS1 TRIG1 3",
+   "options": [
+    "-",
+    "kompas1_clock",
+    "crust21_a_g_in",
+    "crust21_b_c_in",
+    "crust21_a_velocity",
+    "pizza1_sync",
+    "pizza1_v_oct",
+    "abc1_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_4_3",
+   "name": "Cable KOMPAS1 TRIG1 4",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_r_in",
+    "crust21_b_g_in",
+    "crust21_a_trig",
+    "pizza1_ctrl",
+    "abc1_a",
+    "abc1_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_5_0",
+   "name": "Cable KOMPAS1 CV2 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "crust21_a_clk_reset",
+    "crust21_b_clk_in",
+    "crust21_b_r_in",
+    "crust21_b_pitch_voct",
+    "pizza1_fm_index",
+    "abc1_b",
+    "abc1_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_5_1",
+   "name": "Cable KOMPAS1 CV2 2",
+   "options": [
+    "-",
+    "kompas1_reset",
+    "crust21_a_c_in",
+    "crust21_b_clk_reset",
+    "crust21_a_layer_ctrl",
+    "pizza1_cv",
+    "pizza1_ext",
+    "abc1_c"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_5_2",
+   "name": "Cable KOMPAS1 CV2 3",
+   "options": [
+    "-",
+    "kompas1_clock",
+    "crust21_a_g_in",
+    "crust21_b_c_in",
+    "crust21_a_velocity",
+    "pizza1_sync",
+    "pizza1_v_oct",
+    "abc1_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_5_3",
+   "name": "Cable KOMPAS1 CV2 4",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_r_in",
+    "crust21_b_g_in",
+    "crust21_a_trig",
+    "pizza1_ctrl",
+    "abc1_a",
+    "abc1_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_6_0",
+   "name": "Cable KOMPAS1 TRIG2 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "crust21_a_clk_reset",
+    "crust21_b_clk_in",
+    "crust21_b_r_in",
+    "crust21_b_pitch_voct",
+    "pizza1_fm_index",
+    "abc1_b",
+    "abc1_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_6_1",
+   "name": "Cable KOMPAS1 TRIG2 2",
+   "options": [
+    "-",
+    "kompas1_reset",
+    "crust21_a_c_in",
+    "crust21_b_clk_reset",
+    "crust21_a_layer_ctrl",
+    "pizza1_cv",
+    "pizza1_ext",
+    "abc1_c"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_6_2",
+   "name": "Cable KOMPAS1 TRIG2 3",
+   "options": [
+    "-",
+    "kompas1_clock",
+    "crust21_a_g_in",
+    "crust21_b_c_in",
+    "crust21_a_velocity",
+    "pizza1_sync",
+    "pizza1_v_oct",
+    "abc1_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_6_3",
+   "name": "Cable KOMPAS1 TRIG2 4",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_r_in",
+    "crust21_b_g_in",
+    "crust21_a_trig",
+    "pizza1_ctrl",
+    "abc1_a",
+    "abc1_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_7_0",
+   "name": "Cable KOMPAS1 CV3 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "crust21_a_clk_reset",
+    "crust21_b_clk_in",
+    "crust21_b_r_in",
+    "crust21_b_pitch_voct",
+    "pizza1_fm_index",
+    "abc1_b",
+    "abc1_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_7_1",
+   "name": "Cable KOMPAS1 CV3 2",
+   "options": [
+    "-",
+    "kompas1_reset",
+    "crust21_a_c_in",
+    "crust21_b_clk_reset",
+    "crust21_a_layer_ctrl",
+    "pizza1_cv",
+    "pizza1_ext",
+    "abc1_c"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_7_2",
+   "name": "Cable KOMPAS1 CV3 3",
+   "options": [
+    "-",
+    "kompas1_clock",
+    "crust21_a_g_in",
+    "crust21_b_c_in",
+    "crust21_a_velocity",
+    "pizza1_sync",
+    "pizza1_v_oct",
+    "abc1_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_7_3",
+   "name": "Cable KOMPAS1 CV3 4",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_r_in",
+    "crust21_b_g_in",
+    "crust21_a_trig",
+    "pizza1_ctrl",
+    "abc1_a",
+    "abc1_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_8_0",
+   "name": "Cable KOMPAS1 TRIG3 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "crust21_a_clk_reset",
+    "crust21_b_clk_in",
+    "crust21_b_r_in",
+    "crust21_b_pitch_voct",
+    "pizza1_fm_index",
+    "abc1_b",
+    "abc1_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_8_1",
+   "name": "Cable KOMPAS1 TRIG3 2",
+   "options": [
+    "-",
+    "kompas1_reset",
+    "crust21_a_c_in",
+    "crust21_b_clk_reset",
+    "crust21_a_layer_ctrl",
+    "pizza1_cv",
+    "pizza1_ext",
+    "abc1_c"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_8_2",
+   "name": "Cable KOMPAS1 TRIG3 3",
+   "options": [
+    "-",
+    "kompas1_clock",
+    "crust21_a_g_in",
+    "crust21_b_c_in",
+    "crust21_a_velocity",
+    "pizza1_sync",
+    "pizza1_v_oct",
+    "abc1_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_8_3",
+   "name": "Cable KOMPAS1 TRIG3 4",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_r_in",
+    "crust21_b_g_in",
+    "crust21_a_trig",
+    "pizza1_ctrl",
+    "abc1_a",
+    "abc1_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_14_0",
+   "name": "Cable CRUST21 A OUT 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "crust21_a_clk_reset",
+    "crust21_b_clk_in",
+    "crust21_b_r_in",
+    "crust21_b_pitch_voct",
+    "pizza1_fm_index",
+    "abc1_b",
+    "abc1_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_14_1",
+   "name": "Cable CRUST21 A OUT 2",
+   "options": [
+    "-",
+    "kompas1_reset",
+    "crust21_a_c_in",
+    "crust21_b_clk_reset",
+    "crust21_a_layer_ctrl",
+    "pizza1_cv",
+    "pizza1_ext",
+    "abc1_c"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_14_2",
+   "name": "Cable CRUST21 A OUT 3",
+   "options": [
+    "-",
+    "kompas1_clock",
+    "crust21_a_g_in",
+    "crust21_b_c_in",
+    "crust21_a_velocity",
+    "pizza1_sync",
+    "pizza1_v_oct",
+    "abc1_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_14_3",
+   "name": "Cable CRUST21 A OUT 4",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_r_in",
+    "crust21_b_g_in",
+    "crust21_a_trig",
+    "pizza1_ctrl",
+    "abc1_a",
+    "abc1_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_15_0",
+   "name": "Cable CRUST21 A ENV 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "crust21_a_clk_reset",
+    "crust21_b_clk_in",
+    "crust21_b_r_in",
+    "crust21_b_pitch_voct",
+    "pizza1_fm_index",
+    "abc1_b",
+    "abc1_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_15_1",
+   "name": "Cable CRUST21 A ENV 2",
+   "options": [
+    "-",
+    "kompas1_reset",
+    "crust21_a_c_in",
+    "crust21_b_clk_reset",
+    "crust21_a_layer_ctrl",
+    "pizza1_cv",
+    "pizza1_ext",
+    "abc1_c"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_15_2",
+   "name": "Cable CRUST21 A ENV 3",
+   "options": [
+    "-",
+    "kompas1_clock",
+    "crust21_a_g_in",
+    "crust21_b_c_in",
+    "crust21_a_velocity",
+    "pizza1_sync",
+    "pizza1_v_oct",
+    "abc1_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_15_3",
+   "name": "Cable CRUST21 A ENV 4",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_r_in",
+    "crust21_b_g_in",
+    "crust21_a_trig",
+    "pizza1_ctrl",
+    "abc1_a",
+    "abc1_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_16_0",
+   "name": "Cable CRUST21 A CV 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "crust21_a_clk_reset",
+    "crust21_b_clk_in",
+    "crust21_b_r_in",
+    "crust21_b_pitch_voct",
+    "pizza1_fm_index",
+    "abc1_b",
+    "abc1_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_16_1",
+   "name": "Cable CRUST21 A CV 2",
+   "options": [
+    "-",
+    "kompas1_reset",
+    "crust21_a_c_in",
+    "crust21_b_clk_reset",
+    "crust21_a_layer_ctrl",
+    "pizza1_cv",
+    "pizza1_ext",
+    "abc1_c"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_16_2",
+   "name": "Cable CRUST21 A CV 3",
+   "options": [
+    "-",
+    "kompas1_clock",
+    "crust21_a_g_in",
+    "crust21_b_c_in",
+    "crust21_a_velocity",
+    "pizza1_sync",
+    "pizza1_v_oct",
+    "abc1_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_16_3",
+   "name": "Cable CRUST21 A CV 4",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_r_in",
+    "crust21_b_g_in",
+    "crust21_a_trig",
+    "pizza1_ctrl",
+    "abc1_a",
+    "abc1_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_17_0",
+   "name": "Cable CRUST21 A GATE 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "crust21_a_clk_reset",
+    "crust21_b_clk_in",
+    "crust21_b_r_in",
+    "crust21_b_pitch_voct",
+    "pizza1_fm_index",
+    "abc1_b",
+    "abc1_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_17_1",
+   "name": "Cable CRUST21 A GATE 2",
+   "options": [
+    "-",
+    "kompas1_reset",
+    "crust21_a_c_in",
+    "crust21_b_clk_reset",
+    "crust21_a_layer_ctrl",
+    "pizza1_cv",
+    "pizza1_ext",
+    "abc1_c"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_17_2",
+   "name": "Cable CRUST21 A GATE 3",
+   "options": [
+    "-",
+    "kompas1_clock",
+    "crust21_a_g_in",
+    "crust21_b_c_in",
+    "crust21_a_velocity",
+    "pizza1_sync",
+    "pizza1_v_oct",
+    "abc1_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_17_3",
+   "name": "Cable CRUST21 A GATE 4",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_r_in",
+    "crust21_b_g_in",
+    "crust21_a_trig",
+    "pizza1_ctrl",
+    "abc1_a",
+    "abc1_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_18_0",
+   "name": "Cable CRUST21 A EDIT 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "crust21_a_clk_reset",
+    "crust21_b_clk_in",
+    "crust21_b_r_in",
+    "crust21_b_pitch_voct",
+    "pizza1_fm_index",
+    "abc1_b",
+    "abc1_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_18_1",
+   "name": "Cable CRUST21 A EDIT 2",
+   "options": [
+    "-",
+    "kompas1_reset",
+    "crust21_a_c_in",
+    "crust21_b_clk_reset",
+    "crust21_a_layer_ctrl",
+    "pizza1_cv",
+    "pizza1_ext",
+    "abc1_c"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_18_2",
+   "name": "Cable CRUST21 A EDIT 3",
+   "options": [
+    "-",
+    "kompas1_clock",
+    "crust21_a_g_in",
+    "crust21_b_c_in",
+    "crust21_a_velocity",
+    "pizza1_sync",
+    "pizza1_v_oct",
+    "abc1_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_18_3",
+   "name": "Cable CRUST21 A EDIT 4",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_r_in",
+    "crust21_b_g_in",
+    "crust21_a_trig",
+    "pizza1_ctrl",
+    "abc1_a",
+    "abc1_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_24_0",
+   "name": "Cable CRUST21 B OUT 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "crust21_a_clk_reset",
+    "crust21_b_clk_in",
+    "crust21_b_r_in",
+    "crust21_b_pitch_voct",
+    "pizza1_fm_index",
+    "abc1_b",
+    "abc1_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_24_1",
+   "name": "Cable CRUST21 B OUT 2",
+   "options": [
+    "-",
+    "kompas1_reset",
+    "crust21_a_c_in",
+    "crust21_b_clk_reset",
+    "crust21_a_layer_ctrl",
+    "pizza1_cv",
+    "pizza1_ext",
+    "abc1_c"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_24_2",
+   "name": "Cable CRUST21 B OUT 3",
+   "options": [
+    "-",
+    "kompas1_clock",
+    "crust21_a_g_in",
+    "crust21_b_c_in",
+    "crust21_a_velocity",
+    "pizza1_sync",
+    "pizza1_v_oct",
+    "abc1_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_24_3",
+   "name": "Cable CRUST21 B OUT 4",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_r_in",
+    "crust21_b_g_in",
+    "crust21_a_trig",
+    "pizza1_ctrl",
+    "abc1_a",
+    "abc1_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_25_0",
+   "name": "Cable CRUST21 B ENV 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "crust21_a_clk_reset",
+    "crust21_b_clk_in",
+    "crust21_b_r_in",
+    "crust21_b_pitch_voct",
+    "pizza1_fm_index",
+    "abc1_b",
+    "abc1_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_25_1",
+   "name": "Cable CRUST21 B ENV 2",
+   "options": [
+    "-",
+    "kompas1_reset",
+    "crust21_a_c_in",
+    "crust21_b_clk_reset",
+    "crust21_a_layer_ctrl",
+    "pizza1_cv",
+    "pizza1_ext",
+    "abc1_c"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_25_2",
+   "name": "Cable CRUST21 B ENV 3",
+   "options": [
+    "-",
+    "kompas1_clock",
+    "crust21_a_g_in",
+    "crust21_b_c_in",
+    "crust21_a_velocity",
+    "pizza1_sync",
+    "pizza1_v_oct",
+    "abc1_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_25_3",
+   "name": "Cable CRUST21 B ENV 4",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_r_in",
+    "crust21_b_g_in",
+    "crust21_a_trig",
+    "pizza1_ctrl",
+    "abc1_a",
+    "abc1_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_26_0",
+   "name": "Cable CRUST21 B CV 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "crust21_a_clk_reset",
+    "crust21_b_clk_in",
+    "crust21_b_r_in",
+    "crust21_b_pitch_voct",
+    "pizza1_fm_index",
+    "abc1_b",
+    "abc1_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_26_1",
+   "name": "Cable CRUST21 B CV 2",
+   "options": [
+    "-",
+    "kompas1_reset",
+    "crust21_a_c_in",
+    "crust21_b_clk_reset",
+    "crust21_a_layer_ctrl",
+    "pizza1_cv",
+    "pizza1_ext",
+    "abc1_c"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_26_2",
+   "name": "Cable CRUST21 B CV 3",
+   "options": [
+    "-",
+    "kompas1_clock",
+    "crust21_a_g_in",
+    "crust21_b_c_in",
+    "crust21_a_velocity",
+    "pizza1_sync",
+    "pizza1_v_oct",
+    "abc1_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_26_3",
+   "name": "Cable CRUST21 B CV 4",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_r_in",
+    "crust21_b_g_in",
+    "crust21_a_trig",
+    "pizza1_ctrl",
+    "abc1_a",
+    "abc1_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_27_0",
+   "name": "Cable CRUST21 B GATE 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "crust21_a_clk_reset",
+    "crust21_b_clk_in",
+    "crust21_b_r_in",
+    "crust21_b_pitch_voct",
+    "pizza1_fm_index",
+    "abc1_b",
+    "abc1_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_27_1",
+   "name": "Cable CRUST21 B GATE 2",
+   "options": [
+    "-",
+    "kompas1_reset",
+    "crust21_a_c_in",
+    "crust21_b_clk_reset",
+    "crust21_a_layer_ctrl",
+    "pizza1_cv",
+    "pizza1_ext",
+    "abc1_c"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_27_2",
+   "name": "Cable CRUST21 B GATE 3",
+   "options": [
+    "-",
+    "kompas1_clock",
+    "crust21_a_g_in",
+    "crust21_b_c_in",
+    "crust21_a_velocity",
+    "pizza1_sync",
+    "pizza1_v_oct",
+    "abc1_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_27_3",
+   "name": "Cable CRUST21 B GATE 4",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_r_in",
+    "crust21_b_g_in",
+    "crust21_a_trig",
+    "pizza1_ctrl",
+    "abc1_a",
+    "abc1_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_28_0",
+   "name": "Cable CRUST21 B EDIT 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "crust21_a_clk_reset",
+    "crust21_b_clk_in",
+    "crust21_b_r_in",
+    "crust21_b_pitch_voct",
+    "pizza1_fm_index",
+    "abc1_b",
+    "abc1_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_28_1",
+   "name": "Cable CRUST21 B EDIT 2",
+   "options": [
+    "-",
+    "kompas1_reset",
+    "crust21_a_c_in",
+    "crust21_b_clk_reset",
+    "crust21_a_layer_ctrl",
+    "pizza1_cv",
+    "pizza1_ext",
+    "abc1_c"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_28_2",
+   "name": "Cable CRUST21 B EDIT 3",
+   "options": [
+    "-",
+    "kompas1_clock",
+    "crust21_a_g_in",
+    "crust21_b_c_in",
+    "crust21_a_velocity",
+    "pizza1_sync",
+    "pizza1_v_oct",
+    "abc1_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_28_3",
+   "name": "Cable CRUST21 B EDIT 4",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_r_in",
+    "crust21_b_g_in",
+    "crust21_a_trig",
+    "pizza1_ctrl",
+    "abc1_a",
+    "abc1_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_32_0",
+   "name": "Cable CRUST21 A RND OUT 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "crust21_a_clk_reset",
+    "crust21_b_clk_in",
+    "crust21_b_r_in",
+    "crust21_b_pitch_voct",
+    "pizza1_fm_index",
+    "abc1_b",
+    "abc1_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_32_1",
+   "name": "Cable CRUST21 A RND OUT 2",
+   "options": [
+    "-",
+    "kompas1_reset",
+    "crust21_a_c_in",
+    "crust21_b_clk_reset",
+    "crust21_a_layer_ctrl",
+    "pizza1_cv",
+    "pizza1_ext",
+    "abc1_c"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_32_2",
+   "name": "Cable CRUST21 A RND OUT 3",
+   "options": [
+    "-",
+    "kompas1_clock",
+    "crust21_a_g_in",
+    "crust21_b_c_in",
+    "crust21_a_velocity",
+    "pizza1_sync",
+    "pizza1_v_oct",
+    "abc1_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_32_3",
+   "name": "Cable CRUST21 A RND OUT 4",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_r_in",
+    "crust21_b_g_in",
+    "crust21_a_trig",
+    "pizza1_ctrl",
+    "abc1_a",
+    "abc1_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_34_0",
+   "name": "Cable CRUST21 B ENV OUT1 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "crust21_a_clk_reset",
+    "crust21_b_clk_in",
+    "crust21_b_r_in",
+    "crust21_b_pitch_voct",
+    "pizza1_fm_index",
+    "abc1_b",
+    "abc1_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_34_1",
+   "name": "Cable CRUST21 B ENV OUT1 2",
+   "options": [
+    "-",
+    "kompas1_reset",
+    "crust21_a_c_in",
+    "crust21_b_clk_reset",
+    "crust21_a_layer_ctrl",
+    "pizza1_cv",
+    "pizza1_ext",
+    "abc1_c"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_34_2",
+   "name": "Cable CRUST21 B ENV OUT1 3",
+   "options": [
+    "-",
+    "kompas1_clock",
+    "crust21_a_g_in",
+    "crust21_b_c_in",
+    "crust21_a_velocity",
+    "pizza1_sync",
+    "pizza1_v_oct",
+    "abc1_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_34_3",
+   "name": "Cable CRUST21 B ENV OUT1 4",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_r_in",
+    "crust21_b_g_in",
+    "crust21_a_trig",
+    "pizza1_ctrl",
+    "abc1_a",
+    "abc1_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_35_0",
+   "name": "Cable CRUST21 B ENV OUT2 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "crust21_a_clk_reset",
+    "crust21_b_clk_in",
+    "crust21_b_r_in",
+    "crust21_b_pitch_voct",
+    "pizza1_fm_index",
+    "abc1_b",
+    "abc1_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_35_1",
+   "name": "Cable CRUST21 B ENV OUT2 2",
+   "options": [
+    "-",
+    "kompas1_reset",
+    "crust21_a_c_in",
+    "crust21_b_clk_reset",
+    "crust21_a_layer_ctrl",
+    "pizza1_cv",
+    "pizza1_ext",
+    "abc1_c"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_35_2",
+   "name": "Cable CRUST21 B ENV OUT2 3",
+   "options": [
+    "-",
+    "kompas1_clock",
+    "crust21_a_g_in",
+    "crust21_b_c_in",
+    "crust21_a_velocity",
+    "pizza1_sync",
+    "pizza1_v_oct",
+    "abc1_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_35_3",
+   "name": "Cable CRUST21 B ENV OUT2 4",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_r_in",
+    "crust21_b_g_in",
+    "crust21_a_trig",
+    "pizza1_ctrl",
+    "abc1_a",
+    "abc1_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_36_0",
+   "name": "Cable CRUST21 B RND OUT 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "crust21_a_clk_reset",
+    "crust21_b_clk_in",
+    "crust21_b_r_in",
+    "crust21_b_pitch_voct",
+    "pizza1_fm_index",
+    "abc1_b",
+    "abc1_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_36_1",
+   "name": "Cable CRUST21 B RND OUT 2",
+   "options": [
+    "-",
+    "kompas1_reset",
+    "crust21_a_c_in",
+    "crust21_b_clk_reset",
+    "crust21_a_layer_ctrl",
+    "pizza1_cv",
+    "pizza1_ext",
+    "abc1_c"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_36_2",
+   "name": "Cable CRUST21 B RND OUT 3",
+   "options": [
+    "-",
+    "kompas1_clock",
+    "crust21_a_g_in",
+    "crust21_b_c_in",
+    "crust21_a_velocity",
+    "pizza1_sync",
+    "pizza1_v_oct",
+    "abc1_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_36_3",
+   "name": "Cable CRUST21 B RND OUT 4",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_r_in",
+    "crust21_b_g_in",
+    "crust21_a_trig",
+    "pizza1_ctrl",
+    "abc1_a",
+    "abc1_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_43_0",
+   "name": "Cable PIZZA1 PULSE 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "crust21_a_clk_reset",
+    "crust21_b_clk_in",
+    "crust21_b_r_in",
+    "crust21_b_pitch_voct",
+    "pizza1_fm_index",
+    "abc1_b",
+    "abc1_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_43_1",
+   "name": "Cable PIZZA1 PULSE 2",
+   "options": [
+    "-",
+    "kompas1_reset",
+    "crust21_a_c_in",
+    "crust21_b_clk_reset",
+    "crust21_a_layer_ctrl",
+    "pizza1_cv",
+    "pizza1_ext",
+    "abc1_c"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_43_2",
+   "name": "Cable PIZZA1 PULSE 3",
+   "options": [
+    "-",
+    "kompas1_clock",
+    "crust21_a_g_in",
+    "crust21_b_c_in",
+    "crust21_a_velocity",
+    "pizza1_sync",
+    "pizza1_v_oct",
+    "abc1_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_43_3",
+   "name": "Cable PIZZA1 PULSE 4",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_r_in",
+    "crust21_b_g_in",
+    "crust21_a_trig",
+    "pizza1_ctrl",
+    "abc1_a",
+    "abc1_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_44_0",
+   "name": "Cable PIZZA1 MAIN 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "crust21_a_clk_reset",
+    "crust21_b_clk_in",
+    "crust21_b_r_in",
+    "crust21_b_pitch_voct",
+    "pizza1_fm_index",
+    "abc1_b",
+    "abc1_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_44_1",
+   "name": "Cable PIZZA1 MAIN 2",
+   "options": [
+    "-",
+    "kompas1_reset",
+    "crust21_a_c_in",
+    "crust21_b_clk_reset",
+    "crust21_a_layer_ctrl",
+    "pizza1_cv",
+    "pizza1_ext",
+    "abc1_c"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_44_2",
+   "name": "Cable PIZZA1 MAIN 3",
+   "options": [
+    "-",
+    "kompas1_clock",
+    "crust21_a_g_in",
+    "crust21_b_c_in",
+    "crust21_a_velocity",
+    "pizza1_sync",
+    "pizza1_v_oct",
+    "abc1_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_44_3",
+   "name": "Cable PIZZA1 MAIN 4",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_r_in",
+    "crust21_b_g_in",
+    "crust21_a_trig",
+    "pizza1_ctrl",
+    "abc1_a",
+    "abc1_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_45_0",
+   "name": "Cable PIZZA1 OCT OSC 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "crust21_a_clk_reset",
+    "crust21_b_clk_in",
+    "crust21_b_r_in",
+    "crust21_b_pitch_voct",
+    "pizza1_fm_index",
+    "abc1_b",
+    "abc1_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_45_1",
+   "name": "Cable PIZZA1 OCT OSC 2",
+   "options": [
+    "-",
+    "kompas1_reset",
+    "crust21_a_c_in",
+    "crust21_b_clk_reset",
+    "crust21_a_layer_ctrl",
+    "pizza1_cv",
+    "pizza1_ext",
+    "abc1_c"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_45_2",
+   "name": "Cable PIZZA1 OCT OSC 3",
+   "options": [
+    "-",
+    "kompas1_clock",
+    "crust21_a_g_in",
+    "crust21_b_c_in",
+    "crust21_a_velocity",
+    "pizza1_sync",
+    "pizza1_v_oct",
+    "abc1_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_45_3",
+   "name": "Cable PIZZA1 OCT OSC 4",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_r_in",
+    "crust21_b_g_in",
+    "crust21_a_trig",
+    "pizza1_ctrl",
+    "abc1_a",
+    "abc1_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_49_0",
+   "name": "Cable ABC1 SUM1 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "crust21_a_clk_reset",
+    "crust21_b_clk_in",
+    "crust21_b_r_in",
+    "crust21_b_pitch_voct",
+    "pizza1_fm_index",
+    "abc1_b",
+    "abc1_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_49_1",
+   "name": "Cable ABC1 SUM1 2",
+   "options": [
+    "-",
+    "kompas1_reset",
+    "crust21_a_c_in",
+    "crust21_b_clk_reset",
+    "crust21_a_layer_ctrl",
+    "pizza1_cv",
+    "pizza1_ext",
+    "abc1_c"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_49_2",
+   "name": "Cable ABC1 SUM1 3",
+   "options": [
+    "-",
+    "kompas1_clock",
+    "crust21_a_g_in",
+    "crust21_b_c_in",
+    "crust21_a_velocity",
+    "pizza1_sync",
+    "pizza1_v_oct",
+    "abc1_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_49_3",
+   "name": "Cable ABC1 SUM1 4",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_r_in",
+    "crust21_b_g_in",
+    "crust21_a_trig",
+    "pizza1_ctrl",
+    "abc1_a",
+    "abc1_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_53_0",
+   "name": "Cable ABC1 SUM2 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "crust21_a_clk_reset",
+    "crust21_b_clk_in",
+    "crust21_b_r_in",
+    "crust21_b_pitch_voct",
+    "pizza1_fm_index",
+    "abc1_b",
+    "abc1_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_53_1",
+   "name": "Cable ABC1 SUM2 2",
+   "options": [
+    "-",
+    "kompas1_reset",
+    "crust21_a_c_in",
+    "crust21_b_clk_reset",
+    "crust21_a_layer_ctrl",
+    "pizza1_cv",
+    "pizza1_ext",
+    "abc1_c"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_53_2",
+   "name": "Cable ABC1 SUM2 3",
+   "options": [
+    "-",
+    "kompas1_clock",
+    "crust21_a_g_in",
+    "crust21_b_c_in",
+    "crust21_a_velocity",
+    "pizza1_sync",
+    "pizza1_v_oct",
+    "abc1_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_53_3",
+   "name": "Cable ABC1 SUM2 4",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_r_in",
+    "crust21_b_g_in",
+    "crust21_a_trig",
+    "pizza1_ctrl",
+    "abc1_a",
+    "abc1_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_62_0",
+   "name": "Cable WAVEBARD1 OUT 1",
+   "options": [
+    "-",
+    "wavebard1_clk_in",
+    "wavebard1_lfo_mod",
+    "wavebard1_bank",
+    "wavebard1_aux",
+    "abc2_c",
+    "wavebard2_clk_reset",
+    "wavebard2_aud_l_in",
+    "wavebard2_free"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_62_1",
+   "name": "Cable WAVEBARD1 OUT 2",
+   "options": [
+    "-",
+    "wavebard1_clk_reset",
+    "wavebard1_aud_l_in",
+    "wavebard1_free",
+    "kompas2_reset",
+    "abc2_d",
+    "wavebard2_c_in",
+    "wavebard2_aud_r_in",
+    "wavebard2_note"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_62_2",
+   "name": "Cable WAVEBARD1 OUT 3",
+   "options": [
+    "-",
+    "wavebard1_c_in",
+    "wavebard1_aud_r_in",
+    "wavebard1_note",
+    "kompas2_clock",
+    "abc2_e",
+    "wavebard2_g_in",
+    "wavebard2_midi_in",
+    "wavebard2_sample"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_62_3",
+   "name": "Cable WAVEBARD1 OUT 4",
+   "options": [
+    "-",
+    "wavebard1_g_in",
+    "wavebard1_midi_in",
+    "wavebard1_sample",
+    "abc2_a",
+    "abc2_f",
+    "wavebard2_lfo_reset",
+    "wavebard2_trig",
+    "wavebard2_length"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_62_4",
+   "name": "Cable WAVEBARD1 OUT 5",
+   "options": [
+    "-",
+    "wavebard1_lfo_reset",
+    "wavebard1_trig",
+    "wavebard1_length",
+    "abc2_b",
+    "wavebard2_clk_in",
+    "wavebard2_lfo_mod",
+    "wavebard2_bank",
+    "wavebard2_aux"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_63_0",
+   "name": "Cable WAVEBARD1 ENV 1",
+   "options": [
+    "-",
+    "wavebard1_clk_in",
+    "wavebard1_lfo_mod",
+    "wavebard1_bank",
+    "wavebard1_aux",
+    "abc2_c",
+    "wavebard2_clk_reset",
+    "wavebard2_aud_l_in",
+    "wavebard2_free"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_63_1",
+   "name": "Cable WAVEBARD1 ENV 2",
+   "options": [
+    "-",
+    "wavebard1_clk_reset",
+    "wavebard1_aud_l_in",
+    "wavebard1_free",
+    "kompas2_reset",
+    "abc2_d",
+    "wavebard2_c_in",
+    "wavebard2_aud_r_in",
+    "wavebard2_note"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_63_2",
+   "name": "Cable WAVEBARD1 ENV 3",
+   "options": [
+    "-",
+    "wavebard1_c_in",
+    "wavebard1_aud_r_in",
+    "wavebard1_note",
+    "kompas2_clock",
+    "abc2_e",
+    "wavebard2_g_in",
+    "wavebard2_midi_in",
+    "wavebard2_sample"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_63_3",
+   "name": "Cable WAVEBARD1 ENV 4",
+   "options": [
+    "-",
+    "wavebard1_g_in",
+    "wavebard1_midi_in",
+    "wavebard1_sample",
+    "abc2_a",
+    "abc2_f",
+    "wavebard2_lfo_reset",
+    "wavebard2_trig",
+    "wavebard2_length"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_63_4",
+   "name": "Cable WAVEBARD1 ENV 5",
+   "options": [
+    "-",
+    "wavebard1_lfo_reset",
+    "wavebard1_trig",
+    "wavebard1_length",
+    "abc2_b",
+    "wavebard2_clk_in",
+    "wavebard2_lfo_mod",
+    "wavebard2_bank",
+    "wavebard2_aux"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_64_0",
+   "name": "Cable WAVEBARD1 CV 1",
+   "options": [
+    "-",
+    "wavebard1_clk_in",
+    "wavebard1_lfo_mod",
+    "wavebard1_bank",
+    "wavebard1_aux",
+    "abc2_c",
+    "wavebard2_clk_reset",
+    "wavebard2_aud_l_in",
+    "wavebard2_free"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_64_1",
+   "name": "Cable WAVEBARD1 CV 2",
+   "options": [
+    "-",
+    "wavebard1_clk_reset",
+    "wavebard1_aud_l_in",
+    "wavebard1_free",
+    "kompas2_reset",
+    "abc2_d",
+    "wavebard2_c_in",
+    "wavebard2_aud_r_in",
+    "wavebard2_note"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_64_2",
+   "name": "Cable WAVEBARD1 CV 3",
+   "options": [
+    "-",
+    "wavebard1_c_in",
+    "wavebard1_aud_r_in",
+    "wavebard1_note",
+    "kompas2_clock",
+    "abc2_e",
+    "wavebard2_g_in",
+    "wavebard2_midi_in",
+    "wavebard2_sample"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_64_3",
+   "name": "Cable WAVEBARD1 CV 4",
+   "options": [
+    "-",
+    "wavebard1_g_in",
+    "wavebard1_midi_in",
+    "wavebard1_sample",
+    "abc2_a",
+    "abc2_f",
+    "wavebard2_lfo_reset",
+    "wavebard2_trig",
+    "wavebard2_length"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_64_4",
+   "name": "Cable WAVEBARD1 CV 5",
+   "options": [
+    "-",
+    "wavebard1_lfo_reset",
+    "wavebard1_trig",
+    "wavebard1_length",
+    "abc2_b",
+    "wavebard2_clk_in",
+    "wavebard2_lfo_mod",
+    "wavebard2_bank",
+    "wavebard2_aux"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_65_0",
+   "name": "Cable WAVEBARD1 GATE 1",
+   "options": [
+    "-",
+    "wavebard1_clk_in",
+    "wavebard1_lfo_mod",
+    "wavebard1_bank",
+    "wavebard1_aux",
+    "abc2_c",
+    "wavebard2_clk_reset",
+    "wavebard2_aud_l_in",
+    "wavebard2_free"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_65_1",
+   "name": "Cable WAVEBARD1 GATE 2",
+   "options": [
+    "-",
+    "wavebard1_clk_reset",
+    "wavebard1_aud_l_in",
+    "wavebard1_free",
+    "kompas2_reset",
+    "abc2_d",
+    "wavebard2_c_in",
+    "wavebard2_aud_r_in",
+    "wavebard2_note"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_65_2",
+   "name": "Cable WAVEBARD1 GATE 3",
+   "options": [
+    "-",
+    "wavebard1_c_in",
+    "wavebard1_aud_r_in",
+    "wavebard1_note",
+    "kompas2_clock",
+    "abc2_e",
+    "wavebard2_g_in",
+    "wavebard2_midi_in",
+    "wavebard2_sample"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_65_3",
+   "name": "Cable WAVEBARD1 GATE 4",
+   "options": [
+    "-",
+    "wavebard1_g_in",
+    "wavebard1_midi_in",
+    "wavebard1_sample",
+    "abc2_a",
+    "abc2_f",
+    "wavebard2_lfo_reset",
+    "wavebard2_trig",
+    "wavebard2_length"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_65_4",
+   "name": "Cable WAVEBARD1 GATE 5",
+   "options": [
+    "-",
+    "wavebard1_lfo_reset",
+    "wavebard1_trig",
+    "wavebard1_length",
+    "abc2_b",
+    "wavebard2_clk_in",
+    "wavebard2_lfo_mod",
+    "wavebard2_bank",
+    "wavebard2_aux"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_66_0",
+   "name": "Cable WAVEBARD1 LFO L 1",
+   "options": [
+    "-",
+    "wavebard1_clk_in",
+    "wavebard1_lfo_mod",
+    "wavebard1_bank",
+    "wavebard1_aux",
+    "abc2_c",
+    "wavebard2_clk_reset",
+    "wavebard2_aud_l_in",
+    "wavebard2_free"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_66_1",
+   "name": "Cable WAVEBARD1 LFO L 2",
+   "options": [
+    "-",
+    "wavebard1_clk_reset",
+    "wavebard1_aud_l_in",
+    "wavebard1_free",
+    "kompas2_reset",
+    "abc2_d",
+    "wavebard2_c_in",
+    "wavebard2_aud_r_in",
+    "wavebard2_note"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_66_2",
+   "name": "Cable WAVEBARD1 LFO L 3",
+   "options": [
+    "-",
+    "wavebard1_c_in",
+    "wavebard1_aud_r_in",
+    "wavebard1_note",
+    "kompas2_clock",
+    "abc2_e",
+    "wavebard2_g_in",
+    "wavebard2_midi_in",
+    "wavebard2_sample"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_66_3",
+   "name": "Cable WAVEBARD1 LFO L 4",
+   "options": [
+    "-",
+    "wavebard1_g_in",
+    "wavebard1_midi_in",
+    "wavebard1_sample",
+    "abc2_a",
+    "abc2_f",
+    "wavebard2_lfo_reset",
+    "wavebard2_trig",
+    "wavebard2_length"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_66_4",
+   "name": "Cable WAVEBARD1 LFO L 5",
+   "options": [
+    "-",
+    "wavebard1_lfo_reset",
+    "wavebard1_trig",
+    "wavebard1_length",
+    "abc2_b",
+    "wavebard2_clk_in",
+    "wavebard2_lfo_mod",
+    "wavebard2_bank",
+    "wavebard2_aux"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_67_0",
+   "name": "Cable WAVEBARD1 LFO A 1",
+   "options": [
+    "-",
+    "wavebard1_clk_in",
+    "wavebard1_lfo_mod",
+    "wavebard1_bank",
+    "wavebard1_aux",
+    "abc2_c",
+    "wavebard2_clk_reset",
+    "wavebard2_aud_l_in",
+    "wavebard2_free"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_67_1",
+   "name": "Cable WAVEBARD1 LFO A 2",
+   "options": [
+    "-",
+    "wavebard1_clk_reset",
+    "wavebard1_aud_l_in",
+    "wavebard1_free",
+    "kompas2_reset",
+    "abc2_d",
+    "wavebard2_c_in",
+    "wavebard2_aud_r_in",
+    "wavebard2_note"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_67_2",
+   "name": "Cable WAVEBARD1 LFO A 3",
+   "options": [
+    "-",
+    "wavebard1_c_in",
+    "wavebard1_aud_r_in",
+    "wavebard1_note",
+    "kompas2_clock",
+    "abc2_e",
+    "wavebard2_g_in",
+    "wavebard2_midi_in",
+    "wavebard2_sample"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_67_3",
+   "name": "Cable WAVEBARD1 LFO A 4",
+   "options": [
+    "-",
+    "wavebard1_g_in",
+    "wavebard1_midi_in",
+    "wavebard1_sample",
+    "abc2_a",
+    "abc2_f",
+    "wavebard2_lfo_reset",
+    "wavebard2_trig",
+    "wavebard2_length"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_67_4",
+   "name": "Cable WAVEBARD1 LFO A 5",
+   "options": [
+    "-",
+    "wavebard1_lfo_reset",
+    "wavebard1_trig",
+    "wavebard1_length",
+    "abc2_b",
+    "wavebard2_clk_in",
+    "wavebard2_lfo_mod",
+    "wavebard2_bank",
+    "wavebard2_aux"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_68_0",
+   "name": "Cable WAVEBARD1 L OUT 1",
+   "options": [
+    "-",
+    "wavebard1_clk_in",
+    "wavebard1_lfo_mod",
+    "wavebard1_bank",
+    "wavebard1_aux",
+    "abc2_c",
+    "wavebard2_clk_reset",
+    "wavebard2_aud_l_in",
+    "wavebard2_free"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_68_1",
+   "name": "Cable WAVEBARD1 L OUT 2",
+   "options": [
+    "-",
+    "wavebard1_clk_reset",
+    "wavebard1_aud_l_in",
+    "wavebard1_free",
+    "kompas2_reset",
+    "abc2_d",
+    "wavebard2_c_in",
+    "wavebard2_aud_r_in",
+    "wavebard2_note"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_68_2",
+   "name": "Cable WAVEBARD1 L OUT 3",
+   "options": [
+    "-",
+    "wavebard1_c_in",
+    "wavebard1_aud_r_in",
+    "wavebard1_note",
+    "kompas2_clock",
+    "abc2_e",
+    "wavebard2_g_in",
+    "wavebard2_midi_in",
+    "wavebard2_sample"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_68_3",
+   "name": "Cable WAVEBARD1 L OUT 4",
+   "options": [
+    "-",
+    "wavebard1_g_in",
+    "wavebard1_midi_in",
+    "wavebard1_sample",
+    "abc2_a",
+    "abc2_f",
+    "wavebard2_lfo_reset",
+    "wavebard2_trig",
+    "wavebard2_length"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_68_4",
+   "name": "Cable WAVEBARD1 L OUT 5",
+   "options": [
+    "-",
+    "wavebard1_lfo_reset",
+    "wavebard1_trig",
+    "wavebard1_length",
+    "abc2_b",
+    "wavebard2_clk_in",
+    "wavebard2_lfo_mod",
+    "wavebard2_bank",
+    "wavebard2_aux"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_69_0",
+   "name": "Cable WAVEBARD1 R OUT 1",
+   "options": [
+    "-",
+    "wavebard1_clk_in",
+    "wavebard1_lfo_mod",
+    "wavebard1_bank",
+    "wavebard1_aux",
+    "abc2_c",
+    "wavebard2_clk_reset",
+    "wavebard2_aud_l_in",
+    "wavebard2_free"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_69_1",
+   "name": "Cable WAVEBARD1 R OUT 2",
+   "options": [
+    "-",
+    "wavebard1_clk_reset",
+    "wavebard1_aud_l_in",
+    "wavebard1_free",
+    "kompas2_reset",
+    "abc2_d",
+    "wavebard2_c_in",
+    "wavebard2_aud_r_in",
+    "wavebard2_note"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_69_2",
+   "name": "Cable WAVEBARD1 R OUT 3",
+   "options": [
+    "-",
+    "wavebard1_c_in",
+    "wavebard1_aud_r_in",
+    "wavebard1_note",
+    "kompas2_clock",
+    "abc2_e",
+    "wavebard2_g_in",
+    "wavebard2_midi_in",
+    "wavebard2_sample"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_69_3",
+   "name": "Cable WAVEBARD1 R OUT 4",
+   "options": [
+    "-",
+    "wavebard1_g_in",
+    "wavebard1_midi_in",
+    "wavebard1_sample",
+    "abc2_a",
+    "abc2_f",
+    "wavebard2_lfo_reset",
+    "wavebard2_trig",
+    "wavebard2_length"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_69_4",
+   "name": "Cable WAVEBARD1 R OUT 5",
+   "options": [
+    "-",
+    "wavebard1_lfo_reset",
+    "wavebard1_trig",
+    "wavebard1_length",
+    "abc2_b",
+    "wavebard2_clk_in",
+    "wavebard2_lfo_mod",
+    "wavebard2_bank",
+    "wavebard2_aux"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_80_0",
+   "name": "Cable KOMPAS2 CV1 1",
+   "options": [
+    "-",
+    "wavebard1_clk_in",
+    "wavebard1_lfo_mod",
+    "wavebard1_bank",
+    "wavebard1_aux",
+    "abc2_c",
+    "wavebard2_clk_reset",
+    "wavebard2_aud_l_in",
+    "wavebard2_free"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_80_1",
+   "name": "Cable KOMPAS2 CV1 2",
+   "options": [
+    "-",
+    "wavebard1_clk_reset",
+    "wavebard1_aud_l_in",
+    "wavebard1_free",
+    "kompas2_reset",
+    "abc2_d",
+    "wavebard2_c_in",
+    "wavebard2_aud_r_in",
+    "wavebard2_note"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_80_2",
+   "name": "Cable KOMPAS2 CV1 3",
+   "options": [
+    "-",
+    "wavebard1_c_in",
+    "wavebard1_aud_r_in",
+    "wavebard1_note",
+    "kompas2_clock",
+    "abc2_e",
+    "wavebard2_g_in",
+    "wavebard2_midi_in",
+    "wavebard2_sample"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_80_3",
+   "name": "Cable KOMPAS2 CV1 4",
+   "options": [
+    "-",
+    "wavebard1_g_in",
+    "wavebard1_midi_in",
+    "wavebard1_sample",
+    "abc2_a",
+    "abc2_f",
+    "wavebard2_lfo_reset",
+    "wavebard2_trig",
+    "wavebard2_length"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_80_4",
+   "name": "Cable KOMPAS2 CV1 5",
+   "options": [
+    "-",
+    "wavebard1_lfo_reset",
+    "wavebard1_trig",
+    "wavebard1_length",
+    "abc2_b",
+    "wavebard2_clk_in",
+    "wavebard2_lfo_mod",
+    "wavebard2_bank",
+    "wavebard2_aux"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_81_0",
+   "name": "Cable KOMPAS2 TRIG1 1",
+   "options": [
+    "-",
+    "wavebard1_clk_in",
+    "wavebard1_lfo_mod",
+    "wavebard1_bank",
+    "wavebard1_aux",
+    "abc2_c",
+    "wavebard2_clk_reset",
+    "wavebard2_aud_l_in",
+    "wavebard2_free"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_81_1",
+   "name": "Cable KOMPAS2 TRIG1 2",
+   "options": [
+    "-",
+    "wavebard1_clk_reset",
+    "wavebard1_aud_l_in",
+    "wavebard1_free",
+    "kompas2_reset",
+    "abc2_d",
+    "wavebard2_c_in",
+    "wavebard2_aud_r_in",
+    "wavebard2_note"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_81_2",
+   "name": "Cable KOMPAS2 TRIG1 3",
+   "options": [
+    "-",
+    "wavebard1_c_in",
+    "wavebard1_aud_r_in",
+    "wavebard1_note",
+    "kompas2_clock",
+    "abc2_e",
+    "wavebard2_g_in",
+    "wavebard2_midi_in",
+    "wavebard2_sample"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_81_3",
+   "name": "Cable KOMPAS2 TRIG1 4",
+   "options": [
+    "-",
+    "wavebard1_g_in",
+    "wavebard1_midi_in",
+    "wavebard1_sample",
+    "abc2_a",
+    "abc2_f",
+    "wavebard2_lfo_reset",
+    "wavebard2_trig",
+    "wavebard2_length"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_81_4",
+   "name": "Cable KOMPAS2 TRIG1 5",
+   "options": [
+    "-",
+    "wavebard1_lfo_reset",
+    "wavebard1_trig",
+    "wavebard1_length",
+    "abc2_b",
+    "wavebard2_clk_in",
+    "wavebard2_lfo_mod",
+    "wavebard2_bank",
+    "wavebard2_aux"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_82_0",
+   "name": "Cable KOMPAS2 CV2 1",
+   "options": [
+    "-",
+    "wavebard1_clk_in",
+    "wavebard1_lfo_mod",
+    "wavebard1_bank",
+    "wavebard1_aux",
+    "abc2_c",
+    "wavebard2_clk_reset",
+    "wavebard2_aud_l_in",
+    "wavebard2_free"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_82_1",
+   "name": "Cable KOMPAS2 CV2 2",
+   "options": [
+    "-",
+    "wavebard1_clk_reset",
+    "wavebard1_aud_l_in",
+    "wavebard1_free",
+    "kompas2_reset",
+    "abc2_d",
+    "wavebard2_c_in",
+    "wavebard2_aud_r_in",
+    "wavebard2_note"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_82_2",
+   "name": "Cable KOMPAS2 CV2 3",
+   "options": [
+    "-",
+    "wavebard1_c_in",
+    "wavebard1_aud_r_in",
+    "wavebard1_note",
+    "kompas2_clock",
+    "abc2_e",
+    "wavebard2_g_in",
+    "wavebard2_midi_in",
+    "wavebard2_sample"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_82_3",
+   "name": "Cable KOMPAS2 CV2 4",
+   "options": [
+    "-",
+    "wavebard1_g_in",
+    "wavebard1_midi_in",
+    "wavebard1_sample",
+    "abc2_a",
+    "abc2_f",
+    "wavebard2_lfo_reset",
+    "wavebard2_trig",
+    "wavebard2_length"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_82_4",
+   "name": "Cable KOMPAS2 CV2 5",
+   "options": [
+    "-",
+    "wavebard1_lfo_reset",
+    "wavebard1_trig",
+    "wavebard1_length",
+    "abc2_b",
+    "wavebard2_clk_in",
+    "wavebard2_lfo_mod",
+    "wavebard2_bank",
+    "wavebard2_aux"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_83_0",
+   "name": "Cable KOMPAS2 TRIG2 1",
+   "options": [
+    "-",
+    "wavebard1_clk_in",
+    "wavebard1_lfo_mod",
+    "wavebard1_bank",
+    "wavebard1_aux",
+    "abc2_c",
+    "wavebard2_clk_reset",
+    "wavebard2_aud_l_in",
+    "wavebard2_free"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_83_1",
+   "name": "Cable KOMPAS2 TRIG2 2",
+   "options": [
+    "-",
+    "wavebard1_clk_reset",
+    "wavebard1_aud_l_in",
+    "wavebard1_free",
+    "kompas2_reset",
+    "abc2_d",
+    "wavebard2_c_in",
+    "wavebard2_aud_r_in",
+    "wavebard2_note"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_83_2",
+   "name": "Cable KOMPAS2 TRIG2 3",
+   "options": [
+    "-",
+    "wavebard1_c_in",
+    "wavebard1_aud_r_in",
+    "wavebard1_note",
+    "kompas2_clock",
+    "abc2_e",
+    "wavebard2_g_in",
+    "wavebard2_midi_in",
+    "wavebard2_sample"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_83_3",
+   "name": "Cable KOMPAS2 TRIG2 4",
+   "options": [
+    "-",
+    "wavebard1_g_in",
+    "wavebard1_midi_in",
+    "wavebard1_sample",
+    "abc2_a",
+    "abc2_f",
+    "wavebard2_lfo_reset",
+    "wavebard2_trig",
+    "wavebard2_length"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_83_4",
+   "name": "Cable KOMPAS2 TRIG2 5",
+   "options": [
+    "-",
+    "wavebard1_lfo_reset",
+    "wavebard1_trig",
+    "wavebard1_length",
+    "abc2_b",
+    "wavebard2_clk_in",
+    "wavebard2_lfo_mod",
+    "wavebard2_bank",
+    "wavebard2_aux"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_84_0",
+   "name": "Cable KOMPAS2 CV3 1",
+   "options": [
+    "-",
+    "wavebard1_clk_in",
+    "wavebard1_lfo_mod",
+    "wavebard1_bank",
+    "wavebard1_aux",
+    "abc2_c",
+    "wavebard2_clk_reset",
+    "wavebard2_aud_l_in",
+    "wavebard2_free"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_84_1",
+   "name": "Cable KOMPAS2 CV3 2",
+   "options": [
+    "-",
+    "wavebard1_clk_reset",
+    "wavebard1_aud_l_in",
+    "wavebard1_free",
+    "kompas2_reset",
+    "abc2_d",
+    "wavebard2_c_in",
+    "wavebard2_aud_r_in",
+    "wavebard2_note"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_84_2",
+   "name": "Cable KOMPAS2 CV3 3",
+   "options": [
+    "-",
+    "wavebard1_c_in",
+    "wavebard1_aud_r_in",
+    "wavebard1_note",
+    "kompas2_clock",
+    "abc2_e",
+    "wavebard2_g_in",
+    "wavebard2_midi_in",
+    "wavebard2_sample"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_84_3",
+   "name": "Cable KOMPAS2 CV3 4",
+   "options": [
+    "-",
+    "wavebard1_g_in",
+    "wavebard1_midi_in",
+    "wavebard1_sample",
+    "abc2_a",
+    "abc2_f",
+    "wavebard2_lfo_reset",
+    "wavebard2_trig",
+    "wavebard2_length"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_84_4",
+   "name": "Cable KOMPAS2 CV3 5",
+   "options": [
+    "-",
+    "wavebard1_lfo_reset",
+    "wavebard1_trig",
+    "wavebard1_length",
+    "abc2_b",
+    "wavebard2_clk_in",
+    "wavebard2_lfo_mod",
+    "wavebard2_bank",
+    "wavebard2_aux"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_85_0",
+   "name": "Cable KOMPAS2 TRIG3 1",
+   "options": [
+    "-",
+    "wavebard1_clk_in",
+    "wavebard1_lfo_mod",
+    "wavebard1_bank",
+    "wavebard1_aux",
+    "abc2_c",
+    "wavebard2_clk_reset",
+    "wavebard2_aud_l_in",
+    "wavebard2_free"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_85_1",
+   "name": "Cable KOMPAS2 TRIG3 2",
+   "options": [
+    "-",
+    "wavebard1_clk_reset",
+    "wavebard1_aud_l_in",
+    "wavebard1_free",
+    "kompas2_reset",
+    "abc2_d",
+    "wavebard2_c_in",
+    "wavebard2_aud_r_in",
+    "wavebard2_note"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_85_2",
+   "name": "Cable KOMPAS2 TRIG3 3",
+   "options": [
+    "-",
+    "wavebard1_c_in",
+    "wavebard1_aud_r_in",
+    "wavebard1_note",
+    "kompas2_clock",
+    "abc2_e",
+    "wavebard2_g_in",
+    "wavebard2_midi_in",
+    "wavebard2_sample"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_85_3",
+   "name": "Cable KOMPAS2 TRIG3 4",
+   "options": [
+    "-",
+    "wavebard1_g_in",
+    "wavebard1_midi_in",
+    "wavebard1_sample",
+    "abc2_a",
+    "abc2_f",
+    "wavebard2_lfo_reset",
+    "wavebard2_trig",
+    "wavebard2_length"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_85_4",
+   "name": "Cable KOMPAS2 TRIG3 5",
+   "options": [
+    "-",
+    "wavebard1_lfo_reset",
+    "wavebard1_trig",
+    "wavebard1_length",
+    "abc2_b",
+    "wavebard2_clk_in",
+    "wavebard2_lfo_mod",
+    "wavebard2_bank",
+    "wavebard2_aux"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_89_0",
+   "name": "Cable ABC2 SUM1 1",
+   "options": [
+    "-",
+    "wavebard1_clk_in",
+    "wavebard1_lfo_mod",
+    "wavebard1_bank",
+    "wavebard1_aux",
+    "abc2_c",
+    "wavebard2_clk_reset",
+    "wavebard2_aud_l_in",
+    "wavebard2_free"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_89_1",
+   "name": "Cable ABC2 SUM1 2",
+   "options": [
+    "-",
+    "wavebard1_clk_reset",
+    "wavebard1_aud_l_in",
+    "wavebard1_free",
+    "kompas2_reset",
+    "abc2_d",
+    "wavebard2_c_in",
+    "wavebard2_aud_r_in",
+    "wavebard2_note"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_89_2",
+   "name": "Cable ABC2 SUM1 3",
+   "options": [
+    "-",
+    "wavebard1_c_in",
+    "wavebard1_aud_r_in",
+    "wavebard1_note",
+    "kompas2_clock",
+    "abc2_e",
+    "wavebard2_g_in",
+    "wavebard2_midi_in",
+    "wavebard2_sample"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_89_3",
+   "name": "Cable ABC2 SUM1 4",
+   "options": [
+    "-",
+    "wavebard1_g_in",
+    "wavebard1_midi_in",
+    "wavebard1_sample",
+    "abc2_a",
+    "abc2_f",
+    "wavebard2_lfo_reset",
+    "wavebard2_trig",
+    "wavebard2_length"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_89_4",
+   "name": "Cable ABC2 SUM1 5",
+   "options": [
+    "-",
+    "wavebard1_lfo_reset",
+    "wavebard1_trig",
+    "wavebard1_length",
+    "abc2_b",
+    "wavebard2_clk_in",
+    "wavebard2_lfo_mod",
+    "wavebard2_bank",
+    "wavebard2_aux"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_93_0",
+   "name": "Cable ABC2 SUM2 1",
+   "options": [
+    "-",
+    "wavebard1_clk_in",
+    "wavebard1_lfo_mod",
+    "wavebard1_bank",
+    "wavebard1_aux",
+    "abc2_c",
+    "wavebard2_clk_reset",
+    "wavebard2_aud_l_in",
+    "wavebard2_free"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_93_1",
+   "name": "Cable ABC2 SUM2 2",
+   "options": [
+    "-",
+    "wavebard1_clk_reset",
+    "wavebard1_aud_l_in",
+    "wavebard1_free",
+    "kompas2_reset",
+    "abc2_d",
+    "wavebard2_c_in",
+    "wavebard2_aud_r_in",
+    "wavebard2_note"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_93_2",
+   "name": "Cable ABC2 SUM2 3",
+   "options": [
+    "-",
+    "wavebard1_c_in",
+    "wavebard1_aud_r_in",
+    "wavebard1_note",
+    "kompas2_clock",
+    "abc2_e",
+    "wavebard2_g_in",
+    "wavebard2_midi_in",
+    "wavebard2_sample"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_93_3",
+   "name": "Cable ABC2 SUM2 4",
+   "options": [
+    "-",
+    "wavebard1_g_in",
+    "wavebard1_midi_in",
+    "wavebard1_sample",
+    "abc2_a",
+    "abc2_f",
+    "wavebard2_lfo_reset",
+    "wavebard2_trig",
+    "wavebard2_length"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_93_4",
+   "name": "Cable ABC2 SUM2 5",
+   "options": [
+    "-",
+    "wavebard1_lfo_reset",
+    "wavebard1_trig",
+    "wavebard1_length",
+    "abc2_b",
+    "wavebard2_clk_in",
+    "wavebard2_lfo_mod",
+    "wavebard2_bank",
+    "wavebard2_aux"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_102_0",
+   "name": "Cable WAVEBARD2 OUT 1",
+   "options": [
+    "-",
+    "wavebard1_clk_in",
+    "wavebard1_lfo_mod",
+    "wavebard1_bank",
+    "wavebard1_aux",
+    "abc2_c",
+    "wavebard2_clk_reset",
+    "wavebard2_aud_l_in",
+    "wavebard2_free"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_102_1",
+   "name": "Cable WAVEBARD2 OUT 2",
+   "options": [
+    "-",
+    "wavebard1_clk_reset",
+    "wavebard1_aud_l_in",
+    "wavebard1_free",
+    "kompas2_reset",
+    "abc2_d",
+    "wavebard2_c_in",
+    "wavebard2_aud_r_in",
+    "wavebard2_note"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_102_2",
+   "name": "Cable WAVEBARD2 OUT 3",
+   "options": [
+    "-",
+    "wavebard1_c_in",
+    "wavebard1_aud_r_in",
+    "wavebard1_note",
+    "kompas2_clock",
+    "abc2_e",
+    "wavebard2_g_in",
+    "wavebard2_midi_in",
+    "wavebard2_sample"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_102_3",
+   "name": "Cable WAVEBARD2 OUT 4",
+   "options": [
+    "-",
+    "wavebard1_g_in",
+    "wavebard1_midi_in",
+    "wavebard1_sample",
+    "abc2_a",
+    "abc2_f",
+    "wavebard2_lfo_reset",
+    "wavebard2_trig",
+    "wavebard2_length"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_102_4",
+   "name": "Cable WAVEBARD2 OUT 5",
+   "options": [
+    "-",
+    "wavebard1_lfo_reset",
+    "wavebard1_trig",
+    "wavebard1_length",
+    "abc2_b",
+    "wavebard2_clk_in",
+    "wavebard2_lfo_mod",
+    "wavebard2_bank",
+    "wavebard2_aux"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_103_0",
+   "name": "Cable WAVEBARD2 ENV 1",
+   "options": [
+    "-",
+    "wavebard1_clk_in",
+    "wavebard1_lfo_mod",
+    "wavebard1_bank",
+    "wavebard1_aux",
+    "abc2_c",
+    "wavebard2_clk_reset",
+    "wavebard2_aud_l_in",
+    "wavebard2_free"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_103_1",
+   "name": "Cable WAVEBARD2 ENV 2",
+   "options": [
+    "-",
+    "wavebard1_clk_reset",
+    "wavebard1_aud_l_in",
+    "wavebard1_free",
+    "kompas2_reset",
+    "abc2_d",
+    "wavebard2_c_in",
+    "wavebard2_aud_r_in",
+    "wavebard2_note"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_103_2",
+   "name": "Cable WAVEBARD2 ENV 3",
+   "options": [
+    "-",
+    "wavebard1_c_in",
+    "wavebard1_aud_r_in",
+    "wavebard1_note",
+    "kompas2_clock",
+    "abc2_e",
+    "wavebard2_g_in",
+    "wavebard2_midi_in",
+    "wavebard2_sample"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_103_3",
+   "name": "Cable WAVEBARD2 ENV 4",
+   "options": [
+    "-",
+    "wavebard1_g_in",
+    "wavebard1_midi_in",
+    "wavebard1_sample",
+    "abc2_a",
+    "abc2_f",
+    "wavebard2_lfo_reset",
+    "wavebard2_trig",
+    "wavebard2_length"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_103_4",
+   "name": "Cable WAVEBARD2 ENV 5",
+   "options": [
+    "-",
+    "wavebard1_lfo_reset",
+    "wavebard1_trig",
+    "wavebard1_length",
+    "abc2_b",
+    "wavebard2_clk_in",
+    "wavebard2_lfo_mod",
+    "wavebard2_bank",
+    "wavebard2_aux"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_104_0",
+   "name": "Cable WAVEBARD2 CV 1",
+   "options": [
+    "-",
+    "wavebard1_clk_in",
+    "wavebard1_lfo_mod",
+    "wavebard1_bank",
+    "wavebard1_aux",
+    "abc2_c",
+    "wavebard2_clk_reset",
+    "wavebard2_aud_l_in",
+    "wavebard2_free"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_104_1",
+   "name": "Cable WAVEBARD2 CV 2",
+   "options": [
+    "-",
+    "wavebard1_clk_reset",
+    "wavebard1_aud_l_in",
+    "wavebard1_free",
+    "kompas2_reset",
+    "abc2_d",
+    "wavebard2_c_in",
+    "wavebard2_aud_r_in",
+    "wavebard2_note"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_104_2",
+   "name": "Cable WAVEBARD2 CV 3",
+   "options": [
+    "-",
+    "wavebard1_c_in",
+    "wavebard1_aud_r_in",
+    "wavebard1_note",
+    "kompas2_clock",
+    "abc2_e",
+    "wavebard2_g_in",
+    "wavebard2_midi_in",
+    "wavebard2_sample"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_104_3",
+   "name": "Cable WAVEBARD2 CV 4",
+   "options": [
+    "-",
+    "wavebard1_g_in",
+    "wavebard1_midi_in",
+    "wavebard1_sample",
+    "abc2_a",
+    "abc2_f",
+    "wavebard2_lfo_reset",
+    "wavebard2_trig",
+    "wavebard2_length"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_104_4",
+   "name": "Cable WAVEBARD2 CV 5",
+   "options": [
+    "-",
+    "wavebard1_lfo_reset",
+    "wavebard1_trig",
+    "wavebard1_length",
+    "abc2_b",
+    "wavebard2_clk_in",
+    "wavebard2_lfo_mod",
+    "wavebard2_bank",
+    "wavebard2_aux"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_105_0",
+   "name": "Cable WAVEBARD2 GATE 1",
+   "options": [
+    "-",
+    "wavebard1_clk_in",
+    "wavebard1_lfo_mod",
+    "wavebard1_bank",
+    "wavebard1_aux",
+    "abc2_c",
+    "wavebard2_clk_reset",
+    "wavebard2_aud_l_in",
+    "wavebard2_free"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_105_1",
+   "name": "Cable WAVEBARD2 GATE 2",
+   "options": [
+    "-",
+    "wavebard1_clk_reset",
+    "wavebard1_aud_l_in",
+    "wavebard1_free",
+    "kompas2_reset",
+    "abc2_d",
+    "wavebard2_c_in",
+    "wavebard2_aud_r_in",
+    "wavebard2_note"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_105_2",
+   "name": "Cable WAVEBARD2 GATE 3",
+   "options": [
+    "-",
+    "wavebard1_c_in",
+    "wavebard1_aud_r_in",
+    "wavebard1_note",
+    "kompas2_clock",
+    "abc2_e",
+    "wavebard2_g_in",
+    "wavebard2_midi_in",
+    "wavebard2_sample"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_105_3",
+   "name": "Cable WAVEBARD2 GATE 4",
+   "options": [
+    "-",
+    "wavebard1_g_in",
+    "wavebard1_midi_in",
+    "wavebard1_sample",
+    "abc2_a",
+    "abc2_f",
+    "wavebard2_lfo_reset",
+    "wavebard2_trig",
+    "wavebard2_length"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_105_4",
+   "name": "Cable WAVEBARD2 GATE 5",
+   "options": [
+    "-",
+    "wavebard1_lfo_reset",
+    "wavebard1_trig",
+    "wavebard1_length",
+    "abc2_b",
+    "wavebard2_clk_in",
+    "wavebard2_lfo_mod",
+    "wavebard2_bank",
+    "wavebard2_aux"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_106_0",
+   "name": "Cable WAVEBARD2 LFO L 1",
+   "options": [
+    "-",
+    "wavebard1_clk_in",
+    "wavebard1_lfo_mod",
+    "wavebard1_bank",
+    "wavebard1_aux",
+    "abc2_c",
+    "wavebard2_clk_reset",
+    "wavebard2_aud_l_in",
+    "wavebard2_free"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_106_1",
+   "name": "Cable WAVEBARD2 LFO L 2",
+   "options": [
+    "-",
+    "wavebard1_clk_reset",
+    "wavebard1_aud_l_in",
+    "wavebard1_free",
+    "kompas2_reset",
+    "abc2_d",
+    "wavebard2_c_in",
+    "wavebard2_aud_r_in",
+    "wavebard2_note"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_106_2",
+   "name": "Cable WAVEBARD2 LFO L 3",
+   "options": [
+    "-",
+    "wavebard1_c_in",
+    "wavebard1_aud_r_in",
+    "wavebard1_note",
+    "kompas2_clock",
+    "abc2_e",
+    "wavebard2_g_in",
+    "wavebard2_midi_in",
+    "wavebard2_sample"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_106_3",
+   "name": "Cable WAVEBARD2 LFO L 4",
+   "options": [
+    "-",
+    "wavebard1_g_in",
+    "wavebard1_midi_in",
+    "wavebard1_sample",
+    "abc2_a",
+    "abc2_f",
+    "wavebard2_lfo_reset",
+    "wavebard2_trig",
+    "wavebard2_length"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_106_4",
+   "name": "Cable WAVEBARD2 LFO L 5",
+   "options": [
+    "-",
+    "wavebard1_lfo_reset",
+    "wavebard1_trig",
+    "wavebard1_length",
+    "abc2_b",
+    "wavebard2_clk_in",
+    "wavebard2_lfo_mod",
+    "wavebard2_bank",
+    "wavebard2_aux"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_107_0",
+   "name": "Cable WAVEBARD2 LFO A 1",
+   "options": [
+    "-",
+    "wavebard1_clk_in",
+    "wavebard1_lfo_mod",
+    "wavebard1_bank",
+    "wavebard1_aux",
+    "abc2_c",
+    "wavebard2_clk_reset",
+    "wavebard2_aud_l_in",
+    "wavebard2_free"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_107_1",
+   "name": "Cable WAVEBARD2 LFO A 2",
+   "options": [
+    "-",
+    "wavebard1_clk_reset",
+    "wavebard1_aud_l_in",
+    "wavebard1_free",
+    "kompas2_reset",
+    "abc2_d",
+    "wavebard2_c_in",
+    "wavebard2_aud_r_in",
+    "wavebard2_note"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_107_2",
+   "name": "Cable WAVEBARD2 LFO A 3",
+   "options": [
+    "-",
+    "wavebard1_c_in",
+    "wavebard1_aud_r_in",
+    "wavebard1_note",
+    "kompas2_clock",
+    "abc2_e",
+    "wavebard2_g_in",
+    "wavebard2_midi_in",
+    "wavebard2_sample"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_107_3",
+   "name": "Cable WAVEBARD2 LFO A 4",
+   "options": [
+    "-",
+    "wavebard1_g_in",
+    "wavebard1_midi_in",
+    "wavebard1_sample",
+    "abc2_a",
+    "abc2_f",
+    "wavebard2_lfo_reset",
+    "wavebard2_trig",
+    "wavebard2_length"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_107_4",
+   "name": "Cable WAVEBARD2 LFO A 5",
+   "options": [
+    "-",
+    "wavebard1_lfo_reset",
+    "wavebard1_trig",
+    "wavebard1_length",
+    "abc2_b",
+    "wavebard2_clk_in",
+    "wavebard2_lfo_mod",
+    "wavebard2_bank",
+    "wavebard2_aux"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_108_0",
+   "name": "Cable WAVEBARD2 L OUT 1",
+   "options": [
+    "-",
+    "wavebard1_clk_in",
+    "wavebard1_lfo_mod",
+    "wavebard1_bank",
+    "wavebard1_aux",
+    "abc2_c",
+    "wavebard2_clk_reset",
+    "wavebard2_aud_l_in",
+    "wavebard2_free"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_108_1",
+   "name": "Cable WAVEBARD2 L OUT 2",
+   "options": [
+    "-",
+    "wavebard1_clk_reset",
+    "wavebard1_aud_l_in",
+    "wavebard1_free",
+    "kompas2_reset",
+    "abc2_d",
+    "wavebard2_c_in",
+    "wavebard2_aud_r_in",
+    "wavebard2_note"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_108_2",
+   "name": "Cable WAVEBARD2 L OUT 3",
+   "options": [
+    "-",
+    "wavebard1_c_in",
+    "wavebard1_aud_r_in",
+    "wavebard1_note",
+    "kompas2_clock",
+    "abc2_e",
+    "wavebard2_g_in",
+    "wavebard2_midi_in",
+    "wavebard2_sample"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_108_3",
+   "name": "Cable WAVEBARD2 L OUT 4",
+   "options": [
+    "-",
+    "wavebard1_g_in",
+    "wavebard1_midi_in",
+    "wavebard1_sample",
+    "abc2_a",
+    "abc2_f",
+    "wavebard2_lfo_reset",
+    "wavebard2_trig",
+    "wavebard2_length"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_108_4",
+   "name": "Cable WAVEBARD2 L OUT 5",
+   "options": [
+    "-",
+    "wavebard1_lfo_reset",
+    "wavebard1_trig",
+    "wavebard1_length",
+    "abc2_b",
+    "wavebard2_clk_in",
+    "wavebard2_lfo_mod",
+    "wavebard2_bank",
+    "wavebard2_aux"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_109_0",
+   "name": "Cable WAVEBARD2 R OUT 1",
+   "options": [
+    "-",
+    "wavebard1_clk_in",
+    "wavebard1_lfo_mod",
+    "wavebard1_bank",
+    "wavebard1_aux",
+    "abc2_c",
+    "wavebard2_clk_reset",
+    "wavebard2_aud_l_in",
+    "wavebard2_free"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_109_1",
+   "name": "Cable WAVEBARD2 R OUT 2",
+   "options": [
+    "-",
+    "wavebard1_clk_reset",
+    "wavebard1_aud_l_in",
+    "wavebard1_free",
+    "kompas2_reset",
+    "abc2_d",
+    "wavebard2_c_in",
+    "wavebard2_aud_r_in",
+    "wavebard2_note"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_109_2",
+   "name": "Cable WAVEBARD2 R OUT 3",
+   "options": [
+    "-",
+    "wavebard1_c_in",
+    "wavebard1_aud_r_in",
+    "wavebard1_note",
+    "kompas2_clock",
+    "abc2_e",
+    "wavebard2_g_in",
+    "wavebard2_midi_in",
+    "wavebard2_sample"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_109_3",
+   "name": "Cable WAVEBARD2 R OUT 4",
+   "options": [
+    "-",
+    "wavebard1_g_in",
+    "wavebard1_midi_in",
+    "wavebard1_sample",
+    "abc2_a",
+    "abc2_f",
+    "wavebard2_lfo_reset",
+    "wavebard2_trig",
+    "wavebard2_length"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_109_4",
+   "name": "Cable WAVEBARD2 R OUT 5",
+   "options": [
+    "-",
+    "wavebard1_lfo_reset",
+    "wavebard1_trig",
+    "wavebard1_length",
+    "abc2_b",
+    "wavebard2_clk_in",
+    "wavebard2_lfo_mod",
+    "wavebard2_bank",
+    "wavebard2_aux"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_121_0",
+   "name": "Cable KOMPAS3 CV1 1",
+   "options": [
+    "-",
+    "kompas3_collab",
+    "alchemist1_clk_in",
+    "alchemist1_g_in",
+    "alchemist1_lfo_mod",
+    "alchemist1_aud_r_in",
+    "basil1_ctrl",
+    "basil1_mix_cv",
+    "abc3_a",
+    "abc3_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_121_1",
+   "name": "Cable KOMPAS3 CV1 2",
+   "options": [
+    "-",
+    "kompas3_reset",
+    "alchemist1_clk_reset",
+    "alchemist1_r_in",
+    "alchemist1_lfo_in",
+    "basil1_time_cv",
+    "basil1_l_in",
+    "basil1_v_oct",
+    "abc3_b",
+    "abc3_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_121_2",
+   "name": "Cable KOMPAS3 CV1 3",
+   "options": [
+    "-",
+    "kompas3_clock",
+    "alchemist1_c_in",
+    "alchemist1_lfo_reset",
+    "alchemist1_aud_l_in",
+    "basil1_sync",
+    "basil1_r_in",
+    "basil1_feedback_cv",
+    "abc3_c",
+    "abc3_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_122_0",
+   "name": "Cable KOMPAS3 TRIG1 1",
+   "options": [
+    "-",
+    "kompas3_collab",
+    "alchemist1_clk_in",
+    "alchemist1_g_in",
+    "alchemist1_lfo_mod",
+    "alchemist1_aud_r_in",
+    "basil1_ctrl",
+    "basil1_mix_cv",
+    "abc3_a",
+    "abc3_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_122_1",
+   "name": "Cable KOMPAS3 TRIG1 2",
+   "options": [
+    "-",
+    "kompas3_reset",
+    "alchemist1_clk_reset",
+    "alchemist1_r_in",
+    "alchemist1_lfo_in",
+    "basil1_time_cv",
+    "basil1_l_in",
+    "basil1_v_oct",
+    "abc3_b",
+    "abc3_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_122_2",
+   "name": "Cable KOMPAS3 TRIG1 3",
+   "options": [
+    "-",
+    "kompas3_clock",
+    "alchemist1_c_in",
+    "alchemist1_lfo_reset",
+    "alchemist1_aud_l_in",
+    "basil1_sync",
+    "basil1_r_in",
+    "basil1_feedback_cv",
+    "abc3_c",
+    "abc3_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_123_0",
+   "name": "Cable KOMPAS3 CV2 1",
+   "options": [
+    "-",
+    "kompas3_collab",
+    "alchemist1_clk_in",
+    "alchemist1_g_in",
+    "alchemist1_lfo_mod",
+    "alchemist1_aud_r_in",
+    "basil1_ctrl",
+    "basil1_mix_cv",
+    "abc3_a",
+    "abc3_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_123_1",
+   "name": "Cable KOMPAS3 CV2 2",
+   "options": [
+    "-",
+    "kompas3_reset",
+    "alchemist1_clk_reset",
+    "alchemist1_r_in",
+    "alchemist1_lfo_in",
+    "basil1_time_cv",
+    "basil1_l_in",
+    "basil1_v_oct",
+    "abc3_b",
+    "abc3_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_123_2",
+   "name": "Cable KOMPAS3 CV2 3",
+   "options": [
+    "-",
+    "kompas3_clock",
+    "alchemist1_c_in",
+    "alchemist1_lfo_reset",
+    "alchemist1_aud_l_in",
+    "basil1_sync",
+    "basil1_r_in",
+    "basil1_feedback_cv",
+    "abc3_c",
+    "abc3_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_124_0",
+   "name": "Cable KOMPAS3 TRIG2 1",
+   "options": [
+    "-",
+    "kompas3_collab",
+    "alchemist1_clk_in",
+    "alchemist1_g_in",
+    "alchemist1_lfo_mod",
+    "alchemist1_aud_r_in",
+    "basil1_ctrl",
+    "basil1_mix_cv",
+    "abc3_a",
+    "abc3_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_124_1",
+   "name": "Cable KOMPAS3 TRIG2 2",
+   "options": [
+    "-",
+    "kompas3_reset",
+    "alchemist1_clk_reset",
+    "alchemist1_r_in",
+    "alchemist1_lfo_in",
+    "basil1_time_cv",
+    "basil1_l_in",
+    "basil1_v_oct",
+    "abc3_b",
+    "abc3_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_124_2",
+   "name": "Cable KOMPAS3 TRIG2 3",
+   "options": [
+    "-",
+    "kompas3_clock",
+    "alchemist1_c_in",
+    "alchemist1_lfo_reset",
+    "alchemist1_aud_l_in",
+    "basil1_sync",
+    "basil1_r_in",
+    "basil1_feedback_cv",
+    "abc3_c",
+    "abc3_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_125_0",
+   "name": "Cable KOMPAS3 CV3 1",
+   "options": [
+    "-",
+    "kompas3_collab",
+    "alchemist1_clk_in",
+    "alchemist1_g_in",
+    "alchemist1_lfo_mod",
+    "alchemist1_aud_r_in",
+    "basil1_ctrl",
+    "basil1_mix_cv",
+    "abc3_a",
+    "abc3_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_125_1",
+   "name": "Cable KOMPAS3 CV3 2",
+   "options": [
+    "-",
+    "kompas3_reset",
+    "alchemist1_clk_reset",
+    "alchemist1_r_in",
+    "alchemist1_lfo_in",
+    "basil1_time_cv",
+    "basil1_l_in",
+    "basil1_v_oct",
+    "abc3_b",
+    "abc3_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_125_2",
+   "name": "Cable KOMPAS3 CV3 3",
+   "options": [
+    "-",
+    "kompas3_clock",
+    "alchemist1_c_in",
+    "alchemist1_lfo_reset",
+    "alchemist1_aud_l_in",
+    "basil1_sync",
+    "basil1_r_in",
+    "basil1_feedback_cv",
+    "abc3_c",
+    "abc3_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_126_0",
+   "name": "Cable KOMPAS3 TRIG3 1",
+   "options": [
+    "-",
+    "kompas3_collab",
+    "alchemist1_clk_in",
+    "alchemist1_g_in",
+    "alchemist1_lfo_mod",
+    "alchemist1_aud_r_in",
+    "basil1_ctrl",
+    "basil1_mix_cv",
+    "abc3_a",
+    "abc3_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_126_1",
+   "name": "Cable KOMPAS3 TRIG3 2",
+   "options": [
+    "-",
+    "kompas3_reset",
+    "alchemist1_clk_reset",
+    "alchemist1_r_in",
+    "alchemist1_lfo_in",
+    "basil1_time_cv",
+    "basil1_l_in",
+    "basil1_v_oct",
+    "abc3_b",
+    "abc3_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_126_2",
+   "name": "Cable KOMPAS3 TRIG3 3",
+   "options": [
+    "-",
+    "kompas3_clock",
+    "alchemist1_c_in",
+    "alchemist1_lfo_reset",
+    "alchemist1_aud_l_in",
+    "basil1_sync",
+    "basil1_r_in",
+    "basil1_feedback_cv",
+    "abc3_c",
+    "abc3_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_137_0",
+   "name": "Cable ALCHEMIST1 OUT 1",
+   "options": [
+    "-",
+    "kompas3_collab",
+    "alchemist1_clk_in",
+    "alchemist1_g_in",
+    "alchemist1_lfo_mod",
+    "alchemist1_aud_r_in",
+    "basil1_ctrl",
+    "basil1_mix_cv",
+    "abc3_a",
+    "abc3_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_137_1",
+   "name": "Cable ALCHEMIST1 OUT 2",
+   "options": [
+    "-",
+    "kompas3_reset",
+    "alchemist1_clk_reset",
+    "alchemist1_r_in",
+    "alchemist1_lfo_in",
+    "basil1_time_cv",
+    "basil1_l_in",
+    "basil1_v_oct",
+    "abc3_b",
+    "abc3_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_137_2",
+   "name": "Cable ALCHEMIST1 OUT 3",
+   "options": [
+    "-",
+    "kompas3_clock",
+    "alchemist1_c_in",
+    "alchemist1_lfo_reset",
+    "alchemist1_aud_l_in",
+    "basil1_sync",
+    "basil1_r_in",
+    "basil1_feedback_cv",
+    "abc3_c",
+    "abc3_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_138_0",
+   "name": "Cable ALCHEMIST1 ENV 1",
+   "options": [
+    "-",
+    "kompas3_collab",
+    "alchemist1_clk_in",
+    "alchemist1_g_in",
+    "alchemist1_lfo_mod",
+    "alchemist1_aud_r_in",
+    "basil1_ctrl",
+    "basil1_mix_cv",
+    "abc3_a",
+    "abc3_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_138_1",
+   "name": "Cable ALCHEMIST1 ENV 2",
+   "options": [
+    "-",
+    "kompas3_reset",
+    "alchemist1_clk_reset",
+    "alchemist1_r_in",
+    "alchemist1_lfo_in",
+    "basil1_time_cv",
+    "basil1_l_in",
+    "basil1_v_oct",
+    "abc3_b",
+    "abc3_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_138_2",
+   "name": "Cable ALCHEMIST1 ENV 3",
+   "options": [
+    "-",
+    "kompas3_clock",
+    "alchemist1_c_in",
+    "alchemist1_lfo_reset",
+    "alchemist1_aud_l_in",
+    "basil1_sync",
+    "basil1_r_in",
+    "basil1_feedback_cv",
+    "abc3_c",
+    "abc3_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_139_0",
+   "name": "Cable ALCHEMIST1 CV 1",
+   "options": [
+    "-",
+    "kompas3_collab",
+    "alchemist1_clk_in",
+    "alchemist1_g_in",
+    "alchemist1_lfo_mod",
+    "alchemist1_aud_r_in",
+    "basil1_ctrl",
+    "basil1_mix_cv",
+    "abc3_a",
+    "abc3_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_139_1",
+   "name": "Cable ALCHEMIST1 CV 2",
+   "options": [
+    "-",
+    "kompas3_reset",
+    "alchemist1_clk_reset",
+    "alchemist1_r_in",
+    "alchemist1_lfo_in",
+    "basil1_time_cv",
+    "basil1_l_in",
+    "basil1_v_oct",
+    "abc3_b",
+    "abc3_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_139_2",
+   "name": "Cable ALCHEMIST1 CV 3",
+   "options": [
+    "-",
+    "kompas3_clock",
+    "alchemist1_c_in",
+    "alchemist1_lfo_reset",
+    "alchemist1_aud_l_in",
+    "basil1_sync",
+    "basil1_r_in",
+    "basil1_feedback_cv",
+    "abc3_c",
+    "abc3_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_140_0",
+   "name": "Cable ALCHEMIST1 GATE 1",
+   "options": [
+    "-",
+    "kompas3_collab",
+    "alchemist1_clk_in",
+    "alchemist1_g_in",
+    "alchemist1_lfo_mod",
+    "alchemist1_aud_r_in",
+    "basil1_ctrl",
+    "basil1_mix_cv",
+    "abc3_a",
+    "abc3_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_140_1",
+   "name": "Cable ALCHEMIST1 GATE 2",
+   "options": [
+    "-",
+    "kompas3_reset",
+    "alchemist1_clk_reset",
+    "alchemist1_r_in",
+    "alchemist1_lfo_in",
+    "basil1_time_cv",
+    "basil1_l_in",
+    "basil1_v_oct",
+    "abc3_b",
+    "abc3_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_140_2",
+   "name": "Cable ALCHEMIST1 GATE 3",
+   "options": [
+    "-",
+    "kompas3_clock",
+    "alchemist1_c_in",
+    "alchemist1_lfo_reset",
+    "alchemist1_aud_l_in",
+    "basil1_sync",
+    "basil1_r_in",
+    "basil1_feedback_cv",
+    "abc3_c",
+    "abc3_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_141_0",
+   "name": "Cable ALCHEMIST1 LFO L 1",
+   "options": [
+    "-",
+    "kompas3_collab",
+    "alchemist1_clk_in",
+    "alchemist1_g_in",
+    "alchemist1_lfo_mod",
+    "alchemist1_aud_r_in",
+    "basil1_ctrl",
+    "basil1_mix_cv",
+    "abc3_a",
+    "abc3_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_141_1",
+   "name": "Cable ALCHEMIST1 LFO L 2",
+   "options": [
+    "-",
+    "kompas3_reset",
+    "alchemist1_clk_reset",
+    "alchemist1_r_in",
+    "alchemist1_lfo_in",
+    "basil1_time_cv",
+    "basil1_l_in",
+    "basil1_v_oct",
+    "abc3_b",
+    "abc3_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_141_2",
+   "name": "Cable ALCHEMIST1 LFO L 3",
+   "options": [
+    "-",
+    "kompas3_clock",
+    "alchemist1_c_in",
+    "alchemist1_lfo_reset",
+    "alchemist1_aud_l_in",
+    "basil1_sync",
+    "basil1_r_in",
+    "basil1_feedback_cv",
+    "abc3_c",
+    "abc3_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_142_0",
+   "name": "Cable ALCHEMIST1 LFO EDIT 1",
+   "options": [
+    "-",
+    "kompas3_collab",
+    "alchemist1_clk_in",
+    "alchemist1_g_in",
+    "alchemist1_lfo_mod",
+    "alchemist1_aud_r_in",
+    "basil1_ctrl",
+    "basil1_mix_cv",
+    "abc3_a",
+    "abc3_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_142_1",
+   "name": "Cable ALCHEMIST1 LFO EDIT 2",
+   "options": [
+    "-",
+    "kompas3_reset",
+    "alchemist1_clk_reset",
+    "alchemist1_r_in",
+    "alchemist1_lfo_in",
+    "basil1_time_cv",
+    "basil1_l_in",
+    "basil1_v_oct",
+    "abc3_b",
+    "abc3_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_142_2",
+   "name": "Cable ALCHEMIST1 LFO EDIT 3",
+   "options": [
+    "-",
+    "kompas3_clock",
+    "alchemist1_c_in",
+    "alchemist1_lfo_reset",
+    "alchemist1_aud_l_in",
+    "basil1_sync",
+    "basil1_r_in",
+    "basil1_feedback_cv",
+    "abc3_c",
+    "abc3_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_143_0",
+   "name": "Cable ALCHEMIST1 LFO A 1",
+   "options": [
+    "-",
+    "kompas3_collab",
+    "alchemist1_clk_in",
+    "alchemist1_g_in",
+    "alchemist1_lfo_mod",
+    "alchemist1_aud_r_in",
+    "basil1_ctrl",
+    "basil1_mix_cv",
+    "abc3_a",
+    "abc3_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_143_1",
+   "name": "Cable ALCHEMIST1 LFO A 2",
+   "options": [
+    "-",
+    "kompas3_reset",
+    "alchemist1_clk_reset",
+    "alchemist1_r_in",
+    "alchemist1_lfo_in",
+    "basil1_time_cv",
+    "basil1_l_in",
+    "basil1_v_oct",
+    "abc3_b",
+    "abc3_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_143_2",
+   "name": "Cable ALCHEMIST1 LFO A 3",
+   "options": [
+    "-",
+    "kompas3_clock",
+    "alchemist1_c_in",
+    "alchemist1_lfo_reset",
+    "alchemist1_aud_l_in",
+    "basil1_sync",
+    "basil1_r_in",
+    "basil1_feedback_cv",
+    "abc3_c",
+    "abc3_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_144_0",
+   "name": "Cable ALCHEMIST1 LFO OUT 1",
+   "options": [
+    "-",
+    "kompas3_collab",
+    "alchemist1_clk_in",
+    "alchemist1_g_in",
+    "alchemist1_lfo_mod",
+    "alchemist1_aud_r_in",
+    "basil1_ctrl",
+    "basil1_mix_cv",
+    "abc3_a",
+    "abc3_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_144_1",
+   "name": "Cable ALCHEMIST1 LFO OUT 2",
+   "options": [
+    "-",
+    "kompas3_reset",
+    "alchemist1_clk_reset",
+    "alchemist1_r_in",
+    "alchemist1_lfo_in",
+    "basil1_time_cv",
+    "basil1_l_in",
+    "basil1_v_oct",
+    "abc3_b",
+    "abc3_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_144_2",
+   "name": "Cable ALCHEMIST1 LFO OUT 3",
+   "options": [
+    "-",
+    "kompas3_clock",
+    "alchemist1_c_in",
+    "alchemist1_lfo_reset",
+    "alchemist1_aud_l_in",
+    "basil1_sync",
+    "basil1_r_in",
+    "basil1_feedback_cv",
+    "abc3_c",
+    "abc3_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_145_0",
+   "name": "Cable ALCHEMIST1 L OUT 1",
+   "options": [
+    "-",
+    "kompas3_collab",
+    "alchemist1_clk_in",
+    "alchemist1_g_in",
+    "alchemist1_lfo_mod",
+    "alchemist1_aud_r_in",
+    "basil1_ctrl",
+    "basil1_mix_cv",
+    "abc3_a",
+    "abc3_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_145_1",
+   "name": "Cable ALCHEMIST1 L OUT 2",
+   "options": [
+    "-",
+    "kompas3_reset",
+    "alchemist1_clk_reset",
+    "alchemist1_r_in",
+    "alchemist1_lfo_in",
+    "basil1_time_cv",
+    "basil1_l_in",
+    "basil1_v_oct",
+    "abc3_b",
+    "abc3_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_145_2",
+   "name": "Cable ALCHEMIST1 L OUT 3",
+   "options": [
+    "-",
+    "kompas3_clock",
+    "alchemist1_c_in",
+    "alchemist1_lfo_reset",
+    "alchemist1_aud_l_in",
+    "basil1_sync",
+    "basil1_r_in",
+    "basil1_feedback_cv",
+    "abc3_c",
+    "abc3_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_146_0",
+   "name": "Cable ALCHEMIST1 R OUT 1",
+   "options": [
+    "-",
+    "kompas3_collab",
+    "alchemist1_clk_in",
+    "alchemist1_g_in",
+    "alchemist1_lfo_mod",
+    "alchemist1_aud_r_in",
+    "basil1_ctrl",
+    "basil1_mix_cv",
+    "abc3_a",
+    "abc3_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_146_1",
+   "name": "Cable ALCHEMIST1 R OUT 2",
+   "options": [
+    "-",
+    "kompas3_reset",
+    "alchemist1_clk_reset",
+    "alchemist1_r_in",
+    "alchemist1_lfo_in",
+    "basil1_time_cv",
+    "basil1_l_in",
+    "basil1_v_oct",
+    "abc3_b",
+    "abc3_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_146_2",
+   "name": "Cable ALCHEMIST1 R OUT 3",
+   "options": [
+    "-",
+    "kompas3_clock",
+    "alchemist1_c_in",
+    "alchemist1_lfo_reset",
+    "alchemist1_aud_l_in",
+    "basil1_sync",
+    "basil1_r_in",
+    "basil1_feedback_cv",
+    "abc3_c",
+    "abc3_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_155_0",
+   "name": "Cable BASIL1 L OUT 1",
+   "options": [
+    "-",
+    "kompas3_collab",
+    "alchemist1_clk_in",
+    "alchemist1_g_in",
+    "alchemist1_lfo_mod",
+    "alchemist1_aud_r_in",
+    "basil1_ctrl",
+    "basil1_mix_cv",
+    "abc3_a",
+    "abc3_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_155_1",
+   "name": "Cable BASIL1 L OUT 2",
+   "options": [
+    "-",
+    "kompas3_reset",
+    "alchemist1_clk_reset",
+    "alchemist1_r_in",
+    "alchemist1_lfo_in",
+    "basil1_time_cv",
+    "basil1_l_in",
+    "basil1_v_oct",
+    "abc3_b",
+    "abc3_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_155_2",
+   "name": "Cable BASIL1 L OUT 3",
+   "options": [
+    "-",
+    "kompas3_clock",
+    "alchemist1_c_in",
+    "alchemist1_lfo_reset",
+    "alchemist1_aud_l_in",
+    "basil1_sync",
+    "basil1_r_in",
+    "basil1_feedback_cv",
+    "abc3_c",
+    "abc3_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_156_0",
+   "name": "Cable BASIL1 R OUT 1",
+   "options": [
+    "-",
+    "kompas3_collab",
+    "alchemist1_clk_in",
+    "alchemist1_g_in",
+    "alchemist1_lfo_mod",
+    "alchemist1_aud_r_in",
+    "basil1_ctrl",
+    "basil1_mix_cv",
+    "abc3_a",
+    "abc3_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_156_1",
+   "name": "Cable BASIL1 R OUT 2",
+   "options": [
+    "-",
+    "kompas3_reset",
+    "alchemist1_clk_reset",
+    "alchemist1_r_in",
+    "alchemist1_lfo_in",
+    "basil1_time_cv",
+    "basil1_l_in",
+    "basil1_v_oct",
+    "abc3_b",
+    "abc3_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_156_2",
+   "name": "Cable BASIL1 R OUT 3",
+   "options": [
+    "-",
+    "kompas3_clock",
+    "alchemist1_c_in",
+    "alchemist1_lfo_reset",
+    "alchemist1_aud_l_in",
+    "basil1_sync",
+    "basil1_r_in",
+    "basil1_feedback_cv",
+    "abc3_c",
+    "abc3_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_157_0",
+   "name": "Cable BASIL1 MIX OUT 1",
+   "options": [
+    "-",
+    "kompas3_collab",
+    "alchemist1_clk_in",
+    "alchemist1_g_in",
+    "alchemist1_lfo_mod",
+    "alchemist1_aud_r_in",
+    "basil1_ctrl",
+    "basil1_mix_cv",
+    "abc3_a",
+    "abc3_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_157_1",
+   "name": "Cable BASIL1 MIX OUT 2",
+   "options": [
+    "-",
+    "kompas3_reset",
+    "alchemist1_clk_reset",
+    "alchemist1_r_in",
+    "alchemist1_lfo_in",
+    "basil1_time_cv",
+    "basil1_l_in",
+    "basil1_v_oct",
+    "abc3_b",
+    "abc3_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_157_2",
+   "name": "Cable BASIL1 MIX OUT 3",
+   "options": [
+    "-",
+    "kompas3_clock",
+    "alchemist1_c_in",
+    "alchemist1_lfo_reset",
+    "alchemist1_aud_l_in",
+    "basil1_sync",
+    "basil1_r_in",
+    "basil1_feedback_cv",
+    "abc3_c",
+    "abc3_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_161_0",
+   "name": "Cable ABC3 SUM1 1",
+   "options": [
+    "-",
+    "kompas3_collab",
+    "alchemist1_clk_in",
+    "alchemist1_g_in",
+    "alchemist1_lfo_mod",
+    "alchemist1_aud_r_in",
+    "basil1_ctrl",
+    "basil1_mix_cv",
+    "abc3_a",
+    "abc3_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_161_1",
+   "name": "Cable ABC3 SUM1 2",
+   "options": [
+    "-",
+    "kompas3_reset",
+    "alchemist1_clk_reset",
+    "alchemist1_r_in",
+    "alchemist1_lfo_in",
+    "basil1_time_cv",
+    "basil1_l_in",
+    "basil1_v_oct",
+    "abc3_b",
+    "abc3_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_161_2",
+   "name": "Cable ABC3 SUM1 3",
+   "options": [
+    "-",
+    "kompas3_clock",
+    "alchemist1_c_in",
+    "alchemist1_lfo_reset",
+    "alchemist1_aud_l_in",
+    "basil1_sync",
+    "basil1_r_in",
+    "basil1_feedback_cv",
+    "abc3_c",
+    "abc3_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_165_0",
+   "name": "Cable ABC3 SUM2 1",
+   "options": [
+    "-",
+    "kompas3_collab",
+    "alchemist1_clk_in",
+    "alchemist1_g_in",
+    "alchemist1_lfo_mod",
+    "alchemist1_aud_r_in",
+    "basil1_ctrl",
+    "basil1_mix_cv",
+    "abc3_a",
+    "abc3_d"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_165_1",
+   "name": "Cable ABC3 SUM2 2",
+   "options": [
+    "-",
+    "kompas3_reset",
+    "alchemist1_clk_reset",
+    "alchemist1_r_in",
+    "alchemist1_lfo_in",
+    "basil1_time_cv",
+    "basil1_l_in",
+    "basil1_v_oct",
+    "abc3_b",
+    "abc3_e"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "cp_165_2",
+   "name": "Cable ABC3 SUM2 3",
+   "options": [
+    "-",
+    "kompas3_clock",
+    "alchemist1_c_in",
+    "alchemist1_lfo_reset",
+    "alchemist1_aud_l_in",
+    "basil1_sync",
+    "basil1_r_in",
+    "basil1_feedback_cv",
+    "abc3_c",
+    "abc3_f"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_3_1",
+   "name": "Out KOMPAS1 CV1 to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_3_2",
+   "name": "Out KOMPAS1 CV1 to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_4_1",
+   "name": "Out KOMPAS1 TRIG1 to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_4_2",
+   "name": "Out KOMPAS1 TRIG1 to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_5_1",
+   "name": "Out KOMPAS1 CV2 to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_5_2",
+   "name": "Out KOMPAS1 CV2 to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_6_1",
+   "name": "Out KOMPAS1 TRIG2 to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_6_2",
+   "name": "Out KOMPAS1 TRIG2 to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_7_1",
+   "name": "Out KOMPAS1 CV3 to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_7_2",
+   "name": "Out KOMPAS1 CV3 to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_8_1",
+   "name": "Out KOMPAS1 TRIG3 to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_8_2",
+   "name": "Out KOMPAS1 TRIG3 to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_14_1",
+   "name": "Out CRUST21 A OUT to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_14_2",
+   "name": "Out CRUST21 A OUT to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_15_1",
+   "name": "Out CRUST21 A ENV to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_15_2",
+   "name": "Out CRUST21 A ENV to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_16_1",
+   "name": "Out CRUST21 A CV to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_16_2",
+   "name": "Out CRUST21 A CV to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_17_1",
+   "name": "Out CRUST21 A GATE to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_17_2",
+   "name": "Out CRUST21 A GATE to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_18_1",
+   "name": "Out CRUST21 A EDIT to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_18_2",
+   "name": "Out CRUST21 A EDIT to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_24_1",
+   "name": "Out CRUST21 B OUT to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_24_2",
+   "name": "Out CRUST21 B OUT to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_25_1",
+   "name": "Out CRUST21 B ENV to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_25_2",
+   "name": "Out CRUST21 B ENV to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_26_1",
+   "name": "Out CRUST21 B CV to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_26_2",
+   "name": "Out CRUST21 B CV to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_27_1",
+   "name": "Out CRUST21 B GATE to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_27_2",
+   "name": "Out CRUST21 B GATE to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_28_1",
+   "name": "Out CRUST21 B EDIT to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_28_2",
+   "name": "Out CRUST21 B EDIT to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_32_1",
+   "name": "Out CRUST21 A RND OUT to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_32_2",
+   "name": "Out CRUST21 A RND OUT to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_34_1",
+   "name": "Out CRUST21 B ENV OUT1 to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_34_2",
+   "name": "Out CRUST21 B ENV OUT1 to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_35_1",
+   "name": "Out CRUST21 B ENV OUT2 to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_35_2",
+   "name": "Out CRUST21 B ENV OUT2 to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_36_1",
+   "name": "Out CRUST21 B RND OUT to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_36_2",
+   "name": "Out CRUST21 B RND OUT to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_43_1",
+   "name": "Out PIZZA1 PULSE to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_43_2",
+   "name": "Out PIZZA1 PULSE to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_44_1",
+   "name": "Out PIZZA1 MAIN to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_44_2",
+   "name": "Out PIZZA1 MAIN to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_45_1",
+   "name": "Out PIZZA1 OCT OSC to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_45_2",
+   "name": "Out PIZZA1 OCT OSC to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_49_1",
+   "name": "Out ABC1 SUM1 to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_49_2",
+   "name": "Out ABC1 SUM1 to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_53_1",
+   "name": "Out ABC1 SUM2 to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_53_2",
+   "name": "Out ABC1 SUM2 to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_62_0",
+   "name": "Out WAVEBARD1 OUT to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_62_2",
+   "name": "Out WAVEBARD1 OUT to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_63_0",
+   "name": "Out WAVEBARD1 ENV to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_63_2",
+   "name": "Out WAVEBARD1 ENV to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_64_0",
+   "name": "Out WAVEBARD1 CV to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_64_2",
+   "name": "Out WAVEBARD1 CV to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_65_0",
+   "name": "Out WAVEBARD1 GATE to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_65_2",
+   "name": "Out WAVEBARD1 GATE to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_66_0",
+   "name": "Out WAVEBARD1 LFO L to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_66_2",
+   "name": "Out WAVEBARD1 LFO L to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_67_0",
+   "name": "Out WAVEBARD1 LFO A to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_67_2",
+   "name": "Out WAVEBARD1 LFO A to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_68_0",
+   "name": "Out WAVEBARD1 L OUT to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_68_2",
+   "name": "Out WAVEBARD1 L OUT to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_69_0",
+   "name": "Out WAVEBARD1 R OUT to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_69_2",
+   "name": "Out WAVEBARD1 R OUT to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_80_0",
+   "name": "Out KOMPAS2 CV1 to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_80_2",
+   "name": "Out KOMPAS2 CV1 to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_81_0",
+   "name": "Out KOMPAS2 TRIG1 to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_81_2",
+   "name": "Out KOMPAS2 TRIG1 to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_82_0",
+   "name": "Out KOMPAS2 CV2 to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_82_2",
+   "name": "Out KOMPAS2 CV2 to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_83_0",
+   "name": "Out KOMPAS2 TRIG2 to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_83_2",
+   "name": "Out KOMPAS2 TRIG2 to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_84_0",
+   "name": "Out KOMPAS2 CV3 to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_84_2",
+   "name": "Out KOMPAS2 CV3 to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_85_0",
+   "name": "Out KOMPAS2 TRIG3 to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_85_2",
+   "name": "Out KOMPAS2 TRIG3 to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_89_0",
+   "name": "Out ABC2 SUM1 to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_89_2",
+   "name": "Out ABC2 SUM1 to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_93_0",
+   "name": "Out ABC2 SUM2 to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_93_2",
+   "name": "Out ABC2 SUM2 to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_102_0",
+   "name": "Out WAVEBARD2 OUT to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_102_2",
+   "name": "Out WAVEBARD2 OUT to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_103_0",
+   "name": "Out WAVEBARD2 ENV to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_103_2",
+   "name": "Out WAVEBARD2 ENV to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_104_0",
+   "name": "Out WAVEBARD2 CV to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_104_2",
+   "name": "Out WAVEBARD2 CV to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_105_0",
+   "name": "Out WAVEBARD2 GATE to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_105_2",
+   "name": "Out WAVEBARD2 GATE to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_106_0",
+   "name": "Out WAVEBARD2 LFO L to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_106_2",
+   "name": "Out WAVEBARD2 LFO L to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_107_0",
+   "name": "Out WAVEBARD2 LFO A to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_107_2",
+   "name": "Out WAVEBARD2 LFO A to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_108_0",
+   "name": "Out WAVEBARD2 L OUT to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_108_2",
+   "name": "Out WAVEBARD2 L OUT to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_109_0",
+   "name": "Out WAVEBARD2 R OUT to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_109_2",
+   "name": "Out WAVEBARD2 R OUT to 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_121_0",
+   "name": "Out KOMPAS3 CV1 to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_121_1",
+   "name": "Out KOMPAS3 CV1 to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_122_0",
+   "name": "Out KOMPAS3 TRIG1 to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_122_1",
+   "name": "Out KOMPAS3 TRIG1 to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_123_0",
+   "name": "Out KOMPAS3 CV2 to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_123_1",
+   "name": "Out KOMPAS3 CV2 to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_124_0",
+   "name": "Out KOMPAS3 TRIG2 to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_124_1",
+   "name": "Out KOMPAS3 TRIG2 to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_125_0",
+   "name": "Out KOMPAS3 CV3 to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_125_1",
+   "name": "Out KOMPAS3 CV3 to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_126_0",
+   "name": "Out KOMPAS3 TRIG3 to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_126_1",
+   "name": "Out KOMPAS3 TRIG3 to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_137_0",
+   "name": "Out ALCHEMIST1 OUT to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_137_1",
+   "name": "Out ALCHEMIST1 OUT to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_138_0",
+   "name": "Out ALCHEMIST1 ENV to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_138_1",
+   "name": "Out ALCHEMIST1 ENV to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_139_0",
+   "name": "Out ALCHEMIST1 CV to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_139_1",
+   "name": "Out ALCHEMIST1 CV to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_140_0",
+   "name": "Out ALCHEMIST1 GATE to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_140_1",
+   "name": "Out ALCHEMIST1 GATE to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_141_0",
+   "name": "Out ALCHEMIST1 LFO L to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_141_1",
+   "name": "Out ALCHEMIST1 LFO L to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_142_0",
+   "name": "Out ALCHEMIST1 LFO EDIT to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_142_1",
+   "name": "Out ALCHEMIST1 LFO EDIT to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_143_0",
+   "name": "Out ALCHEMIST1 LFO A to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_143_1",
+   "name": "Out ALCHEMIST1 LFO A to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_144_0",
+   "name": "Out ALCHEMIST1 LFO OUT to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_144_1",
+   "name": "Out ALCHEMIST1 LFO OUT to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_145_0",
+   "name": "Out ALCHEMIST1 L OUT to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_145_1",
+   "name": "Out ALCHEMIST1 L OUT to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_146_0",
+   "name": "Out ALCHEMIST1 R OUT to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_146_1",
+   "name": "Out ALCHEMIST1 R OUT to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_155_0",
+   "name": "Out BASIL1 L OUT to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_155_1",
+   "name": "Out BASIL1 L OUT to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_156_0",
+   "name": "Out BASIL1 R OUT to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_156_1",
+   "name": "Out BASIL1 R OUT to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_157_0",
+   "name": "Out BASIL1 MIX OUT to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_157_1",
+   "name": "Out BASIL1 MIX OUT to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_161_0",
+   "name": "Out ABC3 SUM1 to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_161_1",
+   "name": "Out ABC3 SUM1 to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_165_0",
+   "name": "Out ABC3 SUM2 to 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xo_165_1",
+   "name": "Out ABC3 SUM2 to 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_0_1",
+   "name": "In KOMPAS1 COLLAB from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_0_2",
+   "name": "In KOMPAS1 COLLAB from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_1_1",
+   "name": "In KOMPAS1 RESET from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_1_2",
+   "name": "In KOMPAS1 RESET from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_2_1",
+   "name": "In KOMPAS1 CLOCK from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_2_2",
+   "name": "In KOMPAS1 CLOCK from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_9_1",
+   "name": "In CRUST21 A CLK IN from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_9_2",
+   "name": "In CRUST21 A CLK IN from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_10_1",
+   "name": "In CRUST21 A CLK RESET from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_10_2",
+   "name": "In CRUST21 A CLK RESET from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_11_1",
+   "name": "In CRUST21 A C IN from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_11_2",
+   "name": "In CRUST21 A C IN from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_12_1",
+   "name": "In CRUST21 A G IN from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_12_2",
+   "name": "In CRUST21 A G IN from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_13_1",
+   "name": "In CRUST21 A R IN from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_13_2",
+   "name": "In CRUST21 A R IN from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_19_1",
+   "name": "In CRUST21 B CLK IN from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_19_2",
+   "name": "In CRUST21 B CLK IN from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_20_1",
+   "name": "In CRUST21 B CLK RESET from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_20_2",
+   "name": "In CRUST21 B CLK RESET from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_21_1",
+   "name": "In CRUST21 B C IN from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_21_2",
+   "name": "In CRUST21 B C IN from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_22_1",
+   "name": "In CRUST21 B G IN from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_22_2",
+   "name": "In CRUST21 B G IN from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_23_1",
+   "name": "In CRUST21 B R IN from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_23_2",
+   "name": "In CRUST21 B R IN from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_29_1",
+   "name": "In CRUST21 A LAYER CTRL from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_29_2",
+   "name": "In CRUST21 A LAYER CTRL from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_30_1",
+   "name": "In CRUST21 A VELOCITY from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_30_2",
+   "name": "In CRUST21 A VELOCITY from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_31_1",
+   "name": "In CRUST21 A TRIG from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_31_2",
+   "name": "In CRUST21 A TRIG from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_33_1",
+   "name": "In CRUST21 B PITCH VOCT from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_33_2",
+   "name": "In CRUST21 B PITCH VOCT from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_37_1",
+   "name": "In PIZZA1 CV from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_37_2",
+   "name": "In PIZZA1 CV from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_38_1",
+   "name": "In PIZZA1 SYNC from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_38_2",
+   "name": "In PIZZA1 SYNC from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_39_1",
+   "name": "In PIZZA1 CTRL from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_39_2",
+   "name": "In PIZZA1 CTRL from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_40_1",
+   "name": "In PIZZA1 FM INDEX from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_40_2",
+   "name": "In PIZZA1 FM INDEX from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_41_1",
+   "name": "In PIZZA1 EXT from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_41_2",
+   "name": "In PIZZA1 EXT from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_42_1",
+   "name": "In PIZZA1 V OCT from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_42_2",
+   "name": "In PIZZA1 V OCT from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_46_1",
+   "name": "In ABC1 A from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_46_2",
+   "name": "In ABC1 A from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_47_1",
+   "name": "In ABC1 B from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_47_2",
+   "name": "In ABC1 B from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_48_1",
+   "name": "In ABC1 C from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_48_2",
+   "name": "In ABC1 C from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_50_1",
+   "name": "In ABC1 D from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_50_2",
+   "name": "In ABC1 D from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_51_1",
+   "name": "In ABC1 E from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_51_2",
+   "name": "In ABC1 E from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_52_1",
+   "name": "In ABC1 F from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_52_2",
+   "name": "In ABC1 F from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_54_0",
+   "name": "In WAVEBARD1 CLK IN from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_54_2",
+   "name": "In WAVEBARD1 CLK IN from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_55_0",
+   "name": "In WAVEBARD1 CLK RESET from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_55_2",
+   "name": "In WAVEBARD1 CLK RESET from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_56_0",
+   "name": "In WAVEBARD1 C IN from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_56_2",
+   "name": "In WAVEBARD1 C IN from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_57_0",
+   "name": "In WAVEBARD1 G IN from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_57_2",
+   "name": "In WAVEBARD1 G IN from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_58_0",
+   "name": "In WAVEBARD1 LFO RESET from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_58_2",
+   "name": "In WAVEBARD1 LFO RESET from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_59_0",
+   "name": "In WAVEBARD1 LFO MOD from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_59_2",
+   "name": "In WAVEBARD1 LFO MOD from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_60_0",
+   "name": "In WAVEBARD1 AUD L IN from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_60_2",
+   "name": "In WAVEBARD1 AUD L IN from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_61_0",
+   "name": "In WAVEBARD1 AUD R IN from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_61_2",
+   "name": "In WAVEBARD1 AUD R IN from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_70_0",
+   "name": "In WAVEBARD1 MIDI IN from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_70_2",
+   "name": "In WAVEBARD1 MIDI IN from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_71_0",
+   "name": "In WAVEBARD1 TRIG from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_71_2",
+   "name": "In WAVEBARD1 TRIG from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_72_0",
+   "name": "In WAVEBARD1 BANK from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_72_2",
+   "name": "In WAVEBARD1 BANK from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_73_0",
+   "name": "In WAVEBARD1 FREE from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_73_2",
+   "name": "In WAVEBARD1 FREE from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_74_0",
+   "name": "In WAVEBARD1 NOTE from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_74_2",
+   "name": "In WAVEBARD1 NOTE from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_75_0",
+   "name": "In WAVEBARD1 SAMPLE from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_75_2",
+   "name": "In WAVEBARD1 SAMPLE from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_76_0",
+   "name": "In WAVEBARD1 LENGTH from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_76_2",
+   "name": "In WAVEBARD1 LENGTH from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_77_0",
+   "name": "In WAVEBARD1 AUX from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_77_2",
+   "name": "In WAVEBARD1 AUX from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_78_0",
+   "name": "In KOMPAS2 RESET from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_78_2",
+   "name": "In KOMPAS2 RESET from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_79_0",
+   "name": "In KOMPAS2 CLOCK from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_79_2",
+   "name": "In KOMPAS2 CLOCK from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_86_0",
+   "name": "In ABC2 A from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_86_2",
+   "name": "In ABC2 A from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_87_0",
+   "name": "In ABC2 B from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_87_2",
+   "name": "In ABC2 B from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_88_0",
+   "name": "In ABC2 C from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_88_2",
+   "name": "In ABC2 C from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_90_0",
+   "name": "In ABC2 D from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_90_2",
+   "name": "In ABC2 D from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_91_0",
+   "name": "In ABC2 E from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_91_2",
+   "name": "In ABC2 E from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_92_0",
+   "name": "In ABC2 F from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_92_2",
+   "name": "In ABC2 F from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_94_0",
+   "name": "In WAVEBARD2 CLK IN from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_94_2",
+   "name": "In WAVEBARD2 CLK IN from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_95_0",
+   "name": "In WAVEBARD2 CLK RESET from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_95_2",
+   "name": "In WAVEBARD2 CLK RESET from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_96_0",
+   "name": "In WAVEBARD2 C IN from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_96_2",
+   "name": "In WAVEBARD2 C IN from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_97_0",
+   "name": "In WAVEBARD2 G IN from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_97_2",
+   "name": "In WAVEBARD2 G IN from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_98_0",
+   "name": "In WAVEBARD2 LFO RESET from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_98_2",
+   "name": "In WAVEBARD2 LFO RESET from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_99_0",
+   "name": "In WAVEBARD2 LFO MOD from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_99_2",
+   "name": "In WAVEBARD2 LFO MOD from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_100_0",
+   "name": "In WAVEBARD2 AUD L IN from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_100_2",
+   "name": "In WAVEBARD2 AUD L IN from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_101_0",
+   "name": "In WAVEBARD2 AUD R IN from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_101_2",
+   "name": "In WAVEBARD2 AUD R IN from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_110_0",
+   "name": "In WAVEBARD2 MIDI IN from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_110_2",
+   "name": "In WAVEBARD2 MIDI IN from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_111_0",
+   "name": "In WAVEBARD2 TRIG from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_111_2",
+   "name": "In WAVEBARD2 TRIG from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_112_0",
+   "name": "In WAVEBARD2 BANK from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_112_2",
+   "name": "In WAVEBARD2 BANK from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_113_0",
+   "name": "In WAVEBARD2 FREE from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_113_2",
+   "name": "In WAVEBARD2 FREE from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_114_0",
+   "name": "In WAVEBARD2 NOTE from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_114_2",
+   "name": "In WAVEBARD2 NOTE from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_115_0",
+   "name": "In WAVEBARD2 SAMPLE from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_115_2",
+   "name": "In WAVEBARD2 SAMPLE from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_116_0",
+   "name": "In WAVEBARD2 LENGTH from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_116_2",
+   "name": "In WAVEBARD2 LENGTH from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_117_0",
+   "name": "In WAVEBARD2 AUX from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_117_2",
+   "name": "In WAVEBARD2 AUX from 3",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_118_0",
+   "name": "In KOMPAS3 COLLAB from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_118_1",
+   "name": "In KOMPAS3 COLLAB from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_119_0",
+   "name": "In KOMPAS3 RESET from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_119_1",
+   "name": "In KOMPAS3 RESET from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_120_0",
+   "name": "In KOMPAS3 CLOCK from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_120_1",
+   "name": "In KOMPAS3 CLOCK from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_127_0",
+   "name": "In ALCHEMIST1 CLK IN from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_127_1",
+   "name": "In ALCHEMIST1 CLK IN from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_128_0",
+   "name": "In ALCHEMIST1 CLK RESET from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_128_1",
+   "name": "In ALCHEMIST1 CLK RESET from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_129_0",
+   "name": "In ALCHEMIST1 C IN from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_129_1",
+   "name": "In ALCHEMIST1 C IN from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_130_0",
+   "name": "In ALCHEMIST1 G IN from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_130_1",
+   "name": "In ALCHEMIST1 G IN from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_131_0",
+   "name": "In ALCHEMIST1 R IN from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_131_1",
+   "name": "In ALCHEMIST1 R IN from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_132_0",
+   "name": "In ALCHEMIST1 LFO RESET from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_132_1",
+   "name": "In ALCHEMIST1 LFO RESET from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_133_0",
+   "name": "In ALCHEMIST1 LFO MOD from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_133_1",
+   "name": "In ALCHEMIST1 LFO MOD from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_134_0",
+   "name": "In ALCHEMIST1 LFO IN from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_134_1",
+   "name": "In ALCHEMIST1 LFO IN from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_135_0",
+   "name": "In ALCHEMIST1 AUD L IN from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_135_1",
+   "name": "In ALCHEMIST1 AUD L IN from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_136_0",
+   "name": "In ALCHEMIST1 AUD R IN from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_136_1",
+   "name": "In ALCHEMIST1 AUD R IN from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_147_0",
+   "name": "In BASIL1 TIME CV from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_147_1",
+   "name": "In BASIL1 TIME CV from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_148_0",
+   "name": "In BASIL1 SYNC from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_148_1",
+   "name": "In BASIL1 SYNC from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_149_0",
+   "name": "In BASIL1 CTRL from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_149_1",
+   "name": "In BASIL1 CTRL from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_150_0",
+   "name": "In BASIL1 L IN from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_150_1",
+   "name": "In BASIL1 L IN from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_151_0",
+   "name": "In BASIL1 R IN from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_151_1",
+   "name": "In BASIL1 R IN from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_152_0",
+   "name": "In BASIL1 MIX CV from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_152_1",
+   "name": "In BASIL1 MIX CV from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_153_0",
+   "name": "In BASIL1 V OCT from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_153_1",
+   "name": "In BASIL1 V OCT from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_154_0",
+   "name": "In BASIL1 FEEDBACK CV from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_154_1",
+   "name": "In BASIL1 FEEDBACK CV from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_158_0",
+   "name": "In ABC3 A from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_158_1",
+   "name": "In ABC3 A from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_159_0",
+   "name": "In ABC3 B from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_159_1",
+   "name": "In ABC3 B from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_160_0",
+   "name": "In ABC3 C from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_160_1",
+   "name": "In ABC3 C from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_162_0",
+   "name": "In ABC3 D from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_162_1",
+   "name": "In ABC3 D from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_163_0",
+   "name": "In ABC3 E from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_163_1",
+   "name": "In ABC3 E from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_164_0",
+   "name": "In ABC3 F from 1",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "xi_164_1",
+   "name": "In ABC3 F from 2",
+   "options": [
+    "-",
+    "on"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "hd_0",
+   "name": "Held 1",
+   "options": [
+    "-",
+    "kompas1_collab",
+    "kompas1_reset",
+    "kompas1_clock",
+    "kompas1_cv1",
+    "kompas1_trig1",
+    "kompas1_cv2",
+    "kompas1_trig2",
+    "kompas1_cv3",
+    "kompas1_trig3"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "hd_1",
+   "name": "Held 2",
+   "options": [
+    "-",
+    "crust21_a_clk_in",
+    "crust21_a_clk_reset",
+    "crust21_a_c_in",
+    "crust21_a_g_in",
+    "crust21_a_r_in",
+    "crust21_a_out",
+    "crust21_a_env",
+    "crust21_a_cv",
+    "crust21_a_gate"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "hd_2",
+   "name": "Held 3",
+   "options": [
+    "-",
+    "crust21_a_edit",
+    "crust21_b_clk_in",
+    "crust21_b_clk_reset",
+    "crust21_b_c_in",
+    "crust21_b_g_in",
+    "crust21_b_r_in",
+    "crust21_b_out",
+    "crust21_b_env",
+    "crust21_b_cv"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "hd_3",
+   "name": "Held 4",
+   "options": [
+    "-",
+    "crust21_b_gate",
+    "crust21_b_edit",
+    "crust21_a_layer_ctrl",
+    "crust21_a_velocity",
+    "crust21_a_trig",
+    "crust21_a_rnd_out",
+    "crust21_b_pitch_voct",
+    "crust21_b_env_out1",
+    "crust21_b_env_out2"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "hd_4",
+   "name": "Held 5",
+   "options": [
+    "-",
+    "crust21_b_rnd_out",
+    "pizza1_cv",
+    "pizza1_sync",
+    "pizza1_ctrl",
+    "pizza1_fm_index",
+    "pizza1_ext",
+    "pizza1_v_oct",
+    "pizza1_pulse",
+    "pizza1_main"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "hd_5",
+   "name": "Held 6",
+   "options": [
+    "-",
+    "pizza1_oct_osc",
+    "abc1_a",
+    "abc1_b",
+    "abc1_c",
+    "abc1_sum1",
+    "abc1_d",
+    "abc1_e",
+    "abc1_f",
+    "abc1_sum2"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "hd_6",
+   "name": "Held 7",
+   "options": [
+    "-",
+    "wavebard1_clk_in",
+    "wavebard1_clk_reset",
+    "wavebard1_c_in",
+    "wavebard1_g_in",
+    "wavebard1_lfo_reset",
+    "wavebard1_lfo_mod",
+    "wavebard1_aud_l_in",
+    "wavebard1_aud_r_in",
+    "wavebard1_out"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "hd_7",
+   "name": "Held 8",
+   "options": [
+    "-",
+    "wavebard1_env",
+    "wavebard1_cv",
+    "wavebard1_gate",
+    "wavebard1_lfo_l",
+    "wavebard1_lfo_a",
+    "wavebard1_l_out",
+    "wavebard1_r_out",
+    "wavebard1_midi_in",
+    "wavebard1_trig"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "hd_8",
+   "name": "Held 9",
+   "options": [
+    "-",
+    "wavebard1_bank",
+    "wavebard1_free",
+    "wavebard1_note",
+    "wavebard1_sample",
+    "wavebard1_length",
+    "wavebard1_aux",
+    "kompas2_reset",
+    "kompas2_clock",
+    "kompas2_cv1"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "hd_9",
+   "name": "Held 10",
+   "options": [
+    "-",
+    "kompas2_trig1",
+    "kompas2_cv2",
+    "kompas2_trig2",
+    "kompas2_cv3",
+    "kompas2_trig3",
+    "abc2_a",
+    "abc2_b",
+    "abc2_c",
+    "abc2_sum1"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "hd_10",
+   "name": "Held 11",
+   "options": [
+    "-",
+    "abc2_d",
+    "abc2_e",
+    "abc2_f",
+    "abc2_sum2",
+    "wavebard2_clk_in",
+    "wavebard2_clk_reset",
+    "wavebard2_c_in",
+    "wavebard2_g_in",
+    "wavebard2_lfo_reset"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "hd_11",
+   "name": "Held 12",
+   "options": [
+    "-",
+    "wavebard2_lfo_mod",
+    "wavebard2_aud_l_in",
+    "wavebard2_aud_r_in",
+    "wavebard2_out",
+    "wavebard2_env",
+    "wavebard2_cv",
+    "wavebard2_gate",
+    "wavebard2_lfo_l",
+    "wavebard2_lfo_a"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "hd_12",
+   "name": "Held 13",
+   "options": [
+    "-",
+    "wavebard2_l_out",
+    "wavebard2_r_out",
+    "wavebard2_midi_in",
+    "wavebard2_trig",
+    "wavebard2_bank",
+    "wavebard2_free",
+    "wavebard2_note",
+    "wavebard2_sample",
+    "wavebard2_length"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "hd_13",
+   "name": "Held 14",
+   "options": [
+    "-",
+    "wavebard2_aux",
+    "kompas3_collab",
+    "kompas3_reset",
+    "kompas3_clock",
+    "kompas3_cv1",
+    "kompas3_trig1",
+    "kompas3_cv2",
+    "kompas3_trig2",
+    "kompas3_cv3"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "hd_14",
+   "name": "Held 15",
+   "options": [
+    "-",
+    "kompas3_trig3",
+    "alchemist1_clk_in",
+    "alchemist1_clk_reset",
+    "alchemist1_c_in",
+    "alchemist1_g_in",
+    "alchemist1_r_in",
+    "alchemist1_lfo_reset",
+    "alchemist1_lfo_mod",
+    "alchemist1_lfo_in"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "hd_15",
+   "name": "Held 16",
+   "options": [
+    "-",
+    "alchemist1_aud_l_in",
+    "alchemist1_aud_r_in",
+    "alchemist1_out",
+    "alchemist1_env",
+    "alchemist1_cv",
+    "alchemist1_gate",
+    "alchemist1_lfo_l",
+    "alchemist1_lfo_edit",
+    "alchemist1_lfo_a"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "hd_16",
+   "name": "Held 17",
+   "options": [
+    "-",
+    "alchemist1_lfo_out",
+    "alchemist1_l_out",
+    "alchemist1_r_out",
+    "basil1_time_cv",
+    "basil1_sync",
+    "basil1_ctrl",
+    "basil1_l_in",
+    "basil1_r_in",
+    "basil1_mix_cv"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "hd_17",
+   "name": "Held 18",
+   "options": [
+    "-",
+    "basil1_v_oct",
+    "basil1_feedback_cv",
+    "basil1_l_out",
+    "basil1_r_out",
+    "basil1_mix_out",
+    "abc3_a",
+    "abc3_b",
+    "abc3_c",
+    "abc3_sum1"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "hd_18",
+   "name": "Held 19",
+   "options": [
+    "-",
+    "abc3_d",
+    "abc3_e",
+    "abc3_f",
+    "abc3_sum2"
+   ],
+   "default": 0,
+   "poll": false
+  }
+ ]
+}
