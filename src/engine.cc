@@ -178,7 +178,7 @@ struct Module {
 struct Eng {
   float pv[P_COUNT];
   float btn[P_COUNT];                   // pending momentary presses
-  int view = 0, held = -1, zoom = 0;
+  int view = 0, held = -1, win = -1;   // win: the module whose jack window is open, or -1
   Cable cab[MAXCAB];
   int ncab = 0;
   unsigned rev = 1;
@@ -275,24 +275,36 @@ struct Eng {
     }
     bump();
   }
-  void set_zoom(int z) {   // 0 whole screen, 1 top half, 2 bottom half; the skin's enlarged views follow it
-    z = (int)clampf((float)z, 0, 2);
-    if (z == zoom) return;
-    zoom = z;
-    pv[P_ZOOM] = (float)z;
+  // vw: the one switch the skin shows everything by: the screen, or N_SCREENS + the open module's window
+  void sync_vw() { pv[P_VW] = (float)(win >= 0 ? N_SCREENS + win : view); }
+  void open_win(int m) {   // a tap on a module's empty art: its jack window (on that module's screen)
+    if (m < 0 || m >= N_MODS) return;
+    view = MOD_SCREEN[m];
+    pv[P_VIEW] = (float)view;
+    win = m;
+    sync_vw();
     bump();
   }
-  void set_view(int v) {
+  void close_win() {
+    if (win < 0) return;
+    win = -1;
+    sync_vw();
+    bump();
+  }
+  void set_view(int v) {   // a screen change also closes an open window
     v = (int)clampf((float)v, 0, N_SCREENS - 1);
-    if (v == view) return;
+    if (v == view && win < 0) return;
     view = v;
+    win = -1;
     pv[P_VIEW] = (float)v;
+    sync_vw();
     bump();
   }
 
   // ---- the picture switches (what the skin shows) ------------------------------------------------------------------
   int vis_value(int k) const {
     int kind = VIS_KIND[k], a = VIS_A[k], b = VIS_B[k];
+    if (win >= 0) return 0;      // cables and held rings live on the screens, not in a module's jack window
     if (kind == 0) {            // cp: output a, input group b
       if (JACK_SCREEN[a] != view) return 0;
       for (int c = 0; c < ncab; c++)
@@ -887,7 +899,9 @@ struct Inst : Eng {
       q = e;
     }
     held = -1;
+    win = -1;
     pv[P_VIEW] = (float)view;
+    sync_vw();
     rebuild();
     bump();
   }
@@ -954,7 +968,6 @@ void set_param(void *inst, const char *key, const char *val) {
     return;
   }
   if (p == P_VIEW) { s->set_view((int)lroundf(v)); return; }
-  if (p == P_ZOOM) { s->set_zoom((int)lroundf(v)); return; }
   if (p >= P_QL1 && p <= P_QL16) {
     int t = ql_target(s, p - P_QL1);
     if (t < 0) return;
@@ -971,9 +984,8 @@ void set_param(void *inst, const char *key, const char *val) {
     return;
   }
   if (p >= P_TAP_FIRST && p < P_TAP_FIRST + N_JACKS) { s->tap(p - P_TAP_FIRST); return; }
-  if (p == P_ZIN_TOP) { s->set_zoom(1); return; }
-  if (p == P_ZIN_BOT) { s->set_zoom(2); return; }
-  if (p == P_ZOUT) { s->set_zoom(0); return; }
+  if (p >= P_MW_FIRST && p < P_MW_FIRST + N_MODS) { s->open_win(p - P_MW_FIRST); return; }
+  if (p == P_MCLOSE) { s->close_win(); return; }
 }
 
 int get_param(void *inst, const char *key, char *buf, int n) {
@@ -1006,7 +1018,7 @@ int get_param(void *inst, const char *key, char *buf, int n) {
   }
   if (p < N_CONTROLS) return P_NOPTS[p] ? snprintf(buf, n, "%d", (int)s->pv[p]) : snprintf(buf, n, "%g", s->pv[p]);
   if (p == P_VIEW) return snprintf(buf, n, "%d", s->view);
-  if (p == P_ZOOM) return snprintf(buf, n, "%d", s->zoom);
+  if (p == P_VW) return snprintf(buf, n, "%d", s->win >= 0 ? N_SCREENS + s->win : s->view);
   if (p >= P_VIS_FIRST && p < P_VIS_FIRST + N_VIS) return snprintf(buf, n, "%d", s->vis_value(p - P_VIS_FIRST));
   if (p == P_PATCH_INFO) return snprintf(buf, n, "%s", s->info);
   return snprintf(buf, n, "0");

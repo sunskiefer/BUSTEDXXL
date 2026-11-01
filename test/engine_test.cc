@@ -69,11 +69,19 @@ int main() {
     snprintf(k, sizeof k, "cp_%d_%d", o, JACK_GROUP_OF[in]);
     CHECK(geti(s, k) == 1 + JACK_GROUP_POS[in], "cable picture switch %s = %d (want %d)", k, geti(s, k), 1 + JACK_GROUP_POS[in]);
     // the picture clears on another screen, and the cross-screen stub shows where it should
-    set(s, "zin_top", "1"); CHECK(geti(s, "zoom") == 1, "tap top half zooms the top");
-    set(s, "zin_bot", "1"); CHECK(geti(s, "zoom") == 2, "tap bottom half zooms the bottom");
-    set(s, "nav_next", "1"); CHECK(geti(s, "zoom") == 2, "zoom stays when the screen changes");
-    set(s, "nav_prev", "1");
-    set(s, "zout", "1"); CHECK(geti(s, "zoom") == 0, "tap outside zooms out");
+    // module windows: open hides the cable pictures, the switch follows, close brings them back; a screen change closes
+    CHECK(geti(s, "vw") == 0, "view switch: screen 1");
+    set(s, "mw_1", "1"); CHECK(geti(s, "vw") == N_SCREENS + 1, "open module 2's window: vw = %d", geti(s, "vw"));
+    CHECK(geti(s, k) == 0, "no cable picture while a window is open");
+    set(s, "mclose", "1"); CHECK(geti(s, "vw") == 0, "close: back to screen 1");
+    CHECK(geti(s, k) == 1 + JACK_GROUP_POS[in], "cable picture back after close");
+    set(s, "mw_5", "1"); CHECK(geti(s, "view") == 1 && geti(s, "vw") == N_SCREENS + 5, "a module on screen 2 opens on screen 2");
+    set(s, "nav_prev", "1"); CHECK(geti(s, "vw") == 0 && geti(s, "view") == 0, "screen change closes the window");
+    // a half-made patch survives the windows: tap in one window, close, open another, finish there
+    set(s, "mw_0", "1"); tap(s, "kompas1_cv2"); set(s, "mclose", "1");
+    set(s, "mw_1", "1"); tap(s, "crust21_a_c_in"); set(s, "mclose", "1");
+    CHECK(ncables(s) == 2, "patched across two windows: %d cables", ncables(s));
+    patch(s, "kompas1_cv2", "crust21_a_c_in"); CHECK(ncables(s) == 1, "and unplugged again");
     set(s, "nav_next", "1"); CHECK(geti(s, "view") == 1, "next -> screen 2");
     CHECK(geti(s, k) == 0, "no cable picture on another screen");
     set(s, "nav_prev", "1"); set(s, "nav_prev", "1"); CHECK(geti(s, "view") == 2, "prev wraps to screen 3");

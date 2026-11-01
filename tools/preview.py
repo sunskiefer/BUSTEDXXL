@@ -6,6 +6,8 @@ import re
 from PIL import Image
 
 import spec
+import gen_params
+
 
 W, H = spec.PAGE_W, spec.PAGE_H
 
@@ -117,15 +119,13 @@ def run(skin, folder):
     base = sample_state(skin)
     for s in range(spec.NSCREENS):
         # only this screen's picture switches count (the engine zeroes the others)
-        keep0 = {}
+        st = {"view": s, "vw": s}
         for k, v in base.items():
             m = re.match(r"(cp|xo|xi)_(\d+)", k)
             if m and spec.JACKS[int(m.group(2))].screen == s:
-                keep0[k] = v
-        for z in range(spec.ZOOMS):
-            st = dict(keep0)
-            st["view"] = s
-            st["zoom"] = z
-            im = comp.compose(st).convert("RGB")
-            im.save(os.path.join(folder, "screen_%d%s.png" % (s + 1, ["", "_top", "_bottom"][z])))
+                st[k] = v
+        comp.compose(st).convert("RGB").save(os.path.join(folder, "screen_%d.png" % (s + 1)))
+    for m in spec.MODS:   # a module's window: the engine zeroes every cable picture while one is open
+        st = {"view": m.screen, "vw": spec.NSCREENS + m.idx}
+        comp.compose(st).convert("RGB").save(os.path.join(folder, "win_%s.png" % m.name.lower()))
     return folder

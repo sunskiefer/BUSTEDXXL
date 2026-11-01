@@ -12508,44 +12508,156 @@
    "poll": false
   },
   {
-   "key": "zoom",
-   "name": "Zoom",
+   "key": "mw_0",
+   "name": "Open KOMPAS1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "mw_1",
+   "name": "Open CRUST21",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "mw_2",
+   "name": "Open PIZZA1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "mw_3",
+   "name": "Open ABC1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "mw_4",
+   "name": "Open WAVEBARD1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "mw_5",
+   "name": "Open KOMPAS2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "mw_6",
+   "name": "Open ABC2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "mw_7",
+   "name": "Open WAVEBARD2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "mw_8",
+   "name": "Open KOMPAS3",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "mw_9",
+   "name": "Open ALCHEMIST1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "mw_10",
+   "name": "Open BASIL1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "mw_11",
+   "name": "Open ABC3",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "mclose",
+   "name": "Close Module",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "vw",
+   "name": "View",
    "options": [
-    "Whole",
-    "Top half",
-    "Bottom half"
+    "Screen 1",
+    "Screen 2",
+    "Screen 3",
+    "KOMPAS1",
+    "CRUST21",
+    "PIZZA1",
+    "ABC1",
+    "WAVEBARD1",
+    "KOMPAS2",
+    "ABC2",
+    "WAVEBARD2",
+    "KOMPAS3",
+    "ALCHEMIST1",
+    "BASIL1",
+    "ABC3"
    ],
    "default": 0
-  },
-  {
-   "key": "zin_top",
-   "name": "Zoom Top Half",
-   "min": 0.0,
-   "max": 1.0,
-   "default": 0.0,
-   "momentary": true,
-   "type": "trigger",
-   "refresh_display": true
-  },
-  {
-   "key": "zin_bot",
-   "name": "Zoom Bottom Half",
-   "min": 0.0,
-   "max": 1.0,
-   "default": 0.0,
-   "momentary": true,
-   "type": "trigger",
-   "refresh_display": true
-  },
-  {
-   "key": "zout",
-   "name": "Zoom Out",
-   "min": 0.0,
-   "max": 1.0,
-   "default": 0.0,
-   "momentary": true,
-   "type": "trigger",
-   "refresh_display": true
   }
  ]
 }

@@ -29,19 +29,11 @@ def trigger(key, name, refresh=False):
     return p
 
 
-KNOB_MAX_RZ = 64
-
-
-def knob_radius(c, z=0):
-    """Page radius of a control's knob strip (in zoom view z: 0 whole screen, 1 top half, 2 bottom half)."""
+def knob_radius(c):
+    """Page radius of a control's knob strip."""
     if c.kind == "v":
         return SLIDER_R
-    sc = spec.VIEWS[c.mod.screen][z][0]
-    return max(KNOB_MIN_R, min(KNOB_MAX_R if z == 0 else KNOB_MAX_RZ, int(round(c.r * sc))))
-
-
-def zoom_of(y_art, s):
-    return spec.half_of(s, y_art)
+    return max(KNOB_MIN_R, min(KNOB_MAX_R, int(round(c.r * spec.FIT[c.mod.screen][0]))))
 
 
 def pretty(c):
@@ -91,11 +83,13 @@ def build_params():
         grp = spec.JACKS[h * spec.GROUP:(h + 1) * spec.GROUP]
         P.append({"key": "hd_%d" % h, "name": "Held %d" % (h + 1), "options": ["-"] + [j.key for j in grp], "default": 0,
                   "poll": False})
-    # zoom (appended after the shipped parameters): the view's enlarged half, and the taps that change it
-    P.append({"key": "zoom", "name": "Zoom", "options": ["Whole", "Top half", "Bottom half"], "default": 0})
-    P.append(trigger("zin_top", "Zoom Top Half", True))
-    P.append(trigger("zin_bot", "Zoom Bottom Half", True))
-    P.append(trigger("zout", "Zoom Out", True))
+    # module windows (appended after the 0.1.1 parameters): a tap on a module's empty art opens its jack window, a tap on
+    # the window's empty area closes it; vw is the one switch every picture and touch area is shown by
+    for m in spec.MODS:
+        P.append(trigger("mw_%d" % m.idx, "Open %s" % m.name, True))
+    P.append(trigger("mclose", "Close Module", True))
+    P.append({"key": "vw", "name": "View", "options": ["Screen %d" % (s + 1) for s in range(spec.NSCREENS)] + [m.name for m in spec.MODS],
+              "default": 0})
     keys = [p["key"] for p in P]
     assert len(keys) == len(set(keys)), "duplicate keys"
     return P
@@ -215,6 +209,7 @@ def write_header(P):
     L.append("#define N_VIS %d" % len(vis))
     L.append("#define GROUP %d" % spec.GROUP)
     L.append("static const unsigned char JACK_COLOUR[N_JACKS] = {%s};" % ", ".join(str(getattr(j, "out_index", 0) % len(spec.COLORS)) for j in spec.JACKS))
+    L.append("#define P_MW_FIRST %d" % [i for i, p in enumerate(P) if p["key"].startswith("mw_")][0])
     L.append("static const unsigned char VIS_KIND[N_VIS] = {%s};" % ", ".join(str(v[0]) for v in vis))
     L.append("static const short VIS_A[N_VIS] = {%s};" % ", ".join(str(v[1]) for v in vis))
     L.append("static const short VIS_B[N_VIS] = {%s};" % ", ".join(str(v[2]) for v in vis))
@@ -256,25 +251,30 @@ theme_lcd=101010
 theme_box=151515"""
 
 
-def jack_box(j, z=0):
+def jack_box(j):
     """Touch box (page coordinates) of a jack: its circle with a little room, never overlapping the jack row's neighbours."""
-    cx, cy = spec.to_page(j.screen, j.x, j.y, z)
-    sc = spec.VIEWS[j.screen][z][0]
-    r = max(14, int(round(j.r * sc * 1.15)))
+    cx, cy = spec.to_page(j.screen, j.x, j.y)
+    r = max(14, int(round(j.r * spec.FIT[j.screen][0] * 1.15)))
     return int(round(cx)) - r, int(round(cy)) - r, 2 * r, 2 * r
 
 
-def control_box(c, z=0):
-    cx, cy = spec.to_page(c.mod.screen, c.x, c.y, z)
-    sc = spec.VIEWS[c.mod.screen][z][0]
+def win_jack_box(j):
+    """Touch box of a jack in its module's window."""
+    cx, cy = spec.win_layout(j.mod)[j.gid]
+    r = spec.WIN_R + 6
+    return int(round(cx)) - r, int(round(cy)) - r, 2 * r, 2 * r
+
+
+def control_box(c):
+    cx, cy = spec.to_page(c.mod.screen, c.x, c.y)
+    sc = spec.FIT[c.mod.screen][0]
     if c.kind in ("k", "n"):
-        R = knob_radius(c, z)
+        R = knob_radius(c)
         return int(round(cx)) - R - 2, int(round(cy)) - R - 2, 2 * R + 4, 2 * R + 4
     r = max(16, int(round(c.r * sc * 1.1)))
     if c.kind == "v":
         # a slider: a tall touch box along the slider's travel
-        k = sc / spec.FIT[c.mod.screen][0]
-        return int(round(cx - 12 * k)), int(round(cy - 40 * k)), int(round(24 * k)), int(round(80 * k))
+        return int(round(cx - 12)), int(round(cy - 40)), 24, 80
     return int(round(cx)) - r, int(round(cy)) - r, 2 * r, 2 * r
 
 
@@ -299,9 +299,10 @@ def write_layout():
          THEME,
          "qlinks_track = " + ",".join("ql%d" % (i + 1) for i in range(16)),
          "", "[tab KutilXXL]"]
-    for s_ in range(spec.NSCREENS):   # behind every control: a tap on empty art zooms in / out (post_skin.py sizes them)
-        for k in ("zin_top", "zin_bot", "zout"):
-            L.append('button cx=640 cy=%d label="" key=%s when=view:%d' % (350 + Y0, k, s_))
+    for m in spec.MODS:   # behind every control: a tap on a module's empty art opens its window (post_skin.py sizes it)
+        x, y, w, h = spec.module_rect(m)
+        L.append('button cx=%d cy=%d label="" key=mw_%d when=view:%d' % (x + w // 2, y + h // 2 + Y0, m.idx, m.screen))
+    L.append('button cx=640 cy=%d label="" key=mclose when=view:0' % (350 + Y0))
     for k, lbl, x, y in NAV:
         L.append('button cx=%d cy=%d label="%s" key=%s' % (x, y + Y0, lbl, k))
     for j in spec.JACKS:

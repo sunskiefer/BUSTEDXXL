@@ -174,40 +174,73 @@ SX = [f[0] for f in FIT]
 SY = [f[0] for f in FIT]
 
 
-ZOOMS = 3            # 0 whole screen, 1 top half, 2 bottom half (a zoom is a pre-drawn enlarged view, see post_skin.py)
+# ------------------------------------------------------------------------------------------------ module windows
+# Touching a module's empty art pulls up its window: the module's jacks alone, on a plain background, each with its
+# name, laid out as on the art (same rows, same order, same relative spacing) but big. Nothing else is drawn there:
+# cables and held rings live on the screens. View switch vw: 0..NSCREENS-1 the screens, NSCREENS + m module m's window.
+WIN_R = 30                    # jack radius in a window (page px)
+WIN_LABEL = 26                # label text px (two lines when the name has several words)
+WIN_MARGIN_X, WIN_MARGIN_Y = 40, 22
+WIN_ROWS_PER_COL = 4          # more rows than this -> two columns (first rows left, the rest right)
+WIN_ROW_TOL = 35              # art px: jacks within this much y are one row
 
 
-CUT = [FIT[s][4] / 2.0 for s in range(len(GEOM))]    # art y of the line that halves each screen
-PAD = [0.10 * FIT[s][4] for s in range(len(GEOM))]    # each zoomed half also shows this much of the other, so no knob or jack is cut
+def win_rows(m):
+    """-> [[jacks]] rows of module m's jacks, top to bottom, each left to right"""
+    rows = []
+    for j in sorted(m.jacks, key=lambda j: (j.y, j.x)):
+        if rows and abs(rows[-1][0].y - j.y) <= WIN_ROW_TOL:
+            rows[-1].append(j)
+        else:
+            rows.append([j])
+    for r in rows:
+        r.sort(key=lambda j: j.x)
+    return rows
 
 
-def _views(s):
-    sc, ox, oy, w, h = FIT[s]
-    out = [(sc, ox, oy, 0.0, float(h))]
-    usable = PAGE_H - HEADER_H
-    for ya, yb in ((0.0, CUT[s] + PAD[s]), (CUT[s] - PAD[s], float(h))):
-        zs = min(PAGE_W / float(w), usable / (yb - ya))
-        out.append((zs, (PAGE_W - w * zs) / 2.0, HEADER_H + (usable - (yb - ya) * zs) / 2.0, ya, yb))
+def win_layout(m):
+    """-> {jack gid: (page x, page y)} centres of module m's jacks in its window"""
+    rows = win_rows(m)
+    usable_top, usable_h = HEADER_H + WIN_MARGIN_Y, PAGE_H - HEADER_H - 2 * WIN_MARGIN_Y
+    cols = [rows] if len(rows) <= WIN_ROWS_PER_COL else [rows[:(len(rows) + 1) // 2], rows[(len(rows) + 1) // 2:]]
+    colw = (PAGE_W - WIN_MARGIN_X * (len(cols) + 1)) / float(len(cols))
+    xa, xb = min(j.x for j in m.jacks), max(j.x for j in m.jacks)
+    out = {}
+    for ci, col in enumerate(cols):
+        x0 = WIN_MARGIN_X + ci * (colw + WIN_MARGIN_X)
+        kx = min(2.4, (colw - 2 * WIN_R - 70) / float(max(1.0, xb - xa)))
+        span = (xb - xa) * kx
+        pitch = min(140.0, usable_h / float(len(col)))
+        y0 = usable_top + (usable_h - pitch * len(col)) / 2.0 + pitch * 0.38
+        for ri, row in enumerate(col):
+            for j in row:
+                out[j.gid] = (x0 + (colw - span) / 2.0 + (j.x - xa) * kx, y0 + ri * pitch)
     return out
 
 
-VIEWS = [_views(s) for s in range(len(GEOM))]   # per screen, per zoom: (scale, page x of art x 0, page y of art y ya, ya, yb)
+def win_label(j):
+    """the jack's name as drawn in the window: words on up to two lines"""
+    words = j.label.split()
+    if len(words) <= 1:
+        return words
+    if len(words) == 2:
+        return words
+    return [" ".join(words[:-1]), words[-1]] if len(" ".join(words[:-1])) <= 7 else [words[0], " ".join(words[1:])]
 
 
-def zviews(s, y, r):
-    """The zoomed halves (1 top, 2 bottom) a control or jack at art y with radius r is shown and used in: every half that
-    holds its whole body (so one near the middle is in both)."""
-    zs = [z for z in (1, 2) if VIEWS[s][z][3] <= y - r * 0.95 and y + r * 0.95 <= VIEWS[s][z][4]]
-    return zs or [half_of(s, y)]
+def to_page(s, x, y):
+    sc, ox, oy, _, _ = FIT[s]
+    return ox + x * sc, oy + y * sc
 
 
-def to_page(s, x, y, z=0):
-    sc, ox, oy, ya, _ = VIEWS[s][z]
-    return ox + x * sc, oy + (y - ya) * sc
-
-
-def half_of(s, y):
-    return 1 if y < CUT[s] else 2
+def module_rect(m):
+    """page rectangle of module m's art strip on its screen (the tap that pulls up its window)"""
+    sc, ox, oy, w, h = FIT[m.screen]
+    xa, xb = m.g["x"]
+    x0, y0 = to_page(m.screen, xa, 0)
+    x1, y1 = to_page(m.screen, xb + 1, h)
+    return int(round(x0)), int(round(y0)), int(round(x1 - x0)), int(round(y1 - y0))
 
 
 NSCREENS = len(GEOM)
+NVIEWS = NSCREENS + len(MODS)

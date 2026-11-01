@@ -124,6 +124,17 @@ def ring_image(r, w=4, fill=None):
     return im.resize((2 * r, 2 * r), Image.LANCZOS)
 
 
+def ring_colour(r, col, held=False):
+    """A jack's ring in a zoomed view: a thick ring in the cable's colour with a light fill (held: ring only)."""
+    S = 4
+    im = Image.new("RGBA", (2 * r * S, 2 * r * S), (0, 0, 0, 0))
+    d = ImageDraw.Draw(im)
+    if not held:
+        d.ellipse([S, S, 2 * r * S - S, 2 * r * S - S], fill=tuple(col) + (70,))
+    d.ellipse([S, S, 2 * r * S - S, 2 * r * S - S], outline=tuple(col) + (255,), width=(5 if held else 6) * S)
+    return im.resize((2 * r, 2 * r), Image.LANCZOS)
+
+
 def nav_image(label, on, w, h):
     S = 4
     im = Image.new("RGBA", (w * S, h * S), (0, 0, 0, 0))
@@ -238,16 +249,24 @@ def job_pair(a):
     return prefix, _save_pieces(prefix, im, x0, y0)
 
 
+STUB_IN = 230       # an incoming stub runs this far from its jack toward the screen edge (memory: 8 colours per jack)
+
+
 def job_stub(a):
-    """a = (prefix, jack xy, side 'l'/'r', colour, plug, label, jack_is_start)"""
-    prefix, p1, side, colour, plug, label = a
+    """a = (prefix, jack xy, side 'l'/'r', colour, plug, label, reach): reach None = to the screen edge, else that many px"""
+    prefix, p1, side, colour, plug, label, reach = a
     ex = -14 if side == "l" else W + 14
+    if reach is not None:
+        ex = max(reach * 0.35 + 30, p1[0] - reach) if side == "l" else min(W - reach * 0.35 - 30, p1[0] + reach)
     p2 = (ex, min(H - 40, p1[1] + 34))
     im, x0, y0 = draw_cable(p1, p2, colour, plug, plug2=False)
     full = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     full.alpha_composite(im, (x0, y0))
     tg = tag_image(label, colour=colour)
-    tx = 4 if side == "l" else W - tg.size[0] - 4
+    if reach is None:
+        tx = 4 if side == "l" else W - tg.size[0] - 4
+    else:
+        tx = int(p2[0] - tg.size[0] - 2 if side == "l" else p2[0] + 2)
     ty = int(max(HDR + 4, min(H - tg.size[1] - 4, p2[1] - tg.size[1] - 18)))
     full.alpha_composite(tg, (tx, ty))
     bb = full.getbbox()
@@ -256,23 +275,51 @@ def job_stub(a):
 
 
 # ------------------------------------------------------------------------------------------------ the skin
-def panel_image(s, z=0):
-    sc, ox, oy, ya, yb = spec.VIEWS[s][z]
-    w, h = spec.FIT[s][3], spec.FIT[s][4]
+def header_image(s, centre=""):
     S = 2
     ov = Image.new("RGB", (W * S, HDR * S), HEADER)
     d = ImageDraw.Draw(ov)
     d.line([0, (HDR - 1) * S, W * S, (HDR - 1) * S], fill=LINE, width=2 * S)
     d.text((130 * S, 36 * S), "KUTILXXL", font=font(32 * S), fill=INK, anchor="lm")
     d.text((1150 * S, 36 * S), "%d / %d" % (s + 1, spec.NSCREENS), font=font(32 * S), fill=ORANGE, anchor="rm")
-    if z:
-        d.text((640 * S, 36 * S), "TOP HALF" if z == 1 else "BOTTOM HALF", font=font(30 * S), fill=INK, anchor="mm")
+    if centre:
+        d.text((640 * S, 36 * S), centre, font=font(30 * S), fill=INK, anchor="mm")
+    return ov.resize((W, HDR), Image.LANCZOS)
+
+
+def panel_image(s):
+    sc, ox, oy, w, h = spec.FIT[s]
     page = Image.new("RGB", (W, H), PANEL)
-    page.paste(ov.resize((W, HDR), Image.LANCZOS), (0, 0))
+    page.paste(header_image(s), (0, 0))
     art = Image.open(os.path.join(ROOT, "art", spec.GEOM[s]["art"])).convert("RGB")
-    art = art.crop((0, int(round(ya)), w, int(round(yb))))
-    art = art.resize((int(round(w * sc)), int(round((yb - ya) * sc))), Image.LANCZOS)
+    art = art.resize((int(round(w * sc)), int(round(h * sc))), Image.LANCZOS)
     page.paste(art, (int(round(ox)), int(round(oy))))
+    return page
+
+
+def module_title(m):
+    return "%s %s" % (m.type, m.name[len(m.type):])
+
+
+def window_image(m):
+    """A module's window: its jacks alone on the plain panel, each with its name (inputs light ring, outputs orange)."""
+    page = Image.new("RGB", (W, H), PANEL)
+    page.paste(header_image(m.screen, module_title(m) + "  JACKS"), (0, 0))
+    S = 2
+    lay = Image.new("RGBA", (W * S, (H - HDR) * S), (0, 0, 0, 0))
+    d = ImageDraw.Draw(lay)
+    f = font(spec.WIN_LABEL * S)
+    R = spec.WIN_R * S
+    for gid, (x, y) in spec.win_layout(m).items():
+        j = spec.JACKS[gid]
+        x, y = x * S, (y - HDR) * S
+        ring = ORANGE if j.kind == "out" else NEUTRAL
+        d.ellipse([x - R, y - R, x + R, y + R], fill=(18, 18, 18, 255), outline=ring + (255,), width=4 * S)
+        d.ellipse([x - R * 0.5, y - R * 0.5, x + R * 0.5, y + R * 0.5], fill=(60, 60, 60, 255), outline=(8, 8, 8, 255), width=2 * S)
+        d.ellipse([x - R * 0.3, y - R * 0.3, x + R * 0.3, y + R * 0.3], fill=(5, 5, 5, 255))
+        for li, line in enumerate(spec.win_label(j)):
+            d.text((x, y + R + 6 * S + (spec.WIN_LABEL + 2) * S * li), line, font=f, fill=INK + (255,), anchor="ma")
+    page.paste(lay.resize((W, H - HDR), Image.LANCZOS).convert("RGB"), (0, HDR), lay.resize((W, H - HDR), Image.LANCZOS).split()[3])
     return page
 
 
@@ -328,18 +375,20 @@ def main():
         if name.startswith("sh_mode_") or re.match(r"sh_knob_r\d+\.png$", name):
             os.remove(os.path.join(folder, name))
     Image.new("RGB", (W, H), PANEL).save(os.path.join(folder, "sh_bg_0.png"))
-    zidx = skin.index["zoom"]
+    vwidx = skin.index["vw"]
 
-    def en(s_, z_):
-        """the view + zoom a component is shown in (both conditions must hold)"""
-        return ["IndexedEnabling/%d/%d/Parameter %d" % (s_, nview, vidx), "IndexedEnabling/%d/%d/Parameter %d" % (z_, spec.ZOOMS, zidx)]
-    ZOOM0 = "IndexedEnabling/0/%d/Parameter %d" % (spec.ZOOMS, zidx)
+    def en(v):
+        """the one condition a component is shown by: the view switch vw at v (a screen, or NSCREENS + module)"""
+        return ["IndexedEnabling/%d/%d/Parameter %d" % (v, spec.NVIEWS, vwidx)]
     panels = []
     for s in range(nview):
-        for z in range(spec.ZOOMS):
-            nm = "ku_screen_%d.png" % s if z == 0 else "ku_screen_%d_z%d.png" % (s, z)
-            panel_image(s, z).save(os.path.join(folder, nm))
-            panels.append(image_instance("Screen %d%s" % (s + 1, ["", " top", " bottom"][z]), nm, 0, 0, W, H, en(s, z)))
+        nm = "ku_screen_%d.png" % s
+        panel_image(s).save(os.path.join(folder, nm))
+        panels.append(image_instance("Screen %d" % (s + 1), nm, 0, 0, W, H, en(s)))
+    for m in spec.MODS:
+        nm = "ku_win_%d.png" % m.idx
+        window_image(m).save(os.path.join(folder, nm))
+        panels.append(image_instance("Window %s" % m.name, nm, 0, 0, W, H, en(nview + m.idx)))
     comps[1:1] = panels
 
     # 2) knobs: a strip per (module type, radius) from the first knob of that kind; sliders are blank
@@ -422,101 +471,59 @@ def main():
             if c.kind == "s":
                 inst["componentData"]["type"] = "kuToggle_%s" % c.key
 
-    # 3b) zoom: every overview component of a screen gets "whole" as an extra condition; the controls, jack touch areas and
-    # the tap-to-zoom areas get a second, enlarged copy shown while their half of the screen is zoomed
-    vh = "IndexedEnabling/"
+    # 3b) the layout's per-screen controls are shown by 'view': move them to the one switch vw (same value for a screen)
     for inst in comps:
         hs = inst["bounds"]["additionalInvalidatingHandles"]
-        if any(h.startswith(vh) and h.endswith("Parameter %d" % vidx) for h in hs) and ZOOM0 not in hs and \
-                not any(h.endswith("Parameter %d" % zidx) for h in hs):
-            hs.append(ZOOM0)
-    zctl = []
-    kframes = 64
+        for k_, h in enumerate(hs):
+            m = re.match(r"IndexedEnabling/(\d+)/\d+/Parameter %d$" % vidx, h)
+            if m:
+                hs[k_:k_ + 1] = en(int(m.group(1)))
+                break
 
-    def clone_def(src, new, w, h, off=None, on=None, strip=None, frames=None):
+    def clone_def(src, new, w, h, off=None, on=None):
         d = copy.deepcopy(skin.defs[src])
         for sub in d["componentsData"]:
             sub["bounds"]["bounds"] = bstr(0, 0, w, h)
-            t = sub["componentData"]["type"]
-            if t == "Button":
+            if sub["componentData"]["type"] == "Button":
                 if off:
                     sub["componentData"]["data"]["offImage"] = off
                 if on:
                     sub["componentData"]["data"]["onImage"] = on
-            if t == "Knob" and strip:
-                sub["componentData"]["data"]["filmStrip"] = strip
-                sub["componentData"]["data"]["numFrames"] = frames - 1
         skin.add_def(new, d)
         return new
 
-    zclusters = {}
-    for c in spec.CONTROL_LIST:
-        if c.kind in ("k", "n"):
-            for z in spec.zviews(c.mod.screen, c.y, c.r):
-                zclusters.setdefault((c.mod.type, gp.knob_radius(c, z)), c)
-    for (typ, R), c in sorted(zclusters.items()):
-        write_knob_strip(os.path.join(folder, "ku_zknob_%s_r%d.png" % (typ.lower(), R)), c, R, kframes)
-        F = 2 * R + 10
-        clone_def("kuKnob_%s_%d" % (c.mod.type.lower(), gp.knob_radius(c, 0)), "kuZKnob_%s_%d" % (typ.lower(), R), F, F,
-                  strip="ku_zknob_%s_r%d.png" % (typ.lower(), R), frames=kframes)
-    zring = set()
-    for c, z in [(c_, z_) for c_ in spec.CONTROL_LIST for z_ in spec.zviews(c_.mod.screen, c_.y, c_.r)]:
-        s_ = c.mod.screen
-        bx, by, bw, bh = gp.control_box(c, z)
-        for inst in skin.instances(c.key):
-            dup = copy.deepcopy(inst)
-            dup["bounds"]["bounds"] = bstr(bx, by, bw, bh)
-            dup["bounds"]["additionalInvalidatingHandles"] = en(s_, z)
-            if c.kind in ("k", "n"):
-                dup["componentData"]["type"] = "kuZKnob_%s_%d" % (c.mod.type.lower(), gp.knob_radius(c, z))
-            elif c.kind == "v":
-                dup["componentData"]["type"] = clone_def("kuKnob_slider", "kuZSlider_%s_%d" % (c.key, z), bw, bh)
-            elif c.kind == "s":
-                r = bw // 2
-                nm = "ku_lit_%d.png" % r
-                if not os.path.exists(os.path.join(folder, nm)):
-                    ring_image(r, 3, fill=ORANGE + (70,)).save(os.path.join(folder, nm))
-                dup["componentData"]["type"] = clone_def("kuToggle_%s" % c.key, "kuZToggle_%s_%d" % (c.key, z), bw, bh, "ku_blank.png", nm)
-            else:
-                r = bw // 2
-                nm = "ku_lit_%d.png" % r
-                if not os.path.exists(os.path.join(folder, nm)):
-                    ring_image(r, 3, fill=ORANGE + (70,)).save(os.path.join(folder, nm))
-                dup["componentData"]["type"] = clone_def("shTrig_%s_x" % c.key, "kuZBtn_%s_%d" % (c.key, z), bw, bh, "ku_blank.png", nm)
-            zctl.append(dup)
-    for j, z in [(j_, z_) for j_ in spec.JACKS for z_ in spec.zviews(j_.screen, j_.y, j_.r)]:
-        s_ = j.screen
-        bx, by, bw, bh = gp.jack_box(j, z)
-        if not os.path.exists(os.path.join(folder, "ku_ring_%d.png" % (bw // 2))):
-            ring_image(bw // 2).save(os.path.join(folder, "ku_ring_%d.png" % (bw // 2)))
+    # 3c) module windows: a tap on a module's empty art (behind its controls and jacks) opens its window; in the window
+    # every jack has a big touch area (the same tap parameter as on the screen); a tap on the window's empty area closes it
+    taps, wctl = [], []
+    usable_h = H - HDR
+    for m in spec.MODS:
+        x, y, w, h = spec.module_rect(m)
+        for inst in skin.instances("mw_%d" % m.idx):
+            inst["bounds"]["bounds"] = bstr(x, y, w, h)
+            inst["bounds"]["additionalInvalidatingHandles"] = en(m.screen)
+            inst["componentData"]["type"] = clone_def("shTrig_mw_%d_x" % m.idx, "kuOpenTap_%d" % m.idx, w, h, "ku_blank.png", "ku_blank.png")
+            taps.append(inst)
+    close_base = skin.instances("mclose")[0]
+    comps.remove(close_base)
+    for m in spec.MODS:
+        dup = copy.deepcopy(close_base)
+        dup["bounds"]["bounds"] = bstr(0, HDR, W, usable_h)
+        dup["bounds"]["additionalInvalidatingHandles"] = en(nview + m.idx)
+        dup["componentData"]["type"] = clone_def("shTrig_mclose_x", "kuCloseTap_%d" % m.idx, W, usable_h, "ku_blank.png", "ku_blank.png")
+        taps.append(dup)
+    wr = spec.WIN_R + 6
+    ring_image(wr, 5, fill=ORANGE + (90,)).save(os.path.join(folder, "ku_wring.png"))
+    for j in spec.JACKS:
+        bx, by, bw, bh = gp.win_jack_box(j)
         for inst in skin.instances("tap_" + j.key):
             dup = copy.deepcopy(inst)
             dup["bounds"]["bounds"] = bstr(bx, by, bw, bh)
-            dup["bounds"]["additionalInvalidatingHandles"] = en(s_, z)
-            dup["componentData"]["type"] = clone_def("shTrig_tap_%s_x" % j.key, "kuZTap_%s_%d" % (j.key, z), bw, bh,
-                                                     "ku_blank.png", "ku_ring_%d.png" % (bw // 2))
-            zctl.append(dup)
-    # the tap-to-zoom areas sit behind every control: empty art zooms in (whole view) or out (a zoomed view)
-    usable_h = H - HDR
-    for s_ in range(nview):
-        cut_y = int(round(spec.to_page(s_, 0, spec.CUT[s_])[1]))
-        for key, rect, zs_ in (("zin_top", (0, HDR, W, cut_y - HDR), [0]), ("zin_bot", (0, cut_y, W, H - cut_y), [0]),
-                               ("zout", (0, HDR, W, usable_h), [1, 2])):
-            insts = [i for i in skin.instances(key)
-                     if any(h.endswith("Parameter %d" % vidx) and h.startswith("IndexedEnabling/%d/" % s_) for h in i["bounds"]["additionalInvalidatingHandles"])]
-            base = insts[0]
-            for zz in zs_:
-                dup = copy.deepcopy(base)
-                dup["bounds"]["bounds"] = bstr(*rect)
-                dup["bounds"]["additionalInvalidatingHandles"] = en(s_, zz)
-                dup["componentData"]["type"] = clone_def("shTrig_%s_x" % key, "kuZoomTap_%s_%d_%d" % (key, s_, zz), rect[2], rect[3],
-                                                         "ku_blank.png", "ku_blank.png")
-                comps.append(dup)
-            comps.remove(base)
-    # the zoom taps went to the end of the list; move them in front of the controls so controls take the touch first
-    ztap = [c_ for c_ in comps if c_["componentData"]["type"].startswith("kuZoomTap_")]
-    comps[:] = [c_ for c_ in comps if not c_["componentData"]["type"].startswith("kuZoomTap_")]
-    comps[1 + len(panels):1 + len(panels)] = ztap
+            dup["bounds"]["additionalInvalidatingHandles"] = en(nview + j.mod.idx)
+            dup["componentData"]["type"] = clone_def("shTrig_tap_%s_x" % j.key, "kuWTap_%s" % j.key, bw, bh, "ku_blank.png", "ku_wring.png")
+            wctl.append(dup)
+    # the open / close taps sit right behind the controls (in front of the pictures), so controls take the touch first
+    comps[:] = [c_ for c_ in comps if c_ not in taps]
+    comps[1 + len(panels):1 + len(panels)] = taps
 
     # 4) cables, stubs, rings
     pos = {j.gid: spec.to_page(j.screen, j.x, j.y) for j in spec.JACKS}
@@ -536,7 +543,7 @@ def main():
                 continue
             side = "r" if t > o.screen else "l"
             prefix = "ku_xo_%d_%d" % (o.gid, t)
-            jobs_stub.append((prefix, pos[o.gid], side, o.colour, plugr[o.gid], ("TO %d" if side == "r" else "TO %d") % (t + 1)))
+            jobs_stub.append((prefix, pos[o.gid], side, o.colour, plugr[o.gid], "TO %d" % (t + 1), None))
             handles[prefix] = "IndexedEnabling/1/2/Parameter %d" % skin.index["xo_%d_%d" % (o.gid, t)]
     for j in spec.INS:
         for t in range(nview):
@@ -545,70 +552,31 @@ def main():
             side = "l" if t < j.screen else "r"
             for ci in range(len(spec.COLORS)):
                 prefix = "ku_xi_%d_%d_%d" % (j.gid, t, ci)
-                jobs_stub.append((prefix, pos[j.gid], side, spec.COLORS[ci], plugr[j.gid], "FROM %d" % (t + 1)))
+                jobs_stub.append((prefix, pos[j.gid], side, spec.COLORS[ci], plugr[j.gid], "FROM %d" % (t + 1), STUB_IN))
                 handles[prefix] = "IndexedEnabling/%d/%d/Parameter %d" % (1 + ci, 1 + len(spec.COLORS), skin.index["xi_%d_%d" % (j.gid, t)])
     cpus = max(1, multiprocessing.cpu_count())
     with multiprocessing.Pool(cpus, initializer=_init, initargs=(folder,)) as pool:
         res = pool.map(job_pair, jobs_pair, chunksize=16) + pool.map(job_stub, jobs_stub, chunksize=16)
     pic = []
     total_px, npieces = 0, 0
-    pair_meta = []
     for prefix, meta in res:
         for (name, px, py, pw, ph, spx) in meta:
-            pic.append(image_instance("Cable", name, px, py, pw, ph, [handles[prefix], ZOOM0]))
+            pic.append(image_instance("Cable", name, px, py, pw, ph, [handles[prefix]]))
             total_px += spx
             npieces += 1
-            pair_meta.append((prefix, name, px, py, pw, ph))
-    # zoom cables and stubs: the overview pieces again, enlarged by their bounds (cut where they leave the view)
-    opair = {}
-    for o in spec.OUTS:
-        opair[o.gid] = o
-    ncut = 0
-    for (prefix, name, px, py, pw, ph) in pair_meta:
-        gid_o = int(prefix.split("_")[2])
-        s_ = spec.JACKS[gid_o].screen
-        for z in (1, 2):
-            zs, zox, zoy, ya, yb = spec.VIEWS[s_][z]
-            sc, ox, oy = spec.VIEWS[s_][0][:3]
-            k = zs / sc
-            x0, y0 = zox + (px - ox) * k, zoy + (py - oy) * k - ya * zs
-            x1, y1 = x0 + pw * k, y0 + ph * k
-            if min(x1, float(W)) - max(x0, 0.0) < 1.5 or min(y1, float(H)) - max(y0, float(HDR)) < 1.5:
-                continue   # entirely outside the view
-            ix0, iy0, ix1, iy1 = x0, max(y0, float(HDR)), x1, y1   # only the header edge is cut: the page clips the rest
-            hdl = handles[prefix]
-            if ix0 > x0 + 0.5 or iy0 > y0 + 0.5 or ix1 < x1 - 0.5 or iy1 < y1 - 0.5:
-                l, t = int(math.floor((ix0 - x0) / k)), int(math.floor((iy0 - y0) / k))
-                r, b = int(math.ceil((ix1 - x0) / k)), int(math.ceil((iy1 - y0) / k))
-                r, b = min(r, pw), min(b, ph)
-                if r - l < 1 or b - t < 1:
-                    continue
-                cn = "ku_zc_%d.png" % ncut
-                ncut += 1
-                Image.open(os.path.join(folder, name)).crop((l, t, r, b)).save(os.path.join(folder, cn), compress_level=3)
-                bx0, by0, bw_, bh_ = int(round(x0 + l * k)), int(round(y0 + t * k)), max(1, int(round((r - l) * k))), max(1, int(round((b - t) * k)))
-                pic.append(image_instance("Cable", cn, bx0, by0, bw_, bh_, [hdl, "IndexedEnabling/%d/%d/Parameter %d" % (z, spec.ZOOMS, zidx)]))
-            else:
-                pic.append(image_instance("Cable", name, int(round(x0)), int(round(y0)), max(1, int(round(pw * k))), max(1, int(round(ph * k))),
-                                          [hdl, "IndexedEnabling/%d/%d/Parameter %d" % (z, spec.ZOOMS, zidx)]))
-            npieces += 1
-    # held rings
+    # held rings (whole view)
     for j in spec.JACKS:
         bx, by, bw, bh = gp.jack_box(j)
         h, p = divmod(j.gid, spec.GROUP)
         hh = "IndexedEnabling/%d/%d/Parameter %d" % (p + 1, min(spec.GROUP, len(spec.JACKS) - h * spec.GROUP) + 1, skin.index["hd_%d" % h])
-        pic.append(image_instance("Held", "ku_ring_%d.png" % (bw // 2), bx, by, bw, bh, [hh, ZOOM0]))
-        for z in spec.zviews(j.screen, j.y, j.r):
-            zx, zy, zw, zh = gp.jack_box(j, z)
-            pic.append(image_instance("Held", "ku_ring_%d.png" % (zw // 2), zx, zy, zw, zh,
-                                      [hh, "IndexedEnabling/%d/%d/Parameter %d" % (z, spec.ZOOMS, zidx)]))
+        pic.append(image_instance("Held", "ku_ring_%d.png" % (bw // 2), bx, by, bw, bh, [hh]))
     if CABLES_ABOVE:
-        comps.extend(zctl)
+        comps.extend(wctl)
         comps.extend(pic)
     else:
         at = 1 + len(panels)
         comps[at:at] = pic
-        comps.extend(zctl)
+        comps.extend(wctl)
     skin.save()
     print("post_skin: %d screens, %d knob strips, %d cable/stub/ring pictures (%d pieces, %.1f MB decoded), %d components" % (
         nview, len(clusters), len(pic), npieces, total_px * 4 / 1e6, len(comps)))
